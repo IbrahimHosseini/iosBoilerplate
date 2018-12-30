@@ -13,7 +13,7 @@ class BaseNavigationViewController: UINavigationController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.navigationBar.layer.shadowColor = Colors.gray50.cgColor
+        self.navigationBar.layer.shadowColor = Colors.gray.cgColor
         self.navigationBar.layer.shadowOffset = CGSize(width: 0.0, height: 2.0)
         self.navigationBar.layer.shadowRadius = 6.0
         self.navigationBar.layer.shadowOpacity = 0.5
