@@ -1,0 +1,335 @@
+/* 
+  Localizable.strings
+  resno
+
+  Created by hamed mohammadi on 2/1/18.
+  Copyright © 2018 hamed mohammadi. All rights reserved.
+*/
+"HttpCodeUnknown" = "خطای ناشناخته";
+"FatalError" = "خطای ساختاری";
+"HttpCode200To300" = "درخواست با موفقیت انجام شد.";
+"HttpCode401" = "عدم وجود دسترسی";
+"HttpCode403" = "درخواست غیر مجاز";
+"HttpCode404" = "اطلاعات وارد شده صحیح نمی باشد";
+"HttpCode423" = "The resource that is being accessed is locked";
+"HttpCode429" = "تعدد درخواست لطفا کمی بعد دوباره تلاش نمایید.";
+"HttpCode502" = "سرور در حال بروزرسانی است. کمی بعد تلاش کنید";
+
+//General
+"NoItemToShow" = "داده ای برای نمایش موجود نمی باشد.";
+"TomanPrice" = "%@ ریال";
+"ShareAppBody" = "دوست عزیز. سلام. پیشنهاد میکنم اپلیکیشن رسنو را از لینک زیر دریافت کرده و با کد %@ نصب کنید.\n http://www.resno.ir";
+
+//NVOverlayView
+"NVOverlayViewRetryBtnTitle" = "تلاش مجدد";
+"NVOverlayViewDefaultDescription" = "خطا در ارتباط با سرور";
+
+//Vitrine Page
+"VitrinePageLinkNotValid" = "لینک معتبر نیست";
+"HomePage" = "";
+
+//tabbar main
+"MainTabControllerHomeItemTitle" = "خانه";
+"MainTabControllerCategoryItemTitle" = "دسته بندی ها";
+"MainTabControllerOtherItemTitle" = "صفحه من";
+
+"MainTabControllerMyCountryTitle" = "کشور من";
+"MainTabControllerMyProvinceTitle" = "استان من";
+"MainTabControllerMyCityTitle" = "شهر من";
+
+
+//Category Page
+"CategoryPageTitle" = "دسته بندی ها";
+
+//FirstCodePopUp
+"FirstCodePopUpResnoLabel" = "resno.ir";
+"FirstCodePopUpSubmitTitle" = "ارسال";
+"FirstCodePopUpCodePlaceHolder" = "کد معرف خود را اینجا وارد نمایید.";
+"FirstCodePopUpNotValid" = "کد باید ۶ کاراکتر عددی باشد.";
+"FirstCodePopUpDefaultLoader" = "منتظر بمانید";
+"FirstCodePopUpEnteredCodeNotValid" = "کد وارده صحیح نمی باشد.";
+"FirstCodePopUpSuccess" = "به رسنو خوش آمدید.";
+
+//Login Page
+"LoginPageUsernameTitle" = "نام کاربری";
+"LoginPagePasswordTitle" = "رمز عبور";
+"LoginPageLoginBtnTitle" = "ورود به برنامه";
+"LoginPageIAmNewUser" = "کاربر جدید هستم";
+"LoginPageRegisterBtnTitle" = "ثبت نام";
+"LoginPageRegisterRemember" = "رمز عبور خود را فراموش کرده ام!";
+
+//Login Phone Page
+"LoginPagePhoneNumberNotValid" = "شماره تلفن صحیح نمی باشد.";
+"LoginPageParentNodeCodeNotValid" = "کد معرف صحیح نمی باشد.";
+"LoginPagePasswordNotValid" = "طول پسورد شش کاراکتر و شامل حروف و عدد است.";
+"LoginPagePageTitle" = "ورود به سیستم";
+"LoginPagePageBody" = "برای ورود به رسنو شماره تلفن همراه خود را وارد نمایید.";
+"LoginPageForgotPageTitle" = "فراموشی رمز عبور";
+"LoginPageForgotPageBody" = "لطفا شماره تلفن همراه خود را وارد نمایید.";
+"LoginPageSubmitBtn" = "تایید";
+"LoginPageCellPhonePlaceHolder" = "09*********";
+"LoginPageParentCodePlaceHolder" = "333333";
+"LoginPageUserExists" = "شما قبلا ثبت نام کرده اید، لطفا وارد شوید";
+"LoginPageParentCodeNotExists" = "کد معرف صحیح نمی باشد.";
+
+
+//Login Otp Page
+"LoginOtpPageTitle" = "ورود به سیستم";
+"LoginOtpPageBody" = "کد ۵ رقمی ارسال شده به شماره %@ را وارد نمایید";
+"LoginOtpPageInputPlaceHolder" = "کد امنیتی";
+"LoginOtpPageSubmitBtn" = "تایید";
+"LoginOtpPageInputNotValid" = "کد وارده صحیح نمی باشد.";
+"LoginOtpPageResendBtnTitle" = "کد را دریافت نکردم.‌(ارسال مجدد)";
+"LoginOtpPageWrongCode" = "کد صحیح نمی باشد.";
+
+//Login Password Confirmation
+"LoginPasswordPageTitle" = "ورود به سیستم";
+"LoginPasswordPassFieldPlaceholder" = "کلمه عبور";
+"LoginPasswordPassConfirmationFieldPlaceholder" = "تکرار کلمه عبور";
+"LoginPasswordPageTopDesc" = "رمز عبور باید حداقل ۶ حرف و شامل حروف انگلیسی و عدد باشد";
+"LoginPasswordPageBottomDesc" = "رمز عبور باید حداقل ۶ حرف و شامل حروف انگلیسی و عدد باشد";
+"LoginPasswordPagePassNotValid" = "پسورد باید حداقل ۶ کاراکتر و شامل حرف و عدد باشد.";
+"LoginPasswordPagePassNotSame" = "تکرار کلمه عبور صحیح نمی باشد.";
+"LoginPasswordPagePassNotSet" = "خطا در ذخیره رمز عبور";
+
+//Login Profile
+"LoginProfilePageTitle" = "ورود اطلاعات پروفایل";
+"LoginProfilePageBody" = "جهت ورود به سیستم اطلاعات خود را وارد کنید.";
+"LoginProfilePageFirstNamePlaceholder" = "نام";
+"LoginProfilePageLastNamePlaceholder" = "نام خانوادگی";
+"LoginProfilePageEmailPlaceholder" = "ایمیل";
+
+"LoginProfilePageFirstNameRequired" = "نام باید وارد شود";
+"LoginProfilePageLastNameRequired" = "نام خانوادگی باید وارد شود";
+"LoginProfilePageEmailValidation" = "ایمیل صحیح نمی باشد.";
+
+"LoginProfilePageSlectCity" = "شهر را انتخاب کنید";
+"LoginProfilePageSlectProvince" = "استان را انتخاب کنید";
+
+"LoginProfilePageProvinceRequired" = "استان باید وارد شود";
+"LoginProfilePageCityRequired" = "شهر باید وارد شود";
+//splash page
+"SplashPageRetryBtnTitle" = "سعی مجدد";
+"SplashPageForceAlertTitle" = "خطا";
+"SplashPageForceAlertBody" = "نسخه جدید برای نرم افزار امده است. شما نیاز به بروز رسانی دارید.";
+"SplashPageForceAlertGoToDownload" = "دانلود";
+
+"SplashPageOptionalAlertTitle" = "توجه";
+"SplashPageOptionalAlertBody" = "این برنامه نسخه جدیدی دارد.";
+"SplashPageOptionalAlertGoToDownload" = "دانلود";
+"SplashPageOptionalAlertSkip" = "بی خیال";
+
+//loggedIn Page
+"loggedInPageUserCodeTitle" = "کد کاربری: ";
+"loggedInPagePhoneTitle" = "شماره همراه: ";
+"loggedInPageEditTitle" = "ویرایش";
+"loggedInPageLogoutTitle" = "خروج";
+"loggedInPageMyIncomeTillToday" = "درآمد من تا به امروز";
+"loggedInPageMyTeamTitle" = "تیم من";
+"loggedInPageCanPayTitle" = "در آمد قابل تسویه";
+"loggedInPageSubscriptionTypeTitle" = "نوع عضویت";
+"loggedInPageExpirationTitle" = "باقیمانده";
+"loggedInPageIncomeReportTitle" = "گزارش درآمد";
+"loggedInPagePaymentReportTitle" = "گزارش واریزی";
+"loggedInPageAccountNumberTitle" = "درخواست تسویه";
+"loggedInPageTeamManagementTitle" = "تیم من";
+"loggedInPageTeamIsMarketingUserType" = "اشتراک فعال";
+"loggedInPageTeamIsNotMarketingUserType" = "بدون اشتراک";
+"loggedInPageSubscription" = "خرید اشتراک ویژه";
+"loggedInPageAlertTitle" = "هشدار";
+"loggedInPageAlertBody" = "‌آیا مایل به خروج هستید؟";
+"loggedInPageAlertLogout" = "خروج";
+"loggedInPageAlertCancel" = "بی خیال";
+
+//Intro view
+"IntroViewSkipButtonTitle" = "میدونم";
+"IntroViewNextButtonTitle" = "بعدی";
+"IntroPage1TopLabelTitle" = "برای ورود به دنیای رسنو\n اول باید ثبت نام کنی";
+"IntroPage2TopLabelTitle" = "بعد از ثبت نام و ورود \n با دیدن تبلیغات میتونی پول در بیاری";
+"IntroPage3TopLabelTitle" = "میتونی دوستات رو با کد معرف خودت \n به رسنو دعوت کنی و \n تیم خودت رو بسازی";
+"IntroPage4TopLabelTitle" = "وقتی اعضای تیمت تبلیغات ببینن\n تو دو برابر پول در میاری!\n هرچی اعضای تیمت بیشتر، درآمدت بیشتر";
+"IntroPage1BottomLabelTitle" = "بعد از ثبت نام یک کد ۶ رقمی مخصوص خودت داری";
+"IntroPage2BottomLabelTitle" = "کافیه عکس یا ویديو رو ببینی و روش کلیک کنی";
+"IntroPage3BottomLabelTitle" = "این دکمه رو تو اپ پیدا کن";
+"IntroPage4BottomLabelTitle" = "جزییات درآمد ها و نحوه تسویه رو تو 'صفحه من' ببین";
+
+//My Team
+"MyTeamHeaderViewTitle" = "مشخصات معرف";
+"MyTeamHeaderParentCodeTitle" = "کد معرف";
+"MyTeamHeaderParentPhoneTitle" = "شماره همراه معرف";
+"MyTeamMemberActiveStatus" = "فعال";
+"MyTeamMemberDeactiveStatus" = "غیر فعال";
+
+//Edit Account Info Ctrl
+"EditAccountInfoPageTitle" = "ویرایش اطلاعات حساب";
+"EditAccountInfoDesc" = "";
+"EditAccountInfoShabaNumberTitle" = "کد شبا";
+"EditAccountInfoCardNumber" = "شماره کارت";
+"EditAccountInfoBankName" = "نام بانک";
+"EditAccountInfoSubmitBtnTitle" = "ذخیره";
+"EditAccountInfoShabaNumberNotValid" = "کد شبا صحیح نمی باشد.";
+"EditAccountInfoCardNumberNotValid" = "شماره کارت صحیح نمی باشد.";
+"EditAccountInfoBankNameNotValid" = "نام بانک الزامیست.";
+"EditAccountInfoSaveComplete" = "اطلاعات با موفقیت ذخیره گردید.";
+
+
+//Deposite Detail
+"DepositeDetailPageTitle" = "جمع درآمد قابل تسویه:";
+"DepositeDetailBringAdsIncome" = "درآمد از آوردن تبلیغ:";
+"DepositeDetailTeaseIncome" = "درآمد از ویدیو تبلیغاتی:";
+"DepositeDetailPosterIncome" = "درآمد از پوستر تبلیغاتی:";
+
+//Deposite list Report
+"DepositeListPageTitle" = "جزییات واریز به حساب";
+"DepositeListRequestedDate" = "تاریخ درخواست";
+"DepositeListPrice" = "مبلغ";
+"DepositeListDone" = "انجام شد";
+"DepositeListInProgress" = "در حال اجرا";
+"DepositeListFailed" = "انجام نشد";
+
+
+
+//Checkout Ctrl
+"CheckoutTitleFieldTitle" = "جمع کل در آمد:";
+"CheckoutRequestBtnTitle" = "درخواست تسویه";
+"CheckoutEditBtnTitle" = "ویرایش اطلاعات";
+"CheckoutCardNumber" = "شماره کارت";
+"CheckoutShebaNumber" = "شماره شبا";
+"AccountNotFound" = "اکانت شما معتبر نیست";
+"AccountNotCharged" = "اکانت شما شارژ نمی باشد";
+"ProfileNotCompleted" = "اطلاعات پروفایل شما کامل نیست";
+"ProfileNotVerfied" = "اکانت شما تایید نشده است.";
+"NoBankAccount" = "حساب بانکی موجود نیست";
+"SmallAmmount" = "وجه قابل پرداخت به حد نساب نرسیده است";
+
+
+
+//Edit Profile
+"EditProfileUserCodeTitle" = "کد کاربر";
+"EditProfileStatus" = "وضعیت پروفایل";
+"EditProfileStatusComplete" = "کامل";
+"EditProfileChangePasswordBtnTitle" = "تغییر رمز عبور";
+"EditProfileFirstName" = "نام:";
+"EditProfileLastName" = "نام خانوادگی:";
+"EditProfileEmail" = "ایمیل:";
+"EditProfileCodeMeli" = "کد ملی:";
+"EditProfilePostalCode" = "کد پستی:";
+"EditProfileProvince" = "استان:";
+"EditProfileAddress" = "آدرس دقیق:";
+"EditProfileCity" = "شهر:";
+"EditProfileMeliCardImageTitle" = "عکس کارت ملی:";
+"EditProfilePageSubmitBtn" = "ثبت";
+"EditProfileNoImageSelected" = "عکسی انتخاب نشده است";
+"EditProfileSelectImageFinish" = "انتخاب و ارسال";
+"EditProfileNoImageToSelect" = "عکسی برای انتخاب موجود نمی باشد.";
+"EditImageOverlayChangeTitle" = "تغییر عکس";
+"EditProfileShowMobileNumberToParent" = "نمایش شماره تلفن همراه به معرف";
+"EditProfileUserNameTitle" = "نام کاربری";
+"EditProfileChangePassword" = "تغییر رمز عبور";
+
+//Change Password Ctrl
+"ChangePasswordPageTitle" = "تغییر رمز عبور";
+"ChangePasswordCurrentPass" = "رمز فعلی";
+"ChangePasswordNewPass" = "رمز جدید";
+"ChangePasswordNewPassConfirm" = "تکرار رمز جدید";
+"ChangePasswordBtnTitle" = "ثبت";
+
+//Product Item
+"ProductItemIncomeBtnTitle" = "کسب درآمد";
+"ProductItemSendToFriendsBtnTitle" = "ارسال به دوستان";
+"ProductItemDescriptionSectionTitle" = "توضیحات";
+"ProductItemIncomeDescSectionTitle" = "توضیحات روش درآمد";
+"ProductItemLoginSectionTitle" = "کسب درآمد";
+"ProductItemPerClick" = "پرداخت بابت هر کلیک:  %@ ریال";
+"ProductItemPerClickWithYourFriends" = "پرداخت بابت هر کلیک توسط دوستان:  %@ ریال";
+"ProductItemPerClickTotal" = "جمع مبلغ بابت هر کلیک:  %@ ریال";
+
+
+"ProductItemSeenReqFailedTitle" = "هشدار";
+"ProductItemSeenReqFailedBody" = "همگام سازی نهایی جهت محاسبه مبلغ واریزی با خطا مواجه شده است.\nلطفا اینترنت خود را چک نمایید.";
+"ProductItemSeenReqFailedRetry" = "سعی مجدد";
+"ProductItemSeenReqFailedDissmiss" = "بی خیال";
+"ProductItemShareItemBody" = "دوست عزیز سلام. پیشنهاد میکنم %@ %@ را مشاهده کنید.";
+
+"ProductItemSeenNotLogin" = "شما نیاز به ورود به سیستم مجدد دارید";
+"ProductItemSeenNotFoundCity" = "شهر شما مشخص نیست";
+"ProductItemSeenNotFoundProvince" = "استان شما مشخص نیست";
+"ProductItemSeenInvalidProvince" = "این تبلیغ برای استان شما نمی باشد";
+"ProductItemSeenInvalidIP" = "آی پی وارد شده صحصیح نیست";
+"ProductItemSeenBlockIP" = "آی پی شما بلاک شده است";
+"ProductItemSeenInvalidItem" = "مورد انتخاب شده مشخص نیست";
+"ProductItemSeenInvalidUserCode" = "کد کاربری شما مشخص نیست";
+"ProductItemSeenInvalidCity" = "این تبلیغ برای شهر شما نمی باشد";
+"ProductItemSeenOtherError" = "خطایی رخ داده است";
+
+//Product Item Poster
+"ProductItemPosterLoginTitle" = "هشدار";
+"ProductItemPosterLoginBody" = "برای کسب درآمد باید وارد شوید نمایید.";
+"ProductItemPosterLoginLogin" = "ورود به برنامه";
+"ProductItemPosterLoginDissmiss" = "بی خیال";
+
+//Product Item Video
+"ProductItemVideoCloseAlertTitle" = "هشدار";
+"ProductItemVideoCloseAlertBody" = "آیا مطمین به بستن نمایش فیلم تبلیغاتی می باشید؟";
+"ProductItemVideoCloseAlertClose" = "بستن";
+"ProductItemVideoCloseAlertCancel" = "کنسل";
+"ProductItemTeaserSeenByYouAndInprocess" = "این تبلیغ توسط شما دیده شده و در حال پردازش است!";
+"ProductItemTeaserSeenToday" = "این تبلیغ امروز توسط شما دیده شده است!";
+"ProductItemTeaserSeenTimeAgo" = "این تبلیغ %@ روز پیش توسط شما دیده شده است";
+
+//Product Goods Item
+"ProductItemGoodsAlertSuccessfullySendRequest" = "درخواست شما با موفقیت ارسال گردید";
+"ProductItemGoodsButtonBuy" = "خرید";
+"ProductItemGoodsButtonAlertMe" = "به من اطلاع بده";
+"ProductItemGoodsQtyNeededLabel" = "تعداد سفارش مورد نیاز";
+"ProductItemGoodsQtyRequestLabel" = "تعداد سفارش ثبت شده";
+"ProductItemGoodsProfitPerBuyChids" = "درآمد به ازای خرید هر زیرمجموعه";
+"ProductItemGoodsPriceInResno" = "قیمت در رسنو";
+"ProductItemGoodsPricePerOne" = "قیمت تک فروشی محصول";
+
+//Navigatin items
+"NavigationItemsRightTitle" = "کسب و کارها";
+
+
+//My Province
+"MyProvinceLabel" = "استان من:";
+
+//My city
+"MyCityLabel" = "شهر من:";
+
+// welcom
+"undrestood" = "فهمیدم";
+
+//customer call info
+"ProductItemCallMobile" = "موبایل";
+"ProductItemCallTelephone" = "تلفن";
+"ProductItemCall" = "تماس";
+
+//ticket
+"TicketNewTicketLabel" = "تیکت جدید";
+"TicketNewTicketAlertSendButton" = "ارسال";
+"TicketNewTicketAlertTitle" = "تیکت جدید";
+"TicketNewTicketAlertTitleLabel" = "عنوان";
+"TicketNewTicketAlertDescLabel" = "توضیحات";
+
+// archive
+"ArchiveFilterAlertFilterButton" = "فیلتر";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
