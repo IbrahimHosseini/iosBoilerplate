@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NVOverlayView" customModule="baseproject" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="NbE-G4-0Dj" customClass="NVOverlayView" customModule="baseproject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nIE-xj-u8N">
+                    <rect key="frame" x="0.0" y="278.5" width="375" height="130.5"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WGM-wV-DIP">
+                            <rect key="frame" x="15" y="20" width="345" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.27058823529999998" green="0.27058823529999998" blue="0.27058823529999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JrT-eX-Gxw" customClass="Button" customModule="Material">
+                            <rect key="frame" x="157.5" y="70.5" width="60" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="Aqf-Ec-1aI"/>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="QZ0-2d-1Dj"/>
+                            </constraints>
+                            <state key="normal" title="Button">
+                                <color key="titleColor" red="0.34509803919999998" green="0.75294117650000003" blue="0.6705882353" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="onCLickRetry:" destination="NbE-G4-0Dj" eventType="touchUpInside" id="7Uo-De-TcB"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="JrT-eX-Gxw" secondAttribute="bottom" constant="20" id="5V1-wB-vQL"/>
+                        <constraint firstAttribute="trailing" secondItem="WGM-wV-DIP" secondAttribute="trailing" constant="15" id="AXt-6W-rDP"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="Avk-04-39C"/>
+                        <constraint firstItem="JrT-eX-Gxw" firstAttribute="centerX" secondItem="nIE-xj-u8N" secondAttribute="centerX" id="Gv4-Q3-SGF"/>
+                        <constraint firstItem="WGM-wV-DIP" firstAttribute="top" secondItem="nIE-xj-u8N" secondAttribute="top" constant="20" id="db7-pl-rri"/>
+                        <constraint firstItem="JrT-eX-Gxw" firstAttribute="top" secondItem="WGM-wV-DIP" secondAttribute="bottom" constant="30" id="gfR-nP-s5t"/>
+                        <constraint firstItem="WGM-wV-DIP" firstAttribute="leading" secondItem="nIE-xj-u8N" secondAttribute="leading" constant="15" id="hvv-H2-4Cm"/>
+                    </constraints>
+                </view>
+                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="qGZ-Rm-sJ3">
+                    <rect key="frame" x="169" y="325" width="37" height="37"/>
+                    <color key="color" red="0.34509803919999998" green="0.75294117650000003" blue="0.6705882353" alpha="1" colorSpace="calibratedRGB"/>
+                </activityIndicatorView>
+            </subviews>
+            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="qGZ-Rm-sJ3" firstAttribute="centerY" secondItem="Gcp-cM-Tp4" secondAttribute="centerY" id="HMc-zL-pIu"/>
+                <constraint firstItem="nIE-xj-u8N" firstAttribute="centerY" secondItem="Gcp-cM-Tp4" secondAttribute="centerY" id="Pgh-DN-rFW"/>
+                <constraint firstItem="qGZ-Rm-sJ3" firstAttribute="centerX" secondItem="Gcp-cM-Tp4" secondAttribute="centerX" id="VtQ-dY-LSi"/>
+                <constraint firstItem="nIE-xj-u8N" firstAttribute="height" relation="lessThanOrEqual" secondItem="NbE-G4-0Dj" secondAttribute="height" id="Z0P-8K-RDY"/>
+                <constraint firstItem="nIE-xj-u8N" firstAttribute="width" secondItem="NbE-G4-0Dj" secondAttribute="width" id="izQ-lO-UU6"/>
+                <constraint firstItem="nIE-xj-u8N" firstAttribute="centerX" secondItem="NbE-G4-0Dj" secondAttribute="centerX" id="znY-OO-k2f"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Gcp-cM-Tp4"/>
+            <connections>
+                <outlet property="errorBtn" destination="JrT-eX-Gxw" id="R2M-rV-k5Z"/>
+                <outlet property="errorDescription" destination="WGM-wV-DIP" id="PDK-1I-ENw"/>
+                <outlet property="errorParentView" destination="nIE-xj-u8N" id="iJv-cJ-gaC"/>
+                <outlet property="indicator" destination="qGZ-Rm-sJ3" id="Q7k-oJ-a7s"/>
+            </connections>
+        </view>
+    </objects>
+</document>

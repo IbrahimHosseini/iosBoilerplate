@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Debug</key>
+	<dict>
+		<key>baseURL</key>
+		<string>http://DebugHTTPAddress</string>
+		<key>wsURL</key>
+		<string>ws://DebugSocketAddress</string>
+	</dict>
+	<key>Release</key>
+	<dict>
+		<key>baseURL</key>
+		<string>http://ReleaseHTTPAddress</string>
+		<key>wsURL</key>
+		<string>ws://ReleaseSocketAddress</string>
+	</dict>
+</dict>
+</plist>

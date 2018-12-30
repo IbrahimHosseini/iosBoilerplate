@@ -41,5 +41,47 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>IRANSansMobile(FaNum)_UltraLight.ttf</string>
+		<string>IRANSansMobile(FaNum)_Medium.ttf</string>
+		<string>IRANSansMobile(FaNum)_Light.ttf</string>
+		<string>IRANSansMobile(FaNum)_Bold.ttf</string>
+		<string>IRANSansMobile(FaNum).ttf</string>
+		<string>IRANSansMobile_UltraLight.ttf</string>
+		<string>IRANSansMobile_Medium.ttf</string>
+		<string>IRANSansMobile_Light.ttf</string>
+		<string>IRANSansMobile_Bold.ttf</string>
+		<string>IRANSansMobile.ttf</string>
+		<string>IRANSansWeb(FaNum)_Bold.ttf</string>
+		<string>IRANSansWeb(FaNum)_Light.ttf</string>
+		<string>IRANSansWeb(FaNum)_Medium.ttf</string>
+		<string>IRANSansWeb(FaNum)_Bold.ttf</string>
+		<string>IRANSansWeb(FaNum)_UltraLight.ttf</string>
+		<string>IRANSansWeb(FaNum).ttf</string>
+		<string>IRANSansWeb(FaNum)_Light.ttf</string>
+		<string>IRANSansWeb(FaNum)_Medium.ttf</string>
+		<string>IRANSansWeb(FaNum)_UltraLight.ttf</string>
+		<string>IRANSansWeb(FaNum).ttf</string>
+		<string>fontawesome-webfont.ttf</string>
+	</array>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLName</key>
+			<string>bundleIdentifire</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>appName</string>
+			</array>
+		</dict>
+	</array>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
+	<key>Configuration</key>
+	<string>${CONFIGURATION}</string>
 </dict>
 </plist>

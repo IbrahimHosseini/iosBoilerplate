@@ -8,20 +8,104 @@
 
 /* Begin PBXBuildFile section */
 		2831D6BD21D8A28600D5A5F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2831D6BC21D8A28600D5A5F8 /* AppDelegate.swift */; };
-		2831D6BF21D8A28600D5A5F8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2831D6BE21D8A28600D5A5F8 /* ViewController.swift */; };
 		2831D6C221D8A28600D5A5F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2831D6C021D8A28600D5A5F8 /* Main.storyboard */; };
 		2831D6C421D8A28700D5A5F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2831D6C321D8A28700D5A5F8 /* Assets.xcassets */; };
 		2831D6C721D8A28700D5A5F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2831D6C521D8A28700D5A5F8 /* LaunchScreen.storyboard */; };
+		2831D6EA21D8A61500D5A5F8 /* IRANSansMobile_Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2831D6DB21D8A61400D5A5F8 /* IRANSansMobile_Bold.ttf */; };
+		2831D6EB21D8A61500D5A5F8 /* IRANSansMobile(FaNum)_Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2831D6DC21D8A61400D5A5F8 /* IRANSansMobile(FaNum)_Medium.ttf */; };
+		2831D6EC21D8A61500D5A5F8 /* IRANSansWeb(FaNum)_Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2831D6DD21D8A61400D5A5F8 /* IRANSansWeb(FaNum)_Bold.ttf */; };
+		2831D6ED21D8A61500D5A5F8 /* IRANSansMobile_Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2831D6DE21D8A61400D5A5F8 /* IRANSansMobile_Medium.ttf */; };
+		2831D6EE21D8A61500D5A5F8 /* IRANSansMobile_Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2831D6DF21D8A61400D5A5F8 /* IRANSansMobile_Light.ttf */; };
+		2831D6EF21D8A61500D5A5F8 /* IRANSansMobile(FaNum)_UltraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2831D6E021D8A61400D5A5F8 /* IRANSansMobile(FaNum)_UltraLight.ttf */; };
+		2831D6F021D8A61500D5A5F8 /* IRANSansMobile_UltraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2831D6E121D8A61400D5A5F8 /* IRANSansMobile_UltraLight.ttf */; };
+		2831D6F121D8A61500D5A5F8 /* IRANSansMobile(FaNum)_Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2831D6E221D8A61400D5A5F8 /* IRANSansMobile(FaNum)_Bold.ttf */; };
+		2831D6F221D8A61500D5A5F8 /* IRANSansMobile(FaNum)_Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2831D6E321D8A61400D5A5F8 /* IRANSansMobile(FaNum)_Light.ttf */; };
+		2831D6F321D8A61500D5A5F8 /* IRANSansMobile.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2831D6E421D8A61400D5A5F8 /* IRANSansMobile.ttf */; };
+		2831D6F421D8A61500D5A5F8 /* IRANSansMobile(FaNum).ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2831D6E521D8A61400D5A5F8 /* IRANSansMobile(FaNum).ttf */; };
+		2831D6F521D8A61500D5A5F8 /* IRANSansWeb(FaNum)_Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2831D6E621D8A61400D5A5F8 /* IRANSansWeb(FaNum)_Medium.ttf */; };
+		2831D6F621D8A61500D5A5F8 /* IRANSansWeb(FaNum)_Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2831D6E721D8A61400D5A5F8 /* IRANSansWeb(FaNum)_Light.ttf */; };
+		2831D6F721D8A61500D5A5F8 /* IRANSansWeb(FaNum)_UltraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2831D6E821D8A61500D5A5F8 /* IRANSansWeb(FaNum)_UltraLight.ttf */; };
+		2831D6F821D8A61500D5A5F8 /* IRANSansWeb(FaNum).ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2831D6E921D8A61500D5A5F8 /* IRANSansWeb(FaNum).ttf */; };
+		2831D6FB21D8A6DE00D5A5F8 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2831D6FA21D8A6DE00D5A5F8 /* App.swift */; };
+		2831D70021D8A72500D5A5F8 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2831D6FF21D8A72500D5A5F8 /* Fonts.swift */; };
+		2831D70221D8A73500D5A5F8 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2831D70121D8A73500D5A5F8 /* Colors.swift */; };
+		2831D70621D8A79300D5A5F8 /* APIUrls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2831D70521D8A79300D5A5F8 /* APIUrls.swift */; };
+		2831D70821D8A7A800D5A5F8 /* APIs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2831D70721D8A7A800D5A5F8 /* APIs.swift */; };
+		2831D70B21D8A80B00D5A5F8 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2831D70A21D8A80B00D5A5F8 /* Configuration.swift */; };
+		2831D70D21D8A82600D5A5F8 /* Configuration.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2831D70C21D8A82600D5A5F8 /* Configuration.plist */; };
+		2831D71121D8AD4000D5A5F8 /* LoginGetMobileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2831D71021D8AD4000D5A5F8 /* LoginGetMobileVC.swift */; };
+		2831D71321D8AD8400D5A5F8 /* LoginGetVerifyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2831D71221D8AD8400D5A5F8 /* LoginGetVerifyVC.swift */; };
+		2831D71521D8ADA300D5A5F8 /* ForgetPassVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2831D71421D8ADA300D5A5F8 /* ForgetPassVC.swift */; };
+		2831D71721D8ADCA00D5A5F8 /* GetProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2831D71621D8ADCA00D5A5F8 /* GetProfileVC.swift */; };
+		2831D71921D8AE1900D5A5F8 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2831D71821D8AE1900D5A5F8 /* MainVC.swift */; };
+		2831D71B21D8AE3000D5A5F8 /* SplashVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2831D71A21D8AE3000D5A5F8 /* SplashVC.swift */; };
+		2831D71D21D8AE4A00D5A5F8 /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2831D71C21D8AE4A00D5A5F8 /* BaseVC.swift */; };
+		2831D72021D8AFB900D5A5F8 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2831D71F21D8AFB900D5A5F8 /* Request.swift */; };
+		2831D72221D8B26C00D5A5F8 /* RMBaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2831D72121D8B26C00D5A5F8 /* RMBaseResponse.swift */; };
+		2831D72621D8B3C400D5A5F8 /* BaseNavigationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2831D72521D8B3C400D5A5F8 /* BaseNavigationVC.swift */; };
+		2831D72A21D8B44700D5A5F8 /* NVOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2831D72821D8B44700D5A5F8 /* NVOverlayView.swift */; };
+		2831D72B21D8B44700D5A5F8 /* NVOverlayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2831D72921D8B44700D5A5F8 /* NVOverlayView.xib */; };
+		2831D72F21D8B4F500D5A5F8 /* CustomNibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2831D72E21D8B4F500D5A5F8 /* CustomNibView.swift */; };
+		2831D73221D8B54400D5A5F8 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2831D73021D8B54300D5A5F8 /* CustomTextField.swift */; };
+		2831D73321D8B54400D5A5F8 /* CustomTextField.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2831D73121D8B54400D5A5F8 /* CustomTextField.xib */; };
+		2831D73621D8B55900D5A5F8 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2831D73421D8B55900D5A5F8 /* CustomButton.swift */; };
+		2831D73721D8B55900D5A5F8 /* CustomButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2831D73521D8B55900D5A5F8 /* CustomButton.xib */; };
+		2831D73A21D8B90600D5A5F8 /* PersianDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2831D73921D8B90600D5A5F8 /* PersianDate.swift */; };
+		2831D73C21D8B93600D5A5F8 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2831D73B21D8B93600D5A5F8 /* Currency.swift */; };
+		2831D73E21D8B9D800D5A5F8 /* HTML2String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2831D73D21D8B9D800D5A5F8 /* HTML2String.swift */; };
+		2831D74121D8BAA100D5A5F8 /* MessageUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2831D74021D8BAA100D5A5F8 /* MessageUtility.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2831D6B921D8A28600D5A5F8 /* baseproject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = baseproject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2831D6BC21D8A28600D5A5F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2831D6BE21D8A28600D5A5F8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2831D6C121D8A28600D5A5F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2831D6C321D8A28700D5A5F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2831D6C621D8A28700D5A5F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2831D6C821D8A28700D5A5F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2831D6DB21D8A61400D5A5F8 /* IRANSansMobile_Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = IRANSansMobile_Bold.ttf; sourceTree = "<group>"; };
+		2831D6DC21D8A61400D5A5F8 /* IRANSansMobile(FaNum)_Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IRANSansMobile(FaNum)_Medium.ttf"; sourceTree = "<group>"; };
+		2831D6DD21D8A61400D5A5F8 /* IRANSansWeb(FaNum)_Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IRANSansWeb(FaNum)_Bold.ttf"; sourceTree = "<group>"; };
+		2831D6DE21D8A61400D5A5F8 /* IRANSansMobile_Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = IRANSansMobile_Medium.ttf; sourceTree = "<group>"; };
+		2831D6DF21D8A61400D5A5F8 /* IRANSansMobile_Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = IRANSansMobile_Light.ttf; sourceTree = "<group>"; };
+		2831D6E021D8A61400D5A5F8 /* IRANSansMobile(FaNum)_UltraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IRANSansMobile(FaNum)_UltraLight.ttf"; sourceTree = "<group>"; };
+		2831D6E121D8A61400D5A5F8 /* IRANSansMobile_UltraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = IRANSansMobile_UltraLight.ttf; sourceTree = "<group>"; };
+		2831D6E221D8A61400D5A5F8 /* IRANSansMobile(FaNum)_Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IRANSansMobile(FaNum)_Bold.ttf"; sourceTree = "<group>"; };
+		2831D6E321D8A61400D5A5F8 /* IRANSansMobile(FaNum)_Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IRANSansMobile(FaNum)_Light.ttf"; sourceTree = "<group>"; };
+		2831D6E421D8A61400D5A5F8 /* IRANSansMobile.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = IRANSansMobile.ttf; sourceTree = "<group>"; };
+		2831D6E521D8A61400D5A5F8 /* IRANSansMobile(FaNum).ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IRANSansMobile(FaNum).ttf"; sourceTree = "<group>"; };
+		2831D6E621D8A61400D5A5F8 /* IRANSansWeb(FaNum)_Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IRANSansWeb(FaNum)_Medium.ttf"; sourceTree = "<group>"; };
+		2831D6E721D8A61400D5A5F8 /* IRANSansWeb(FaNum)_Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IRANSansWeb(FaNum)_Light.ttf"; sourceTree = "<group>"; };
+		2831D6E821D8A61500D5A5F8 /* IRANSansWeb(FaNum)_UltraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IRANSansWeb(FaNum)_UltraLight.ttf"; sourceTree = "<group>"; };
+		2831D6E921D8A61500D5A5F8 /* IRANSansWeb(FaNum).ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IRANSansWeb(FaNum).ttf"; sourceTree = "<group>"; };
+		2831D6FA21D8A6DE00D5A5F8 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
+		2831D6FF21D8A72500D5A5F8 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		2831D70121D8A73500D5A5F8 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		2831D70521D8A79300D5A5F8 /* APIUrls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIUrls.swift; sourceTree = "<group>"; };
+		2831D70721D8A7A800D5A5F8 /* APIs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIs.swift; sourceTree = "<group>"; };
+		2831D70A21D8A80B00D5A5F8 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		2831D70C21D8A82600D5A5F8 /* Configuration.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Configuration.plist; sourceTree = "<group>"; };
+		2831D71021D8AD4000D5A5F8 /* LoginGetMobileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginGetMobileVC.swift; sourceTree = "<group>"; };
+		2831D71221D8AD8400D5A5F8 /* LoginGetVerifyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginGetVerifyVC.swift; sourceTree = "<group>"; };
+		2831D71421D8ADA300D5A5F8 /* ForgetPassVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPassVC.swift; sourceTree = "<group>"; };
+		2831D71621D8ADCA00D5A5F8 /* GetProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetProfileVC.swift; sourceTree = "<group>"; };
+		2831D71821D8AE1900D5A5F8 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		2831D71A21D8AE3000D5A5F8 /* SplashVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashVC.swift; sourceTree = "<group>"; };
+		2831D71C21D8AE4A00D5A5F8 /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
+		2831D71F21D8AFB900D5A5F8 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		2831D72121D8B26C00D5A5F8 /* RMBaseResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMBaseResponse.swift; sourceTree = "<group>"; };
+		2831D72521D8B3C400D5A5F8 /* BaseNavigationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationVC.swift; sourceTree = "<group>"; };
+		2831D72821D8B44700D5A5F8 /* NVOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NVOverlayView.swift; sourceTree = "<group>"; };
+		2831D72921D8B44700D5A5F8 /* NVOverlayView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NVOverlayView.xib; sourceTree = "<group>"; };
+		2831D72E21D8B4F500D5A5F8 /* CustomNibView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNibView.swift; sourceTree = "<group>"; };
+		2831D73021D8B54300D5A5F8 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		2831D73121D8B54400D5A5F8 /* CustomTextField.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTextField.xib; sourceTree = "<group>"; };
+		2831D73421D8B55900D5A5F8 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		2831D73521D8B55900D5A5F8 /* CustomButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomButton.xib; sourceTree = "<group>"; };
+		2831D73921D8B90600D5A5F8 /* PersianDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersianDate.swift; sourceTree = "<group>"; };
+		2831D73B21D8B93600D5A5F8 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
+		2831D73D21D8B9D800D5A5F8 /* HTML2String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTML2String.swift; sourceTree = "<group>"; };
+		2831D74021D8BAA100D5A5F8 /* MessageUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageUtility.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +138,288 @@
 		2831D6BB21D8A28600D5A5F8 /* baseproject */ = {
 			isa = PBXGroup;
 			children = (
-				2831D6BC21D8A28600D5A5F8 /* AppDelegate.swift */,
-				2831D6BE21D8A28600D5A5F8 /* ViewController.swift */,
-				2831D6C021D8A28600D5A5F8 /* Main.storyboard */,
-				2831D6C321D8A28700D5A5F8 /* Assets.xcassets */,
-				2831D6C521D8A28700D5A5F8 /* LaunchScreen.storyboard */,
-				2831D6C821D8A28700D5A5F8 /* Info.plist */,
+				2831D6F921D8A6C000D5A5F8 /* App */,
+				2831D6D221D8A3ED00D5A5F8 /* Model */,
+				2831D6D121D8A3E200D5A5F8 /* View */,
+				2831D6D021D8A3CB00D5A5F8 /* Controller */,
+				2831D6CE21D8A2C200D5A5F8 /* Support */,
 			);
 			path = baseproject;
+			sourceTree = "<group>";
+		};
+		2831D6CE21D8A2C200D5A5F8 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				2831D6BC21D8A28600D5A5F8 /* AppDelegate.swift */,
+				2831D6C321D8A28700D5A5F8 /* Assets.xcassets */,
+				2831D6C021D8A28600D5A5F8 /* Main.storyboard */,
+				2831D6C521D8A28700D5A5F8 /* LaunchScreen.storyboard */,
+				2831D6C821D8A28700D5A5F8 /* Info.plist */,
+				2831D6CF21D8A3BF00D5A5F8 /* Font */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		2831D6CF21D8A3BF00D5A5F8 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				2831D6DB21D8A61400D5A5F8 /* IRANSansMobile_Bold.ttf */,
+				2831D6DF21D8A61400D5A5F8 /* IRANSansMobile_Light.ttf */,
+				2831D6DE21D8A61400D5A5F8 /* IRANSansMobile_Medium.ttf */,
+				2831D6E121D8A61400D5A5F8 /* IRANSansMobile_UltraLight.ttf */,
+				2831D6E421D8A61400D5A5F8 /* IRANSansMobile.ttf */,
+				2831D6E221D8A61400D5A5F8 /* IRANSansMobile(FaNum)_Bold.ttf */,
+				2831D6E321D8A61400D5A5F8 /* IRANSansMobile(FaNum)_Light.ttf */,
+				2831D6DC21D8A61400D5A5F8 /* IRANSansMobile(FaNum)_Medium.ttf */,
+				2831D6E021D8A61400D5A5F8 /* IRANSansMobile(FaNum)_UltraLight.ttf */,
+				2831D6E521D8A61400D5A5F8 /* IRANSansMobile(FaNum).ttf */,
+				2831D6DD21D8A61400D5A5F8 /* IRANSansWeb(FaNum)_Bold.ttf */,
+				2831D6E721D8A61400D5A5F8 /* IRANSansWeb(FaNum)_Light.ttf */,
+				2831D6E621D8A61400D5A5F8 /* IRANSansWeb(FaNum)_Medium.ttf */,
+				2831D6E821D8A61500D5A5F8 /* IRANSansWeb(FaNum)_UltraLight.ttf */,
+				2831D6E921D8A61500D5A5F8 /* IRANSansWeb(FaNum).ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		2831D6D021D8A3CB00D5A5F8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2831D6D121D8A3E200D5A5F8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2831D72321D8B36700D5A5F8 /* Common */,
+				2831D6D821D8A44700D5A5F8 /* Splash */,
+				2831D6DA21D8A45500D5A5F8 /* Register */,
+				2831D6D921D8A44E00D5A5F8 /* Main */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2831D6D221D8A3ED00D5A5F8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2831D70421D8A76900D5A5F8 /* API */,
+				2831D6D321D8A3F900D5A5F8 /* Data */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2831D6D321D8A3F900D5A5F8 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				2831D71E21D8AF6800D5A5F8 /* Request */,
+				2831D6D621D8A42C00D5A5F8 /* Common */,
+				2831D6D421D8A40100D5A5F8 /* Send */,
+				2831D6D521D8A41600D5A5F8 /* Receive */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		2831D6D421D8A40100D5A5F8 /* Send */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Send;
+			sourceTree = "<group>";
+		};
+		2831D6D521D8A41600D5A5F8 /* Receive */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Receive;
+			sourceTree = "<group>";
+		};
+		2831D6D621D8A42C00D5A5F8 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				2831D72121D8B26C00D5A5F8 /* RMBaseResponse.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		2831D6D821D8A44700D5A5F8 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				2831D71A21D8AE3000D5A5F8 /* SplashVC.swift */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		2831D6D921D8A44E00D5A5F8 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				2831D71821D8AE1900D5A5F8 /* MainVC.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		2831D6DA21D8A45500D5A5F8 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				2831D71021D8AD4000D5A5F8 /* LoginGetMobileVC.swift */,
+				2831D71221D8AD8400D5A5F8 /* LoginGetVerifyVC.swift */,
+				2831D71421D8ADA300D5A5F8 /* ForgetPassVC.swift */,
+				2831D71621D8ADCA00D5A5F8 /* GetProfileVC.swift */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		2831D6F921D8A6C000D5A5F8 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				2831D73821D8B8D900D5A5F8 /* Extensions */,
+				2831D70F21D8A85200D5A5F8 /* Notification */,
+				2831D70E21D8A84600D5A5F8 /* Libraries */,
+				2831D6FD21D8A70000D5A5F8 /* Theme */,
+				2831D6FC21D8A6F400D5A5F8 /* Setting */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		2831D6FC21D8A6F400D5A5F8 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				2831D70921D8A7C900D5A5F8 /* Configuration */,
+				2831D6FA21D8A6DE00D5A5F8 /* App.swift */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		2831D6FD21D8A70000D5A5F8 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				2831D6FE21D8A70800D5A5F8 /* Font */,
+				2831D70321D8A73C00D5A5F8 /* Colors */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		2831D6FE21D8A70800D5A5F8 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				2831D6FF21D8A72500D5A5F8 /* Fonts.swift */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		2831D70321D8A73C00D5A5F8 /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				2831D70121D8A73500D5A5F8 /* Colors.swift */,
+			);
+			path = Colors;
+			sourceTree = "<group>";
+		};
+		2831D70421D8A76900D5A5F8 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				2831D70521D8A79300D5A5F8 /* APIUrls.swift */,
+				2831D70721D8A7A800D5A5F8 /* APIs.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		2831D70921D8A7C900D5A5F8 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				2831D70A21D8A80B00D5A5F8 /* Configuration.swift */,
+				2831D70C21D8A82600D5A5F8 /* Configuration.plist */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		2831D70E21D8A84600D5A5F8 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				2831D73F21D8BA7500D5A5F8 /* AlertMessage */,
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
+		2831D70F21D8A85200D5A5F8 /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Notification;
+			sourceTree = "<group>";
+		};
+		2831D71E21D8AF6800D5A5F8 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				2831D71F21D8AFB900D5A5F8 /* Request.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		2831D72321D8B36700D5A5F8 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				2831D72421D8B37900D5A5F8 /* CustomViews */,
+				2831D72521D8B3C400D5A5F8 /* BaseNavigationVC.swift */,
+				2831D71C21D8AE4A00D5A5F8 /* BaseVC.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		2831D72421D8B37900D5A5F8 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				2831D72D21D8B4B300D5A5F8 /* TextField */,
+				2831D72C21D8B4A800D5A5F8 /* Button */,
+				2831D72721D8B41000D5A5F8 /* LoaderView */,
+				2831D72E21D8B4F500D5A5F8 /* CustomNibView.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		2831D72721D8B41000D5A5F8 /* LoaderView */ = {
+			isa = PBXGroup;
+			children = (
+				2831D72821D8B44700D5A5F8 /* NVOverlayView.swift */,
+				2831D72921D8B44700D5A5F8 /* NVOverlayView.xib */,
+			);
+			path = LoaderView;
+			sourceTree = "<group>";
+		};
+		2831D72C21D8B4A800D5A5F8 /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				2831D73421D8B55900D5A5F8 /* CustomButton.swift */,
+				2831D73521D8B55900D5A5F8 /* CustomButton.xib */,
+			);
+			path = Button;
+			sourceTree = "<group>";
+		};
+		2831D72D21D8B4B300D5A5F8 /* TextField */ = {
+			isa = PBXGroup;
+			children = (
+				2831D73021D8B54300D5A5F8 /* CustomTextField.swift */,
+				2831D73121D8B54400D5A5F8 /* CustomTextField.xib */,
+			);
+			path = TextField;
+			sourceTree = "<group>";
+		};
+		2831D73821D8B8D900D5A5F8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2831D73921D8B90600D5A5F8 /* PersianDate.swift */,
+				2831D73B21D8B93600D5A5F8 /* Currency.swift */,
+				2831D73D21D8B9D800D5A5F8 /* HTML2String.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2831D73F21D8BA7500D5A5F8 /* AlertMessage */ = {
+			isa = PBXGroup;
+			children = (
+				2831D74021D8BAA100D5A5F8 /* MessageUtility.swift */,
+			);
+			path = AlertMessage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,9 +480,28 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2831D70D21D8A82600D5A5F8 /* Configuration.plist in Resources */,
 				2831D6C721D8A28700D5A5F8 /* LaunchScreen.storyboard in Resources */,
+				2831D6F721D8A61500D5A5F8 /* IRANSansWeb(FaNum)_UltraLight.ttf in Resources */,
+				2831D6F221D8A61500D5A5F8 /* IRANSansMobile(FaNum)_Light.ttf in Resources */,
+				2831D6EB21D8A61500D5A5F8 /* IRANSansMobile(FaNum)_Medium.ttf in Resources */,
+				2831D6EE21D8A61500D5A5F8 /* IRANSansMobile_Light.ttf in Resources */,
+				2831D6F621D8A61500D5A5F8 /* IRANSansWeb(FaNum)_Light.ttf in Resources */,
+				2831D6F421D8A61500D5A5F8 /* IRANSansMobile(FaNum).ttf in Resources */,
+				2831D6F821D8A61500D5A5F8 /* IRANSansWeb(FaNum).ttf in Resources */,
 				2831D6C421D8A28700D5A5F8 /* Assets.xcassets in Resources */,
+				2831D6ED21D8A61500D5A5F8 /* IRANSansMobile_Medium.ttf in Resources */,
+				2831D73321D8B54400D5A5F8 /* CustomTextField.xib in Resources */,
+				2831D73721D8B55900D5A5F8 /* CustomButton.xib in Resources */,
+				2831D6F521D8A61500D5A5F8 /* IRANSansWeb(FaNum)_Medium.ttf in Resources */,
+				2831D6F121D8A61500D5A5F8 /* IRANSansMobile(FaNum)_Bold.ttf in Resources */,
+				2831D6EF21D8A61500D5A5F8 /* IRANSansMobile(FaNum)_UltraLight.ttf in Resources */,
+				2831D6F321D8A61500D5A5F8 /* IRANSansMobile.ttf in Resources */,
+				2831D72B21D8B44700D5A5F8 /* NVOverlayView.xib in Resources */,
+				2831D6EA21D8A61500D5A5F8 /* IRANSansMobile_Bold.ttf in Resources */,
+				2831D6EC21D8A61500D5A5F8 /* IRANSansWeb(FaNum)_Bold.ttf in Resources */,
 				2831D6C221D8A28600D5A5F8 /* Main.storyboard in Resources */,
+				2831D6F021D8A61500D5A5F8 /* IRANSansMobile_UltraLight.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,8 +512,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2831D6BF21D8A28600D5A5F8 /* ViewController.swift in Sources */,
+				2831D72F21D8B4F500D5A5F8 /* CustomNibView.swift in Sources */,
 				2831D6BD21D8A28600D5A5F8 /* AppDelegate.swift in Sources */,
+				2831D71921D8AE1900D5A5F8 /* MainVC.swift in Sources */,
+				2831D74121D8BAA100D5A5F8 /* MessageUtility.swift in Sources */,
+				2831D70621D8A79300D5A5F8 /* APIUrls.swift in Sources */,
+				2831D73A21D8B90600D5A5F8 /* PersianDate.swift in Sources */,
+				2831D73221D8B54400D5A5F8 /* CustomTextField.swift in Sources */,
+				2831D70B21D8A80B00D5A5F8 /* Configuration.swift in Sources */,
+				2831D71121D8AD4000D5A5F8 /* LoginGetMobileVC.swift in Sources */,
+				2831D71D21D8AE4A00D5A5F8 /* BaseVC.swift in Sources */,
+				2831D70221D8A73500D5A5F8 /* Colors.swift in Sources */,
+				2831D72021D8AFB900D5A5F8 /* Request.swift in Sources */,
+				2831D72621D8B3C400D5A5F8 /* BaseNavigationVC.swift in Sources */,
+				2831D73621D8B55900D5A5F8 /* CustomButton.swift in Sources */,
+				2831D72221D8B26C00D5A5F8 /* RMBaseResponse.swift in Sources */,
+				2831D73C21D8B93600D5A5F8 /* Currency.swift in Sources */,
+				2831D71721D8ADCA00D5A5F8 /* GetProfileVC.swift in Sources */,
+				2831D72A21D8B44700D5A5F8 /* NVOverlayView.swift in Sources */,
+				2831D70021D8A72500D5A5F8 /* Fonts.swift in Sources */,
+				2831D73E21D8B9D800D5A5F8 /* HTML2String.swift in Sources */,
+				2831D71B21D8AE3000D5A5F8 /* SplashVC.swift in Sources */,
+				2831D71321D8AD8400D5A5F8 /* LoginGetVerifyVC.swift in Sources */,
+				2831D70821D8A7A800D5A5F8 /* APIs.swift in Sources */,
+				2831D71521D8ADA300D5A5F8 /* ForgetPassVC.swift in Sources */,
+				2831D6FB21D8A6DE00D5A5F8 /* App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,7 +684,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WLF775PH42;
-				INFOPLIST_FILE = baseproject/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/baseproject/Support/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +703,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WLF775PH42;
-				INFOPLIST_FILE = baseproject/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/baseproject/Support/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
