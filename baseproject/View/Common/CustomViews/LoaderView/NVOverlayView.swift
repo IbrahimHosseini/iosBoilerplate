@@ -30,14 +30,14 @@ class NVOverlayView: UIView {
     static func show(in parentView:UIView = UIApplication.shared.keyWindow!, status:NVOverlayStatus = .loading){
         if let v = parentView.viewWithTag(14325) as? NVOverlayView{
             v.status = status
-            parentView.bringSubview(toFront: v)
+            parentView.bringSubviewToFront(v)
         }else{
             let v = NVOverlayView.fromNib()
             v.tag = 14325
             v.frame = parentView.bounds
             v.status = status
             parentView.addSubview(v)
-            parentView.bringSubview(toFront: v)
+            parentView.bringSubviewToFront(v)
         }
     }
     
@@ -70,10 +70,10 @@ class NVOverlayView: UIView {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        errorDescription.text = NVLocalized(NVOverlayViewDefaultDescription)
-        errorDescription.setFont(FontStyle.small)
-        errorBtn.setFont(FontStyle.normalBold)
-        errorBtn.nvSetTitle(NVLocalized(NVOverlayViewRetryBtnTitle))
+        errorDescription.text = NVLocalized("خطا در ارتباط با سرور")
+        errorDescription.font = UIFont.irNumRegularFont10()
+        errorBtn.titleLabel?.font = UIFont.irNumMediumFont12()
+        errorBtn.setTitle(NVLocalized("تلاش مجدد"), for: .normal)
         
         if self.status == nil {
             self.status = .loading
@@ -86,3 +86,4 @@ class NVOverlayView: UIView {
         }
     }
 }
+
