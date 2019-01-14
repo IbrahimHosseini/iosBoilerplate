@@ -31,20 +31,20 @@ extension String {
     }
     
     
-    func passwordRegexValidation() -> Bool {
+    func passwordValidation() -> Bool {
         let regex = "^(?=.*[A-Za-z])(?=.*\\d)[A-Za-z\\d$@$!%*?&]{6,}"//"^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[$@$!%*?&])[A-Za-z\\d$@$!%*?&]{8,}" //Minimum 8 characters at least 1 Uppercase Alphabet, 1 Lowercase Alphabet, 1 Number and 1 Special Character
-        let isMatched = NSPredicate(format:"SELF MATCHES %@", regex).evaluate(with: self)
-        if(isMatched  == true) {
+        let isMatched = NSPredicate(format: "SELF MATCHES %@", regex).evaluate(with: self)
+        if isMatched  == true {
             return true
         }  else {
             return false
         }
     }
     
-    func mobileRegexValidation() -> Bool {
+    func mobileValidation() -> Bool {
         
         let regex = "(\\d{11,})"
-        let isMatched = NSPredicate(format:"SELF MATCHES %@", regex).evaluate(with: self)
+        let isMatched = NSPredicate(format: "SELF MATCHES %@", regex).evaluate(with: self)
         if isMatched  == true {
             return true
         } else {
@@ -52,6 +52,18 @@ extension String {
         }
     }
 
+    func emailValidation() -> Bool {
+        
+        let regex = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}"
+        
+        let isMatched = NSPredicate(format: "SELF MATCHES %@", regex).evaluate(with: self)
+        
+        if isMatched  == true {
+            return true
+        }  else {
+            return false
+        }
+    }
     
     
 }

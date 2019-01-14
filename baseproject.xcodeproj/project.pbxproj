@@ -60,6 +60,11 @@
 		284C4AD421EC627C00DAFDE1 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284C4AD321EC627C00DAFDE1 /* App.swift */; };
 		284C4AD621EC62E500DAFDE1 /* Configurations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284C4AD521EC62E500DAFDE1 /* Configurations.swift */; };
 		284C4AD921EC664300DAFDE1 /* RegexUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284C4AD821EC664300DAFDE1 /* RegexUtility.swift */; };
+		284C4ADC21EC6C5A00DAFDE1 /* ViewAndCreateFromNib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284C4ADB21EC6C5A00DAFDE1 /* ViewAndCreateFromNib.swift */; };
+		284C4ADF21EC6CAC00DAFDE1 /* CustomNibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284C4ADE21EC6CAC00DAFDE1 /* CustomNibView.swift */; };
+		284C4AE221EC6D1400DAFDE1 /* NVImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284C4AE121EC6D1400DAFDE1 /* NVImageView.swift */; };
+		284C4AE421EC6D7000DAFDE1 /* TableViewUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284C4AE321EC6D7000DAFDE1 /* TableViewUtility.swift */; };
+		284C4AE621EC713200DAFDE1 /* CommonUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284C4AE521EC713200DAFDE1 /* CommonUtility.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -118,6 +123,11 @@
 		284C4AD321EC627C00DAFDE1 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		284C4AD521EC62E500DAFDE1 /* Configurations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configurations.swift; sourceTree = "<group>"; };
 		284C4AD821EC664300DAFDE1 /* RegexUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegexUtility.swift; sourceTree = "<group>"; };
+		284C4ADB21EC6C5A00DAFDE1 /* ViewAndCreateFromNib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewAndCreateFromNib.swift; sourceTree = "<group>"; };
+		284C4ADE21EC6CAC00DAFDE1 /* CustomNibView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNibView.swift; sourceTree = "<group>"; };
+		284C4AE121EC6D1400DAFDE1 /* NVImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NVImageView.swift; sourceTree = "<group>"; };
+		284C4AE321EC6D7000DAFDE1 /* TableViewUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewUtility.swift; sourceTree = "<group>"; };
+		284C4AE521EC713200DAFDE1 /* CommonUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonUtility.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -263,8 +273,11 @@
 		2831D6F921D8A6C000D5A5F8 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				284C4AE021EC6CE900DAFDE1 /* ImageWithLoader */,
+				284C4ADD21EC6C7A00DAFDE1 /* CustomNibView */,
 				284C4AC721EC505C00DAFDE1 /* Notificatin */,
 				2831D6FD21D8A70000D5A5F8 /* Theme */,
+				284C4ADA21EC6C1100DAFDE1 /* UI */,
 				284C4AD321EC627C00DAFDE1 /* App.swift */,
 				284C4AD521EC62E500DAFDE1 /* Configurations.swift */,
 			);
@@ -461,8 +474,34 @@
 			isa = PBXGroup;
 			children = (
 				284C4AD821EC664300DAFDE1 /* RegexUtility.swift */,
+				284C4AE321EC6D7000DAFDE1 /* TableViewUtility.swift */,
+				284C4AE521EC713200DAFDE1 /* CommonUtility.swift */,
 			);
 			path = String;
+			sourceTree = "<group>";
+		};
+		284C4ADA21EC6C1100DAFDE1 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				284C4ADB21EC6C5A00DAFDE1 /* ViewAndCreateFromNib.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		284C4ADD21EC6C7A00DAFDE1 /* CustomNibView */ = {
+			isa = PBXGroup;
+			children = (
+				284C4ADE21EC6CAC00DAFDE1 /* CustomNibView.swift */,
+			);
+			path = CustomNibView;
+			sourceTree = "<group>";
+		};
+		284C4AE021EC6CE900DAFDE1 /* ImageWithLoader */ = {
+			isa = PBXGroup;
+			children = (
+				284C4AE121EC6D1400DAFDE1 /* NVImageView.swift */,
+			);
+			path = ImageWithLoader;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -559,6 +598,7 @@
 				284C4AD921EC664300DAFDE1 /* RegexUtility.swift in Sources */,
 				2831D72F21D8B4F500D5A5F8 /* CustomNibView.swift in Sources */,
 				2831D6BD21D8A28600D5A5F8 /* AppDelegate.swift in Sources */,
+				284C4ADC21EC6C5A00DAFDE1 /* ViewAndCreateFromNib.swift in Sources */,
 				284C4AD421EC627C00DAFDE1 /* App.swift in Sources */,
 				2831D71921D8AE1900D5A5F8 /* MainVC.swift in Sources */,
 				2831D74121D8BAA100D5A5F8 /* MessageUtility.swift in Sources */,
@@ -574,17 +614,21 @@
 				2831D73621D8B55900D5A5F8 /* CustomButton.swift in Sources */,
 				2831D72221D8B26C00D5A5F8 /* RMBaseResponse.swift in Sources */,
 				2831D73C21D8B93600D5A5F8 /* Currency.swift in Sources */,
+				284C4AE221EC6D1400DAFDE1 /* NVImageView.swift in Sources */,
 				2831D71721D8ADCA00D5A5F8 /* GetProfileVC.swift in Sources */,
 				284C4AC921EC512100DAFDE1 /* NotificationUtility.swift in Sources */,
 				2831D72A21D8B44700D5A5F8 /* NVOverlayView.swift in Sources */,
 				2831D70021D8A72500D5A5F8 /* Fonts.swift in Sources */,
 				2831D73E21D8B9D800D5A5F8 /* HTML2String.swift in Sources */,
 				2831D71B21D8AE3000D5A5F8 /* SplashVC.swift in Sources */,
+				284C4AE621EC713200DAFDE1 /* CommonUtility.swift in Sources */,
+				284C4AE421EC6D7000DAFDE1 /* TableViewUtility.swift in Sources */,
 				284C4ACF21EC522300DAFDE1 /* Commons.swift in Sources */,
 				2831D71321D8AD8400D5A5F8 /* LoginGetVerifyVC.swift in Sources */,
 				284C4AD621EC62E500DAFDE1 /* Configurations.swift in Sources */,
 				2831D70821D8A7A800D5A5F8 /* APIs.swift in Sources */,
 				2831D71521D8ADA300D5A5F8 /* ForgetPassVC.swift in Sources */,
+				284C4ADF21EC6CAC00DAFDE1 /* CustomNibView.swift in Sources */,
 				2831D6FB21D8A6DE00D5A5F8 /* App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
