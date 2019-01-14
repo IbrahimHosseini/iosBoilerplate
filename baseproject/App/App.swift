@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Presentr
 import MBProgressHUD
 import PromiseKit
 import SwiftyUserDefaults
