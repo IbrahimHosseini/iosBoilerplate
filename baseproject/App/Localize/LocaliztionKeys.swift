@@ -134,4 +134,10 @@ public let NVOverlayViewRetryBtnTitle = "NVOverlayViewRetryBtnTitle"
  */
 public let NVOverlayViewDefaultDescription = "NVOverlayViewDefaultDescription"
 
-
+/**
+ "فهمیدم"
+ All translations:
+ 
+ en: "فهمیدم"
+ */
+public let undrestood = "undrestood"

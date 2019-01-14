@@ -27,6 +27,7 @@
 "Unknown" = "نامشخص";
 "Second" = "%@ ثانیه";
 "People" = " نفر";
+"undrestood" = "فهمیدم";
 
 //NVOverlayView
 "NVOverlayViewRetryBtnTitle" = "تلاش مجدد";
