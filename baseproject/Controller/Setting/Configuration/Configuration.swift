@@ -8,6 +8,7 @@
 
 import Foundation
 
+let configuration = Configuration()
 
 class Configuration {
     var baseURL: String?
@@ -16,7 +17,7 @@ class Configuration {
     init() {
         if let dictionary = Bundle.main.infoDictionary,
             let configuration = dictionary["Configuration"] as? String {
-            let path = Bundle.main.path(forResource: "Configurations", ofType: "plist")
+            let path = Bundle.main.path(forResource: "Configuration", ofType: "plist")
             let config = NSDictionary(contentsOfFile: path!)
             for (key, value) in config! {
                 if let key = key as? String,

@@ -57,6 +57,8 @@
 		284C4AC921EC512100DAFDE1 /* NotificationUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284C4AC821EC512100DAFDE1 /* NotificationUtility.swift */; };
 		284C4ACF21EC522300DAFDE1 /* Commons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284C4ACE21EC522300DAFDE1 /* Commons.swift */; };
 		284C4AD221EC523600DAFDE1 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284C4AD121EC523600DAFDE1 /* Common.swift */; };
+		284C4AD421EC627C00DAFDE1 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284C4AD321EC627C00DAFDE1 /* App.swift */; };
+		284C4AD621EC62E500DAFDE1 /* Configurations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284C4AD521EC62E500DAFDE1 /* Configurations.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -112,6 +114,8 @@
 		284C4AC821EC512100DAFDE1 /* NotificationUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationUtility.swift; sourceTree = "<group>"; };
 		284C4ACE21EC522300DAFDE1 /* Commons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Commons.swift; sourceTree = "<group>"; };
 		284C4AD121EC523600DAFDE1 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		284C4AD321EC627C00DAFDE1 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
+		284C4AD521EC62E500DAFDE1 /* Configurations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configurations.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -259,6 +263,8 @@
 			children = (
 				284C4AC721EC505C00DAFDE1 /* Notificatin */,
 				2831D6FD21D8A70000D5A5F8 /* Theme */,
+				284C4AD321EC627C00DAFDE1 /* App.swift */,
+				284C4AD521EC62E500DAFDE1 /* Configurations.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -541,6 +547,7 @@
 				284C4AD221EC523600DAFDE1 /* Common.swift in Sources */,
 				2831D72F21D8B4F500D5A5F8 /* CustomNibView.swift in Sources */,
 				2831D6BD21D8A28600D5A5F8 /* AppDelegate.swift in Sources */,
+				284C4AD421EC627C00DAFDE1 /* App.swift in Sources */,
 				2831D71921D8AE1900D5A5F8 /* MainVC.swift in Sources */,
 				2831D74121D8BAA100D5A5F8 /* MessageUtility.swift in Sources */,
 				2831D70621D8A79300D5A5F8 /* APIUrls.swift in Sources */,
@@ -563,6 +570,7 @@
 				2831D71B21D8AE3000D5A5F8 /* SplashVC.swift in Sources */,
 				284C4ACF21EC522300DAFDE1 /* Commons.swift in Sources */,
 				2831D71321D8AD8400D5A5F8 /* LoginGetVerifyVC.swift in Sources */,
+				284C4AD621EC62E500DAFDE1 /* Configurations.swift in Sources */,
 				2831D70821D8A7A800D5A5F8 /* APIs.swift in Sources */,
 				2831D71521D8ADA300D5A5F8 /* ForgetPassVC.swift in Sources */,
 				2831D6FB21D8A6DE00D5A5F8 /* App.swift in Sources */,

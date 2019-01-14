@@ -8,16 +8,22 @@
 
 import Foundation
 
+
+enum CurrencyLabel: String {
+    case rial = "ریال"
+    case toman = "تومان"
+}
+
 //-------------------------------------
 //MARK: - String to decimal Casting and add "ریال" label
 //-------------------------------------
-extension String{
+extension String {
     
-    func toDecimal()-> String{
+    func toDecimal()-> String {
         return "\(number2Decimal.n2d(number: self))"
     }
-    func toCurrency()-> String{
-        return "\(number2Decimal.n2d(number: self)) ریال"
+    func toCurrency()-> String {
+        return "\(number2Decimal.n2d(number: self)) \(CurrencyLabel.rial.rawValue)"
     }
 }
 
@@ -25,9 +31,9 @@ extension String{
 //-------------------------------------
 //MARK: - number to decimal
 //-------------------------------------
-internal class number2Decimal{
+internal class number2Decimal {
     
-    class func n2d(number:String) -> String{
+    class func n2d(number:String) -> String {
         
         let number = NSDecimalNumber(string: number)
         let numberFormatter = NumberFormatter()
