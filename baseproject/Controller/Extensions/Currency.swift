@@ -22,6 +22,7 @@ extension String {
     func toDecimal()-> String {
         return "\(number2Decimal.n2d(number: self))"
     }
+    
     func toCurrency()-> String {
         return "\(number2Decimal.n2d(number: self)) \(CurrencyLabel.rial.rawValue)"
     }

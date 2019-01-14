@@ -59,6 +59,7 @@
 		284C4AD221EC523600DAFDE1 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284C4AD121EC523600DAFDE1 /* Common.swift */; };
 		284C4AD421EC627C00DAFDE1 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284C4AD321EC627C00DAFDE1 /* App.swift */; };
 		284C4AD621EC62E500DAFDE1 /* Configurations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284C4AD521EC62E500DAFDE1 /* Configurations.swift */; };
+		284C4AD921EC664300DAFDE1 /* RegexUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284C4AD821EC664300DAFDE1 /* RegexUtility.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -116,6 +117,7 @@
 		284C4AD121EC523600DAFDE1 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		284C4AD321EC627C00DAFDE1 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		284C4AD521EC62E500DAFDE1 /* Configurations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configurations.swift; sourceTree = "<group>"; };
+		284C4AD821EC664300DAFDE1 /* RegexUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegexUtility.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -324,6 +326,7 @@
 		2831D70E21D8A84600D5A5F8 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				284C4AD721EC662F00DAFDE1 /* String */,
 				2831D73F21D8BA7500D5A5F8 /* AlertMessage */,
 			);
 			path = Libraries;
@@ -454,6 +457,14 @@
 			path = Common;
 			sourceTree = "<group>";
 		};
+		284C4AD721EC662F00DAFDE1 /* String */ = {
+			isa = PBXGroup;
+			children = (
+				284C4AD821EC664300DAFDE1 /* RegexUtility.swift */,
+			);
+			path = String;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -545,6 +556,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				284C4AD221EC523600DAFDE1 /* Common.swift in Sources */,
+				284C4AD921EC664300DAFDE1 /* RegexUtility.swift in Sources */,
 				2831D72F21D8B4F500D5A5F8 /* CustomNibView.swift in Sources */,
 				2831D6BD21D8A28600D5A5F8 /* AppDelegate.swift in Sources */,
 				284C4AD421EC627C00DAFDE1 /* App.swift in Sources */,
