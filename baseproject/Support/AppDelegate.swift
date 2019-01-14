@@ -7,6 +7,8 @@
 //
 
 import UIKit
+/*import UserNotifications
+*/
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate /*,MessagingDelegate*/ {
@@ -18,6 +20,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate /*,MessagingDelegate*/ {
         
         App.shared.rootViewController = self.window?.rootViewController as? UINavigationController
         UINavigationBar.appearance().isTranslucent = false
+        
+        
         
 //        //notification
 //        UNUserNotificationCenter.current().delegate = self
