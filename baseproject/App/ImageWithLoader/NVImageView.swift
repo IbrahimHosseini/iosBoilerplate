@@ -35,7 +35,7 @@ class NVImageView: UIImageView {
         self.indicator = UIActivityIndicatorView()
         self.indicator.center = self.center
         self.indicator.isHidden = true
-        self.indicator.color = Colors.downy
+        self.indicator.color = Colors.gray
         self.isOpaque = true
         self.clipsToBounds = true
         self.addSubview(self.indicator)

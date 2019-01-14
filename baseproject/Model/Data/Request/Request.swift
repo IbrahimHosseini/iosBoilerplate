@@ -51,18 +51,18 @@ class BaseRequestHolder {
                      httpMethod: Alamofire.HTTPMethod = .get,
                      header: [String: String] = [:],
                      isForm: Bool = false) {
-                                            self.init(rurl: rurl)
-                                            self.set(headerParams: headerParams)
-                                            self.set(urlData: urlData)
+        self.init(rurl: rurl)
+        self.set(headerParams: headerParams)
+        self.set(urlData: urlData)
         
-                                            self.set(body: body)
+        self.set(body: body)
         
-                                            if let model = bodyModel {
-                                                self.set(body: model)
-                                            }
+        if let model = bodyModel {
+            self.set(body: model)
+        }
         
-                                            self.set(httpMethod: httpMethod)
-                                            self.set(isForm: isForm)
+        self.set(httpMethod: httpMethod)
+        self.set(isForm: isForm)
     }
     
     @discardableResult func set(body: [String: Any]) -> Self { self.body = body; return self }
@@ -115,7 +115,7 @@ class BaseRequestHolder {
     @discardableResult func set(urlData: [String: Any]) -> Self { self.urlData = urlData; return self; }
     
     func getUrl() -> URLConvertible {
-        var baseUrl = App.shared.configuration.baseURL
+        var baseUrl = Configurations.baseUrl
         
         
         let relativeUrlTemplate = try! Template(string: rurl)
@@ -133,7 +133,7 @@ class BaseRequestHolder {
         let urlTemp = URL(string: url)!
         
         var urlComponents = URLComponents(url: urlTemp, resolvingAgainstBaseURL: false)!
-    
+        
         var qpItems: [URLQueryItem] = []
         
         self.getQueryParams().forEach { (item: (key: AnyHashable, value: Any)) in

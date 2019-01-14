@@ -37,7 +37,7 @@ class PersianDate {
         return dateFormatter.string(from: date)
     }
     
-    func persianDate(time: String)-> String {
+    class func persianDate(time: String)-> String {
         
         var unixTimestamp = Double(time)
         unixTimestamp = unixTimestamp! //- 12600.0 // -3.5h
