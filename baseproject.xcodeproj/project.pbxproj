@@ -141,7 +141,7 @@
 				2831D6F921D8A6C000D5A5F8 /* App */,
 				2831D6D221D8A3ED00D5A5F8 /* Model */,
 				2831D6D121D8A3E200D5A5F8 /* View */,
-				2831D6D021D8A3CB00D5A5F8 /* Controller */,
+				284C4AC621EC4F5000DAFDE1 /* Controller */,
 				2831D6CE21D8A2C200D5A5F8 /* Support */,
 			);
 			path = baseproject;
@@ -180,13 +180,6 @@
 				2831D6E921D8A61500D5A5F8 /* IRANSansWeb(FaNum).ttf */,
 			);
 			path = Font;
-			sourceTree = "<group>";
-		};
-		2831D6D021D8A3CB00D5A5F8 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controller;
 			sourceTree = "<group>";
 		};
 		2831D6D121D8A3E200D5A5F8 /* View */ = {
@@ -420,6 +413,13 @@
 				2831D74021D8BAA100D5A5F8 /* MessageUtility.swift */,
 			);
 			path = AlertMessage;
+			sourceTree = "<group>";
+		};
+		284C4AC621EC4F5000DAFDE1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
