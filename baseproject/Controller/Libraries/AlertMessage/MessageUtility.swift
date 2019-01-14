@@ -43,15 +43,15 @@ class AletrView {
         
         switch type {
         case .error:
-            alert.showError(title ?? "", subTitle: body)
+            alert.showError(title ?? "", subTitle: body ?? "")
         case .warning:
-            alert.showWarning(title ?? "", subTitle: body)
+            alert.showWarning(title ?? "", subTitle: body ?? "")
         case .info:
-            alert.showInfo(title ?? "", subTitle: body)
+            alert.showInfo(title ?? "", subTitle: body ?? "")
         case .success:
-            alert.showSuccess(title ?? "", subTitle: body)
+            alert.showSuccess(title ?? "", subTitle: body ?? "")
         case .notic:
-            alert.showNotice(title ?? "", subTitle: body)
+            alert.showNotice(title ?? "", subTitle: body ?? "")
         default:
             break
         }
