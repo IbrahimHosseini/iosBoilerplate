@@ -68,6 +68,7 @@
 		284C4AE921EC71D300DAFDE1 /* LocalizeUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284C4AE821EC71D300DAFDE1 /* LocalizeUtility.swift */; };
 		284C4AEB21EC728200DAFDE1 /* LocaliztionKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284C4AEA21EC728200DAFDE1 /* LocaliztionKeys.swift */; };
 		284C4AED21EC72CD00DAFDE1 /* en.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 284C4AEC21EC72CD00DAFDE1 /* en.lproj */; };
+		284C4AEF21EC746A00DAFDE1 /* AppUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284C4AEE21EC746A00DAFDE1 /* AppUtility.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -134,6 +135,7 @@
 		284C4AE821EC71D300DAFDE1 /* LocalizeUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizeUtility.swift; sourceTree = "<group>"; };
 		284C4AEA21EC728200DAFDE1 /* LocaliztionKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocaliztionKeys.swift; sourceTree = "<group>"; };
 		284C4AEC21EC72CD00DAFDE1 /* en.lproj */ = {isa = PBXFileReference; lastKnownFileType = folder; path = en.lproj; sourceTree = "<group>"; };
+		284C4AEE21EC746A00DAFDE1 /* AppUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUtility.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -296,6 +298,7 @@
 			children = (
 				2831D70921D8A7C900D5A5F8 /* Configuration */,
 				2831D6FA21D8A6DE00D5A5F8 /* App.swift */,
+				284C4AEE21EC746A00DAFDE1 /* AppUtility.swift */,
 			);
 			path = Setting;
 			sourceTree = "<group>";
@@ -647,6 +650,7 @@
 				2831D71321D8AD8400D5A5F8 /* LoginGetVerifyVC.swift in Sources */,
 				284C4AD621EC62E500DAFDE1 /* Configurations.swift in Sources */,
 				2831D70821D8A7A800D5A5F8 /* APIs.swift in Sources */,
+				284C4AEF21EC746A00DAFDE1 /* AppUtility.swift in Sources */,
 				2831D71521D8ADA300D5A5F8 /* ForgetPassVC.swift in Sources */,
 				284C4ADF21EC6CAC00DAFDE1 /* CustomNibView.swift in Sources */,
 				2831D6FB21D8A6DE00D5A5F8 /* App.swift in Sources */,

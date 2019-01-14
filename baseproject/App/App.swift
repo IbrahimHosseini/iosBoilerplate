@@ -219,31 +219,6 @@ class App {
         return dateFormatter.string(from: date)
     }
     
-    func persianDateTime(time: String)-> String {
-        
-        var unixTimestamp = Double(time)
-        unixTimestamp = unixTimestamp! //- 12600.0 // -3.5h
-        let date = Date(timeIntervalSince1970: unixTimestamp!)
-        
-        let dateFormatter = DateFormatter()
-        dateFormatter.calendar = Calendar(identifier: .persian)
-        
-        dateFormatter.dateFormat = "yyyy/MM/dd - HH:mm"
-        return dateFormatter.string(from: date)
-    }
-    
-    func persianTime(time: String)-> String {
-        
-        var unixTimestamp = Double(time)
-        unixTimestamp = unixTimestamp!// - 12600.0 // -3.5h
-        let date = Date(timeIntervalSince1970: unixTimestamp!)
-        
-        let dateFormatter = DateFormatter()
-        dateFormatter.calendar = Calendar(identifier: .persian)
-        
-        dateFormatter.dateFormat = "HH:mm"
-        return dateFormatter.string(from: date)
-    }
     
     func encode(input: String) -> String {
         let data = input.data(using: .nonLossyASCII, allowLossyConversion: true)!

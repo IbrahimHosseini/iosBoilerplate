@@ -14,16 +14,16 @@ import SwiftyUserDefaults
 import CoreLocation
 import SwiftLocation
 
-enum LoginStatus:Int {
+enum LoginStatus: Int {
     case login = 0
     case logout
 }
-enum SendStatus:String{
+enum SendStatus: String {
     case  sent = "sent"
     case  notSent = "not_sent"
 }
 
-enum LoggedInType:String{
+enum LoggedInType: String {
     //    case  facebook  = "facebook"
     //    case  google    = "google"
     case  phone     = "email"
@@ -60,7 +60,7 @@ class App {
     private(set) var loginStatus: LoginStatus = .logout
     
     
-    var userToken:String?{
+    var userToken:String? {
         didSet{
             checkLoginStatus()
         }
@@ -74,11 +74,11 @@ class App {
         checkLoginStatus()
     }
     
-    private func checkLoginStatus(){
+    private func checkLoginStatus() {
         if userToken == nil{
             Defaults.remove(DefaultsKeys.UserToken)
             self.loginStatus = .logout
-        }else{
+        } else {
             Defaults[DefaultsKeys.UserToken] = userToken
             self.loginStatus = .login
         }
