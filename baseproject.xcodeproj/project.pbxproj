@@ -54,6 +54,9 @@
 		2831D73C21D8B93600D5A5F8 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2831D73B21D8B93600D5A5F8 /* Currency.swift */; };
 		2831D73E21D8B9D800D5A5F8 /* HTML2String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2831D73D21D8B9D800D5A5F8 /* HTML2String.swift */; };
 		2831D74121D8BAA100D5A5F8 /* MessageUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2831D74021D8BAA100D5A5F8 /* MessageUtility.swift */; };
+		284C4AC921EC512100DAFDE1 /* NotificationUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284C4AC821EC512100DAFDE1 /* NotificationUtility.swift */; };
+		284C4ACF21EC522300DAFDE1 /* Commons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284C4ACE21EC522300DAFDE1 /* Commons.swift */; };
+		284C4AD221EC523600DAFDE1 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284C4AD121EC523600DAFDE1 /* Common.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -106,6 +109,9 @@
 		2831D73B21D8B93600D5A5F8 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
 		2831D73D21D8B9D800D5A5F8 /* HTML2String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTML2String.swift; sourceTree = "<group>"; };
 		2831D74021D8BAA100D5A5F8 /* MessageUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageUtility.swift; sourceTree = "<group>"; };
+		284C4AC821EC512100DAFDE1 /* NotificationUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationUtility.swift; sourceTree = "<group>"; };
+		284C4ACE21EC522300DAFDE1 /* Commons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Commons.swift; sourceTree = "<group>"; };
+		284C4AD121EC523600DAFDE1 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -207,24 +213,10 @@
 			children = (
 				2831D71E21D8AF6800D5A5F8 /* Request */,
 				2831D6D621D8A42C00D5A5F8 /* Common */,
-				2831D6D421D8A40100D5A5F8 /* Send */,
-				2831D6D521D8A41600D5A5F8 /* Receive */,
+				284C4ACB21EC51CA00DAFDE1 /* Send */,
+				284C4ACC21EC51F800DAFDE1 /* Receive */,
 			);
 			path = Data;
-			sourceTree = "<group>";
-		};
-		2831D6D421D8A40100D5A5F8 /* Send */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Send;
-			sourceTree = "<group>";
-		};
-		2831D6D521D8A41600D5A5F8 /* Receive */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Receive;
 			sourceTree = "<group>";
 		};
 		2831D6D621D8A42C00D5A5F8 /* Common */ = {
@@ -265,11 +257,8 @@
 		2831D6F921D8A6C000D5A5F8 /* App */ = {
 			isa = PBXGroup;
 			children = (
-				2831D73821D8B8D900D5A5F8 /* Extensions */,
-				2831D70F21D8A85200D5A5F8 /* Notification */,
-				2831D70E21D8A84600D5A5F8 /* Libraries */,
+				284C4AC721EC505C00DAFDE1 /* Notificatin */,
 				2831D6FD21D8A70000D5A5F8 /* Theme */,
-				2831D6FC21D8A6F400D5A5F8 /* Setting */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -332,13 +321,6 @@
 				2831D73F21D8BA7500D5A5F8 /* AlertMessage */,
 			);
 			path = Libraries;
-			sourceTree = "<group>";
-		};
-		2831D70F21D8A85200D5A5F8 /* Notification */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Notification;
 			sourceTree = "<group>";
 		};
 		2831D71E21D8AF6800D5A5F8 /* Request */ = {
@@ -418,8 +400,52 @@
 		284C4AC621EC4F5000DAFDE1 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				2831D6FC21D8A6F400D5A5F8 /* Setting */,
+				2831D70E21D8A84600D5A5F8 /* Libraries */,
+				2831D73821D8B8D900D5A5F8 /* Extensions */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		284C4AC721EC505C00DAFDE1 /* Notificatin */ = {
+			isa = PBXGroup;
+			children = (
+				284C4AC821EC512100DAFDE1 /* NotificationUtility.swift */,
+			);
+			path = Notificatin;
+			sourceTree = "<group>";
+		};
+		284C4ACB21EC51CA00DAFDE1 /* Send */ = {
+			isa = PBXGroup;
+			children = (
+				284C4ACD21EC521200DAFDE1 /* Common */,
+			);
+			name = Send;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		284C4ACC21EC51F800DAFDE1 /* Receive */ = {
+			isa = PBXGroup;
+			children = (
+				284C4AD021EC522900DAFDE1 /* Common */,
+			);
+			path = Receive;
+			sourceTree = "<group>";
+		};
+		284C4ACD21EC521200DAFDE1 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				284C4ACE21EC522300DAFDE1 /* Commons.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		284C4AD021EC522900DAFDE1 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				284C4AD121EC523600DAFDE1 /* Common.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -512,6 +538,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				284C4AD221EC523600DAFDE1 /* Common.swift in Sources */,
 				2831D72F21D8B4F500D5A5F8 /* CustomNibView.swift in Sources */,
 				2831D6BD21D8A28600D5A5F8 /* AppDelegate.swift in Sources */,
 				2831D71921D8AE1900D5A5F8 /* MainVC.swift in Sources */,
@@ -529,10 +556,12 @@
 				2831D72221D8B26C00D5A5F8 /* RMBaseResponse.swift in Sources */,
 				2831D73C21D8B93600D5A5F8 /* Currency.swift in Sources */,
 				2831D71721D8ADCA00D5A5F8 /* GetProfileVC.swift in Sources */,
+				284C4AC921EC512100DAFDE1 /* NotificationUtility.swift in Sources */,
 				2831D72A21D8B44700D5A5F8 /* NVOverlayView.swift in Sources */,
 				2831D70021D8A72500D5A5F8 /* Fonts.swift in Sources */,
 				2831D73E21D8B9D800D5A5F8 /* HTML2String.swift in Sources */,
 				2831D71B21D8AE3000D5A5F8 /* SplashVC.swift in Sources */,
+				284C4ACF21EC522300DAFDE1 /* Commons.swift in Sources */,
 				2831D71321D8AD8400D5A5F8 /* LoginGetVerifyVC.swift in Sources */,
 				2831D70821D8A7A800D5A5F8 /* APIs.swift in Sources */,
 				2831D71521D8ADA300D5A5F8 /* ForgetPassVC.swift in Sources */,

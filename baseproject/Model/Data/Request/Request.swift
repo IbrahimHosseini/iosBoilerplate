@@ -30,43 +30,44 @@ class BaseRequestHolder {
     
     internal static let syncQueue = DispatchQueue(label: "syncRetokenQueue")
     
-    public var rurl:String
-    internal var headerParams:[String:String] = [:]
-    static var defaultHeaderParams:[String:String] = [:]
-    internal var urlData:[String:Any] = [:]
-    static var defaultQueryParams:[AnyHashable:Any] = [:]
-    internal var queryParams:[AnyHashable:Any] = [:]
-    internal var body:[String:Any] = [:]
-    internal var paramEncoding:ParameterEncoding = Alamofire.JSONEncoding.default
-    internal var httpMethod:Alamofire.HTTPMethod = .get
-    internal var isForm:Bool = false
+    public var rurl: String
+    internal var headerParams: [String: String] = [:]
+    static var defaultHeaderParams: [String: String] = [:]
+    internal var urlData: [String: Any] = [:]
+    static var defaultQueryParams: [AnyHashable: Any] = [:]
+    internal var queryParams: [AnyHashable: Any] = [:]
+    internal var body: [String: Any] = [:]
+    internal var paramEncoding: ParameterEncoding = Alamofire.JSONEncoding.default
+    internal var httpMethod: Alamofire.HTTPMethod = .get
+    internal var isForm: Bool = false
     
     init(rurl: String) {
         self.rurl = rurl
     }
     convenience init(rurl: String,
-        urlData: [String: Any] = [:],
-        body: [String: Any] = [:],
-        bodyModel: Mappable? = nil,
-        httpMethod: Alamofire.HTTPMethod = .get,
-        header: [String: String] = [:],
-        isForm: Bool = false) {
-        self.init(rurl: rurl)
-        self.set(headerParams: headerParams)
-        self.set(urlData: urlData)
+                     urlData: [String: Any] = [:],
+                     body: [String: Any] = [:],
+                     bodyModel: Mappable? = nil,
+                     httpMethod: Alamofire.HTTPMethod = .get,
+                     header: [String: String] = [:],
+                     isForm: Bool = false) {
+                                            self.init(rurl: rurl)
+                                            self.set(headerParams: headerParams)
+                                            self.set(urlData: urlData)
         
-        self.set(body: body);
-        if let model = bodyModel {
-            self.set(body: model)
-        }
+                                            self.set(body: body)
         
-        self.set(httpMethod: httpMethod)
-        self.set(isForm: isForm)
+                                            if let model = bodyModel {
+                                                self.set(body: model)
+                                            }
+        
+                                            self.set(httpMethod: httpMethod)
+                                            self.set(isForm: isForm)
     }
     
-    @discardableResult func set(body: [String:Any]) -> Self { self.body = body; return self }
+    @discardableResult func set(body: [String: Any]) -> Self { self.body = body; return self }
     
-    func getBody() -> [String:Any] {
+    func getBody() -> [String: Any] {
         return body
     }
     
@@ -83,6 +84,7 @@ class BaseRequestHolder {
         
         return params
     }
+    
     @discardableResult func set(headerParams: [String: String]) -> Self { self.headerParams = headerParams; return self; }
     
     func getQueryParams() -> [AnyHashable: Any] {
@@ -102,15 +104,15 @@ class BaseRequestHolder {
     
     func getIsForm() -> Bool { return isForm }
     
-    @discardableResult func set(isForm:Bool) -> Self { self.isForm = isForm ; return self; }
+    @discardableResult func set(isForm: Bool) -> Self { self.isForm = isForm ; return self; }
     
     func getHttpMethod() -> Alamofire.HTTPMethod { return self.httpMethod }
     
     @discardableResult func set(httpMethod: Alamofire.HTTPMethod) -> Self { self.httpMethod = httpMethod; return self }
     
-    func getUrlData() -> [String:Any] { return self.urlData }
+    func getUrlData() -> [String: Any] { return self.urlData }
     
-    @discardableResult func set(urlData:[String:Any]) -> Self { self.urlData = urlData; return self; }
+    @discardableResult func set(urlData: [String: Any]) -> Self { self.urlData = urlData; return self; }
     
     func getUrl() -> URLConvertible {
         var baseUrl = App.shared.configuration.baseURL
@@ -195,8 +197,8 @@ class BaseRequestHolder {
     }
     
     
-    public static func getErrorCode(error:Error) -> Int {
-        var errorCode:Int = error._code
+    public static func getErrorCode(error: Error) -> Int {
+        var errorCode: Int = error._code
         if error is NVError, case let NVError.requestFail(response) = error {
             errorCode = getHttpErrorCode(response: response)
         } else if error is NVError, case let NVError.mappingFail(response) = error {
@@ -206,17 +208,16 @@ class BaseRequestHolder {
     }
     
     static func getHttpErrorMessage(error: Error) -> String {
-        var errorCode:Int = error._code
+        var errorCode: Int = error._code
         var errorMessage = NVLocalized(HttpCodeUnknown)
         if error is NVError, case let NVError.requestFail(response) = error {
             errorCode = getHttpErrorCode(response: response)
-            if let data = response.data{
+            if let data = response.data {
                 if let json = try? JSONSerialization.jsonObject(with: data, options: [.allowFragments]) as? String {
                     if json != nil && json!.count > 0 {
                         errorMessage = json!
                         return errorMessage
                     }
-                    
                 }
             }
         } else if error is NVError, case let NVError.mappingFail(response) = error {
@@ -227,15 +228,15 @@ class BaseRequestHolder {
         
         if errorCode >= 200 && errorCode < 300 {
             errorMessage = NVLocalized(HttpCode200To300)
-        }else if errorCode == 401 {//
+        } else if errorCode == 401 {//
             errorMessage = NVLocalized(HttpCode401)
-        }else if errorCode == 403{//
+        } else if errorCode == 403 {//
             errorMessage = NVLocalized(HttpCode403)
-        }else if errorCode == 404{//
+        } else if errorCode == 404 {//
             errorMessage = NVLocalized(HttpCode404)
-        }else if errorCode == 423{//
+        } else if errorCode == 423 {//
             errorMessage = NVLocalized(HttpCode423)
-        }else if errorCode == 429{//many request
+        } else if errorCode == 429 {//many request
             errorMessage = NVLocalized(HttpCode429)
         } else if errorCode == 502 {
             errorMessage = NVLocalized(HttpCode502)
