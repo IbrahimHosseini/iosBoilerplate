@@ -26,7 +26,6 @@
 		2831D6F621D8A61500D5A5F8 /* IRANSansWeb(FaNum)_Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2831D6E721D8A61400D5A5F8 /* IRANSansWeb(FaNum)_Light.ttf */; };
 		2831D6F721D8A61500D5A5F8 /* IRANSansWeb(FaNum)_UltraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2831D6E821D8A61500D5A5F8 /* IRANSansWeb(FaNum)_UltraLight.ttf */; };
 		2831D6F821D8A61500D5A5F8 /* IRANSansWeb(FaNum).ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2831D6E921D8A61500D5A5F8 /* IRANSansWeb(FaNum).ttf */; };
-		2831D6FB21D8A6DE00D5A5F8 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2831D6FA21D8A6DE00D5A5F8 /* App.swift */; };
 		2831D70021D8A72500D5A5F8 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2831D6FF21D8A72500D5A5F8 /* Fonts.swift */; };
 		2831D70221D8A73500D5A5F8 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2831D70121D8A73500D5A5F8 /* Colors.swift */; };
 		2831D70621D8A79300D5A5F8 /* APIUrls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2831D70521D8A79300D5A5F8 /* APIUrls.swift */; };
@@ -93,7 +92,6 @@
 		2831D6E721D8A61400D5A5F8 /* IRANSansWeb(FaNum)_Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IRANSansWeb(FaNum)_Light.ttf"; sourceTree = "<group>"; };
 		2831D6E821D8A61500D5A5F8 /* IRANSansWeb(FaNum)_UltraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IRANSansWeb(FaNum)_UltraLight.ttf"; sourceTree = "<group>"; };
 		2831D6E921D8A61500D5A5F8 /* IRANSansWeb(FaNum).ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IRANSansWeb(FaNum).ttf"; sourceTree = "<group>"; };
-		2831D6FA21D8A6DE00D5A5F8 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		2831D6FF21D8A72500D5A5F8 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		2831D70121D8A73500D5A5F8 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		2831D70521D8A79300D5A5F8 /* APIUrls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIUrls.swift; sourceTree = "<group>"; };
@@ -297,7 +295,6 @@
 			isa = PBXGroup;
 			children = (
 				2831D70921D8A7C900D5A5F8 /* Configuration */,
-				2831D6FA21D8A6DE00D5A5F8 /* App.swift */,
 				284C4AEE21EC746A00DAFDE1 /* AppUtility.swift */,
 			);
 			path = Setting;
@@ -653,7 +650,6 @@
 				284C4AEF21EC746A00DAFDE1 /* AppUtility.swift in Sources */,
 				2831D71521D8ADA300D5A5F8 /* ForgetPassVC.swift in Sources */,
 				284C4ADF21EC6CAC00DAFDE1 /* CustomNibView.swift in Sources */,
-				2831D6FB21D8A6DE00D5A5F8 /* App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
