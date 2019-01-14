@@ -239,7 +239,7 @@
 				2831D71E21D8AF6800D5A5F8 /* Request */,
 				2831D6D621D8A42C00D5A5F8 /* Common */,
 				284C4ACB21EC51CA00DAFDE1 /* Send */,
-				284C4ACC21EC51F800DAFDE1 /* Receive */,
+				284C4ACC21EC51F800DAFDE1 /* Response */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -456,11 +456,12 @@
 			path = "New Group";
 			sourceTree = "<group>";
 		};
-		284C4ACC21EC51F800DAFDE1 /* Receive */ = {
+		284C4ACC21EC51F800DAFDE1 /* Response */ = {
 			isa = PBXGroup;
 			children = (
 				284C4AD021EC522900DAFDE1 /* Common */,
 			);
+			name = Response;
 			path = Receive;
 			sourceTree = "<group>";
 		};
