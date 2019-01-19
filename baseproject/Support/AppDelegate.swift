@@ -22,6 +22,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate /*,MessagingDelegate*/ {
         UINavigationBar.appearance().isTranslucent = false
         
         
+        do {
+            InternetNetwork.reachability = try Reachability(hostname: "www.google.com")
+            do {
+                try InternetNetwork.reachability?.start()
+            } catch let error as InternetNetwork.Error {
+                print(error)
+            } catch {
+                print(error)
+            }
+        } catch {
+            print(error)
+        }
+
+        
         
 //        //notification
 //        UNUserNotificationCenter.current().delegate = self

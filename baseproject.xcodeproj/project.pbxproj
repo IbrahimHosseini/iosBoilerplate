@@ -69,6 +69,7 @@
 		284C4AED21EC72CD00DAFDE1 /* en.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 284C4AEC21EC72CD00DAFDE1 /* en.lproj */; };
 		284C4AEF21EC746A00DAFDE1 /* AppUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284C4AEE21EC746A00DAFDE1 /* AppUtility.swift */; };
 		284C4AF221EC98E600DAFDE1 /* CommonMappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284C4AF121EC98E600DAFDE1 /* CommonMappable.swift */; };
+		288B2BA421F2FBFD001A086B /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288B2BA321F2FBFD001A086B /* Reachability.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -136,6 +137,7 @@
 		284C4AEC21EC72CD00DAFDE1 /* en.lproj */ = {isa = PBXFileReference; lastKnownFileType = folder; path = en.lproj; sourceTree = "<group>"; };
 		284C4AEE21EC746A00DAFDE1 /* AppUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUtility.swift; sourceTree = "<group>"; };
 		284C4AF121EC98E600DAFDE1 /* CommonMappable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonMappable.swift; sourceTree = "<group>"; };
+		288B2BA321F2FBFD001A086B /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -432,6 +434,7 @@
 		284C4AC621EC4F5000DAFDE1 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				288B2BA221F2FB7B001A086B /* Internet Check */,
 				2831D6FC21D8A6F400D5A5F8 /* Setting */,
 				2831D70E21D8A84600D5A5F8 /* Libraries */,
 				2831D73821D8B8D900D5A5F8 /* Extensions */,
@@ -531,6 +534,14 @@
 				284C4AF121EC98E600DAFDE1 /* CommonMappable.swift */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		288B2BA221F2FB7B001A086B /* Internet Check */ = {
+			isa = PBXGroup;
+			children = (
+				288B2BA321F2FBFD001A086B /* Reachability.swift */,
+			);
+			path = "Internet Check";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -662,6 +673,7 @@
 				2831D70821D8A7A800D5A5F8 /* APIs.swift in Sources */,
 				284C4AEF21EC746A00DAFDE1 /* AppUtility.swift in Sources */,
 				2831D71521D8ADA300D5A5F8 /* ForgetPassVC.swift in Sources */,
+				288B2BA421F2FBFD001A086B /* Reachability.swift in Sources */,
 				284C4ADF21EC6CAC00DAFDE1 /* CustomNibView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
