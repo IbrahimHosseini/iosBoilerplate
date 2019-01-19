@@ -19,7 +19,19 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT" customClass="CustomButton" customModule="baseproject" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="250" height="50"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h5R-P7-AAX" customClass="Button">
+                    <rect key="frame" x="0.0" y="0.0" width="250" height="50"/>
+                    <state key="normal" title="Button"/>
+                </button>
+            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="h5R-P7-AAX" secondAttribute="trailing" id="FCR-aB-d2m"/>
+                <constraint firstItem="h5R-P7-AAX" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="aT9-yg-6De"/>
+                <constraint firstItem="h5R-P7-AAX" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="dkv-As-k1V"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="h5R-P7-AAX" secondAttribute="bottom" id="ht3-Pe-szD"/>
+            </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="-399.19999999999999" y="-184.40779610194903"/>

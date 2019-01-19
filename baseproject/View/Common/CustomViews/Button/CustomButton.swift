@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Material
 
 @IBDesignable
 class CustomButton: CustomNibView {
@@ -16,7 +17,7 @@ class CustomButton: CustomNibView {
     //MARK: - parameters
     //-----------------------
     public var onClick:(() -> Void)?
-    
+    @IBOutlet weak var btn: Button!
     
     //-----------------------
     //MARK: - view load
@@ -24,11 +25,16 @@ class CustomButton: CustomNibView {
     override func awakeFromNib() {
         super.awakeFromNib()
         
+        btn.backgroundColor = Colors.darkBlue
+        btn.setTitleColor(Colors.white, for: .normal)
+        btn.titleLabel?.font = UIFont.robotoBold15()
+        
     }
     
     override func layoutSubviews() {
         super.layoutSubviews()
-        
+        btn.layer.cornerRadius = btn.frame.height/2 - 7
+        btn.clipsToBounds = true
     }
     
     //-----------------------

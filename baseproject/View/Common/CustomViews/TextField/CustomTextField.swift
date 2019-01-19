@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Material
+
 
 @IBDesignable
 class CustomUITextField: UITextField {
@@ -21,8 +23,11 @@ class CustomUITextField: UITextField {
 
 class CustomTextField: CustomNibView {
     
+    @IBOutlet weak var textField: CustomUITextField!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
+        
         
     }
     
