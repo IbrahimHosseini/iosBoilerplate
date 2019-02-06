@@ -10,43 +10,58 @@ import UIKit
 import Material
 
 @IBDesignable
-class CustomButton: CustomNibView {
+class CustomUITextField: TextField {
+    var shouldPerformAction = true
+    override func canPerformAction(_ action: Selector, withSender sender: Any?) -> Bool {
+        if !shouldPerformAction {
+            return false
+        }
+        return super.canPerformAction(action, withSender: sender)
+    }
+}
 
+class CustomTextField: CustomNibView {
     
-    //-----------------------
-    //MARK: - parameters
-    //-----------------------
-    public var onClick:(() -> Void)?
-    @IBOutlet weak var btn: Button!
+    @IBOutlet weak var textField: CustomUITextField!
     
-    //-----------------------
-    //MARK: - view load
-    //-----------------------
     override func awakeFromNib() {
         super.awakeFromNib()
-        
-        btn.backgroundColor = Colors.darkBlue
-        btn.setTitleColor(Colors.white, for: .normal)
-        btn.titleLabel?.font = UIFont.robotoBold15()
-        
+        initTextField()
     }
     
     override func layoutSubviews() {
         super.layoutSubviews()
-        btn.layer.cornerRadius = btn.frame.height/2 - 7
-        btn.clipsToBounds = true
+        
     }
-    
-    //-----------------------
-    //MARK: - button actions
-    //-----------------------
-    @IBAction func onClickBtn(_ sender: Any) {
-        onClick?()
-    }
-    //-----------------------
-    //MARK: - functions
-    //-----------------------
-
-    
-
 }
+
+
+extension CustomTextField: TextFieldDelegate {
+    
+    private func initTextField() {
+        
+        textField.dividerNormalColor = Colors.gray.withAlphaComponent(0.5)
+        textField.font = UIFont.robotoRegular15()
+        textField.textAlignment = .left
+        textField.isPlaceholderAnimated = true
+        textField.isPlaceholderUppercasedWhenEditing = true
+        
+        textField.delegate = self
+        
+    }
+    
+    public func textFieldDidEndEditing(_ textField: UITextField) {
+        (textField as? ErrorTextField)?.isErrorRevealed = false
+    }
+    
+    public func textFieldShouldClear(_ textField: UITextField) -> Bool {
+        (textField as? ErrorTextField)?.isErrorRevealed = false
+        return true
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        (textField as? ErrorTextField)?.isErrorRevealed = true
+        return true
+    }
+}
+

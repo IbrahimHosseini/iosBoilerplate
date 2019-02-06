@@ -10,18 +10,14 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomTextField" customModule="baseproject" customModuleProvider="target">
-            <connections>
-                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
-            </connections>
-        </placeholder>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomTextField" customModule="baseproject" customModuleProvider="target"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="UQp-4p-REG">
             <rect key="frame" x="0.0" y="0.0" width="250" height="50"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QMy-hr-mSe" customClass="CustomUITextField" customModule="baseproject" customModuleProvider="target">
-                    <rect key="frame" x="0.0" y="0.0" width="250" height="50"/>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ux7-Wv-z2d" customClass="CustomUITextField" customModule="baseproject" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="250" height="34"/>
                     <nil key="textColor"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
@@ -29,13 +25,13 @@
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="QMy-hr-mSe" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="ChT-Cz-xvk"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="QMy-hr-mSe" secondAttribute="trailing" id="chX-04-Ftl"/>
-                <constraint firstItem="QMy-hr-mSe" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="ho8-kt-Nvw"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="QMy-hr-mSe" secondAttribute="bottom" id="wed-h3-qRt"/>
+                <constraint firstItem="sg0-Xz-nBg" firstAttribute="trailing" secondItem="ux7-Wv-z2d" secondAttribute="trailing" id="JoR-ud-9lN"/>
+                <constraint firstItem="ux7-Wv-z2d" firstAttribute="top" secondItem="sg0-Xz-nBg" secondAttribute="top" id="Tvk-6U-F4T"/>
+                <constraint firstItem="sg0-Xz-nBg" firstAttribute="bottom" secondItem="ux7-Wv-z2d" secondAttribute="bottom" constant="16" id="f8b-pS-sAA"/>
+                <constraint firstItem="ux7-Wv-z2d" firstAttribute="leading" secondItem="sg0-Xz-nBg" secondAttribute="leading" id="t5j-rb-yVo"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <viewLayoutGuide key="safeArea" id="sg0-Xz-nBg"/>
             <point key="canvasLocation" x="53.600000000000001" y="-215.8920539730135"/>
         </view>
     </objects>
