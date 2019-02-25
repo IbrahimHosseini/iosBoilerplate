@@ -15,7 +15,7 @@ target 'baseproject' do
     pod 'GRMustache.swift'
     pod 'Eureka'
     pod 'iCarousel'
-    pod 'PromiseKit/Alamofire'
+    pod 'PromiseKit/Alamofire' , '~> 4.0'
     pod 'Presentr'
     pod 'Toaster'
     pod 'MXParallaxHeader'
