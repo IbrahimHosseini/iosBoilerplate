@@ -13,7 +13,7 @@ target 'baseproject' do
     pod 'Alamofire', '~> 4.5'
     pod 'AlamofireObjectMapper', '~> 5.0.0'
     pod 'GRMustache.swift', '~> 2.0'
-    pod 'Eureka'#, :git => 'https://github.com/xmartlabs/Eureka.git'
+    pod 'Eureka'
     pod 'iCarousel', '~> 1.8'
     pod 'PromiseKit/Alamofire', '~> 4.0'
     pod 'Presentr', '~> 1.3'
@@ -36,5 +36,12 @@ target 'baseproject' do
     pod "KeyboardAvoidingView"
     pod "StompClientLib"
     pod "SkeletonView"
+    pod 'SideMenu'
+    pod 'ImagePicker'
+    pod 'BulletinBoard'
+    pod 'NotificationBannerSwift'
+    pod 'MaterialMotion'
+    pod 'Quick'
+    pod 'Nimble'
 
 end
