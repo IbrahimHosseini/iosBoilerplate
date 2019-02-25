@@ -40,7 +40,6 @@ target 'baseproject' do
     pod 'ImagePicker'
     pod 'BulletinBoard'
     pod 'NotificationBannerSwift'
-    pod 'MaterialMotion'
     pod 'Quick'
     pod 'Nimble'
 

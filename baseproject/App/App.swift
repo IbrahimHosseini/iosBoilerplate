@@ -52,11 +52,11 @@ class App {
     
     public var rootViewController: UINavigationController?
     
-    public weak var mainTabbarController: MainTabbarCtrl?
+//    public weak var mainTabbarController: MainTabbarCtrl?
     
     private(set) var loginStatus: LoginStatus = .logout
     
-    var itemUri: ItemUriModel?
+//    var itemUri: ItemUriModel?
     
     var fcmToken: String?
     
@@ -66,25 +66,25 @@ class App {
         }
     }
     
-    var currentLang: Language {
-        get{
-            let langString = Defaults[DefaultsKeys.AppLanguages].first ?? Language.persian.rawValue
-            return Language(rawValue: langString) ?? .persian
-        }
-        set(newValue){
-            Defaults[DefaultsKeys.AppLanguages] = [newValue.rawValue]
-        }
-    }
-    
-    var loggedInType: LoggedInType {
-        get{
-            let langString = Defaults[DefaultsKeys.LoggedInType] ?? LoggedInType.skiped.rawValue
-            return LoggedInType(rawValue: langString) ?? .skiped
-        }
-        set(newValue){
-            Defaults[DefaultsKeys.LoggedInType] = newValue.rawValue
-        }
-    }
+//    var currentLang: Language {
+//        get{
+//            let langString = Defaults[DefaultsKeys.AppLanguages].first ?? Language.persian.rawValue
+//            return Language(rawValue: langString) ?? .persian
+//        }
+//        set(newValue){
+//            Defaults[DefaultsKeys.AppLanguages] = [newValue.rawValue]
+//        }
+//    }
+//
+//    var loggedInType: LoggedInType {
+//        get{
+//            let langString = Defaults[DefaultsKeys.LoggedInType] ?? LoggedInType.skiped.rawValue
+//            return LoggedInType(rawValue: langString) ?? .skiped
+//        }
+//        set(newValue){
+//            Defaults[DefaultsKeys.LoggedInType] = newValue.rawValue
+//        }
+//    }
     
     
     init() {
@@ -105,35 +105,35 @@ class App {
         }
     }
     
-    public func setPushToken(_ token: String) {
-        let oldToken = Defaults[DefaultsKeys.PushToken]
-        if oldToken.count == 0 || token == oldToken {
-            return
-        }
-        Defaults[DefaultsKeys.PushToken] = token
-        Defaults[DefaultsKeys.PushTokenSentStatus] = SendStatus.notSent.rawValue
-        
-        syncPushToken()
-    }
+//    public func setPushToken(_ token: String) {
+//        let oldToken = Defaults[DefaultsKeys.PushToken]
+//        if oldToken.count == 0 || token == oldToken {
+//            return
+//        }
+//        Defaults[DefaultsKeys.PushToken] = token
+//        Defaults[DefaultsKeys.PushTokenSentStatus] = SendStatus.notSent.rawValue
+//
+//        syncPushToken()
+//    }
     
-    @discardableResult
-    public func syncPushToken() -> Promise<NVDataResponse>? {
-        
-        let status = Defaults[DefaultsKeys.PushTokenSentStatus]
-        if( status.count == 0 || status == SendStatus.sent.rawValue ) {
-            return nil;
-        }
-        
-        let model = SMPushToken()
-        model.token = Defaults[DefaultsKeys.PushToken]
-        return CommonApi.pushTokenUpdate
-            .set(urlData: model.toJSON())
-            .requestForPromise()
-            .then { (resp: NVDataResponse) -> NVDataResponse in
-                Defaults[DefaultsKeys.PushTokenSentStatus] = SendStatus.sent.rawValue
-                return resp
-        }
-    }
+//    @discardableResult
+//    public func syncPushToken() -> Promise<NVDataResponse>? {
+//
+//        let status = Defaults[DefaultsKeys.PushTokenSentStatus]
+//        if( status.count == 0 || status == SendStatus.sent.rawValue ) {
+//            return nil;
+//        }
+//
+//        let model = SMPushToken()
+//        model.token = Defaults[DefaultsKeys.PushToken]
+//        return CommonApi.pushTokenUpdate
+//            .set(urlData: model.toJSON())
+//            .requestForPromise()
+//            .then { (resp: NVDataResponse) -> NVDataResponse in
+//                Defaults[DefaultsKeys.PushTokenSentStatus] = SendStatus.sent.rawValue
+//                return resp
+//        }
+//    }
     
     func forceLogout() {
         self.userToken = nil
@@ -143,37 +143,37 @@ class App {
         
     }
     
-    @discardableResult
-    func logout() -> Promise<NVDataResponse> {
-        return CommonApi.logout.requestForPromise()
-            .then {[weak self] (resp: NVDataResponse) -> NVDataResponse in
-                self?.userToken = nil
-                BaseRequestHolder.defaultHeaderParams = [:]
-                self?.checkLoginStatus()
-                self?.reboot()
-                return resp
-        }
-    }
+//    @discardableResult
+//    func logout() -> Promise<NVDataResponse> {
+//        return CommonApi.logout.requestForPromise()
+//            .then {[weak self] (resp: NVDataResponse) -> NVDataResponse in
+//                self?.userToken = nil
+//                BaseRequestHolder.defaultHeaderParams = [:]
+//                self?.checkLoginStatus()
+//                self?.reboot()
+//                return resp
+//        }
+//    }
     
     func reboot() {
         App.shared.rootViewController?.popToRootViewController(animated: true)
     }
     
-    @discardableResult
-    public func syncDeviceInfo() -> Promise<NVDataResponse>? {
-        let oldDeviceInfo = Defaults[DefaultsKeys.DeviceInfo]
-        let newDeviceInfo = SMDeviceInfo()
-        if self.loginStatus != .login || ( oldDeviceInfo != nil && newDeviceInfo == oldDeviceInfo)  {
-            return nil
-        }
-        return CommonApi.deviceInfo
-            .set(queryParams: newDeviceInfo.toJSON())
-            .requestForPromise()
-            .then(execute: {(resp) -> NVDataResponse in
-                Defaults[DefaultsKeys.DeviceInfo] = newDeviceInfo
-                return resp
-            })
-    }
+//    @discardableResult
+//    public func syncDeviceInfo() -> Promise<NVDataResponse>? {
+//        let oldDeviceInfo = Defaults[DefaultsKeys.DeviceInfo]
+//        let newDeviceInfo = SMDeviceInfo()
+//        if self.loginStatus != .login || ( oldDeviceInfo != nil && newDeviceInfo == oldDeviceInfo)  {
+//            return nil
+//        }
+//        return CommonApi.deviceInfo
+//            .set(queryParams: newDeviceInfo.toJSON())
+//            .requestForPromise()
+//            .then(execute: {(resp) -> NVDataResponse in
+//                Defaults[DefaultsKeys.DeviceInfo] = newDeviceInfo
+//                return resp
+//            })
+//    }
     
     func lockOrientation(_ orientation: UIInterfaceOrientationMask) {
         if let delegate = UIApplication.shared.delegate as? AppDelegate {

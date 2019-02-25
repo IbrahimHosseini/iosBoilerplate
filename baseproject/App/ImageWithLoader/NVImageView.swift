@@ -8,7 +8,6 @@
 
 import UIKit
 import Kingfisher
-import UIColor_Hex_Swift
 import SkeletonView
 
 class NVImageView: UIImageView {

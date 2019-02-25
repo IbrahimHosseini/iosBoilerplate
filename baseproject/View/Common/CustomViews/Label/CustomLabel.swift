@@ -23,7 +23,7 @@ class CustomLabel: UILabel {
     
     func commonInit() {
         self.textColor = Colors.black
-        self.font = UIFont.robotoRegular13()
+        self.font = UIFont.irNumRegularFont13()
         setProperties(border: 0.0, border: Colors.black)
     }
     

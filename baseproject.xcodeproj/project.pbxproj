@@ -67,10 +67,8 @@
 		284C4AEF21EC746A00DAFDE1 /* AppUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284C4AEE21EC746A00DAFDE1 /* AppUtility.swift */; };
 		284C4AF221EC98E600DAFDE1 /* CommonMappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284C4AF121EC98E600DAFDE1 /* CommonMappable.swift */; };
 		2878702822241CB80020CBCF /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2878702722241CB80020CBCF /* Request.swift */; };
-		2878702B22241CE10020CBCF /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2878702922241CE10020CBCF /* Common.swift */; };
 		2878702C22241CE10020CBCF /* RMBaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2878702A22241CE10020CBCF /* RMBaseResponse.swift */; };
 		2878702E22241CF60020CBCF /* Commons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2878702D22241CF60020CBCF /* Commons.swift */; };
-		2878703122241D210020CBCF /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2878703022241D210020CBCF /* Common.swift */; };
 		288B2BA421F2FBFD001A086B /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288B2BA321F2FBFD001A086B /* Reachability.swift */; };
 		288B2BD021F35868001A086B /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288B2BCF21F35868001A086B /* CustomLabel.swift */; };
 		DF4EA50BE44342C7FA8B9488 /* Pods_baseproject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9FA347AF95AA62E9B3245F9 /* Pods_baseproject.framework */; };
@@ -162,10 +160,8 @@
 		284C4AEE21EC746A00DAFDE1 /* AppUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUtility.swift; sourceTree = "<group>"; };
 		284C4AF121EC98E600DAFDE1 /* CommonMappable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonMappable.swift; sourceTree = "<group>"; };
 		2878702722241CB80020CBCF /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
-		2878702922241CE10020CBCF /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		2878702A22241CE10020CBCF /* RMBaseResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RMBaseResponse.swift; sourceTree = "<group>"; };
 		2878702D22241CF60020CBCF /* Commons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Commons.swift; sourceTree = "<group>"; };
-		2878703022241D210020CBCF /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		288B2BA321F2FBFD001A086B /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		288B2BCF21F35868001A086B /* CustomLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
 		F9FA347AF95AA62E9B3245F9 /* Pods_baseproject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_baseproject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -301,7 +297,6 @@
 		2831D6D621D8A42C00D5A5F8 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				2878702922241CE10020CBCF /* Common.swift */,
 				2878702A22241CE10020CBCF /* RMBaseResponse.swift */,
 			);
 			path = Common;
@@ -585,7 +580,6 @@
 		2878702F22241CFD0020CBCF /* Send */ = {
 			isa = PBXGroup;
 			children = (
-				2878703022241D210020CBCF /* Common.swift */,
 			);
 			path = Send;
 			sourceTree = "<group>";
@@ -816,14 +810,12 @@
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/INSPhotoGallery/INSPhotoGallery.framework",
 				"${BUILT_PRODUCTS_DIR}/ImagePicker/ImagePicker.framework",
-				"${BUILT_PRODUCTS_DIR}/IndefiniteObservable/IndefiniteObservable.framework",
 				"${BUILT_PRODUCTS_DIR}/KeyboardAvoidingView/KeyboardAvoidingView.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/MXParallaxHeader/MXParallaxHeader.framework",
 				"${BUILT_PRODUCTS_DIR}/MarqueeLabel/MarqueeLabel.framework",
 				"${BUILT_PRODUCTS_DIR}/Material/Material.framework",
-				"${BUILT_PRODUCTS_DIR}/MaterialMotion/MaterialMotion.framework",
 				"${BUILT_PRODUCTS_DIR}/MiawKit/MiawKit.framework",
 				"${BUILT_PRODUCTS_DIR}/Motion/Motion.framework",
 				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
@@ -865,14 +857,12 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/INSPhotoGallery.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ImagePicker.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IndefiniteObservable.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeyboardAvoidingView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MXParallaxHeader.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MarqueeLabel.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Material.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MaterialMotion.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MiawKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Motion.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
@@ -920,7 +910,6 @@
 				2831D74121D8BAA100D5A5F8 /* MessageUtility.swift in Sources */,
 				2831D70621D8A79300D5A5F8 /* APIUrls.swift in Sources */,
 				2831D73A21D8B90600D5A5F8 /* PersianDate.swift in Sources */,
-				2878703122241D210020CBCF /* Common.swift in Sources */,
 				2831D73221D8B54400D5A5F8 /* CustomTextField.swift in Sources */,
 				2878702E22241CF60020CBCF /* Commons.swift in Sources */,
 				288B2BD021F35868001A086B /* CustomLabel.swift in Sources */,
@@ -946,7 +935,6 @@
 				2831D71321D8AD8400D5A5F8 /* LoginGetVerifyVC.swift in Sources */,
 				284C4AD621EC62E500DAFDE1 /* Configurations.swift in Sources */,
 				2831D70821D8A7A800D5A5F8 /* APIs.swift in Sources */,
-				2878702B22241CE10020CBCF /* Common.swift in Sources */,
 				284C4AEF21EC746A00DAFDE1 /* AppUtility.swift in Sources */,
 				2831D71521D8ADA300D5A5F8 /* ForgetPassVC.swift in Sources */,
 				288B2BA421F2FBFD001A086B /* Reachability.swift in Sources */,

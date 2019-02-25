@@ -68,9 +68,6 @@ PODS:
   - GRMustache.swift (2.0.0)
   - iCarousel (1.8.3)
   - ImagePicker (3.1.0)
-  - IndefiniteObservable (4.0.0):
-    - IndefiniteObservable/lib (= 4.0.0)
-  - IndefiniteObservable/lib (4.0.0)
   - INSPhotoGallery (1.2.7)
   - KeyboardAvoidingView (3.0.0):
     - APExtensions/ViewState (>= 4.5.0)
@@ -80,8 +77,6 @@ PODS:
     - Material/Core (= 2.16.4)
   - Material/Core (2.16.4):
     - Motion (~> 1.4.3)
-  - MaterialMotion (2.0.0):
-    - IndefiniteObservable (~> 4.0)
   - MBProgressHUD (1.1.0)
   - MiawKit (1.2.1)
   - Motion (1.4.3):
@@ -140,7 +135,6 @@ DEPENDENCIES:
   - KeyboardAvoidingView
   - Kingfisher
   - Material
-  - MaterialMotion
   - MBProgressHUD
   - MiawKit
   - MXParallaxHeader
@@ -183,13 +177,11 @@ SPEC REPOS:
     - GRMustache.swift
     - iCarousel
     - ImagePicker
-    - IndefiniteObservable
     - INSPhotoGallery
     - KeyboardAvoidingView
     - Kingfisher
     - MarqueeLabel
     - Material
-    - MaterialMotion
     - MBProgressHUD
     - MiawKit
     - Motion
@@ -236,13 +228,11 @@ SPEC CHECKSUMS:
   GRMustache.swift: 8a547c12bea16052071b2b540af83d770075f0eb
   iCarousel: d782f635afac190c49bb8ee455882284cff8b85f
   ImagePicker: db1fd7626337b2577c523bef5f499bbbe5a37079
-  IndefiniteObservable: 1ee6af37efa8763a222cc6d414cd125e26ed9b6a
   INSPhotoGallery: a4e698e3d6338d9016328d6747488a2a111d94e2
   KeyboardAvoidingView: 0b689b4169f655192a20af70e8951395691ef1fc
   Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
   MarqueeLabel: 440a502b91a9179bd98f9fff00ba1150650a1c0e
   Material: 4ed78690b09ffd148b5ffab6b4367fb1d8da1cd3
-  MaterialMotion: a0532ef7bc01f3592fc41e09fcc04bdb7939839e
   MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
   MiawKit: 97fd3545bcee64e8317479adf154173a021918b8
   Motion: 153ba49692997888556c7a95207278a8b1f8be95
@@ -268,6 +258,6 @@ SPEC CHECKSUMS:
   SwiftyUserDefaults: 3d273b1739b68ada3145dc754a70ec775bc5c8be
   Toaster: a6c9532de1ded8105e77376f7dffeb2e12b46dbb
 
-PODFILE CHECKSUM: 72153fa7924240b7ae991b7b9ac1b347b90d6261
+PODFILE CHECKSUM: 1a076ca4f1c35cca1e63141316421b0b30b6b841
 
 COCOAPODS: 1.6.0.beta.2

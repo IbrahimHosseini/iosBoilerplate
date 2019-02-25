@@ -10,58 +10,39 @@ import UIKit
 import Material
 
 @IBDesignable
-class CustomUITextField: TextField {
-    var shouldPerformAction = true
-    override func canPerformAction(_ action: Selector, withSender sender: Any?) -> Bool {
-        if !shouldPerformAction {
-            return false
-        }
-        return super.canPerformAction(action, withSender: sender)
-    }
-}
-
-class CustomTextField: CustomNibView {
+class CustomButton: CustomNibView {
     
-    @IBOutlet weak var textField: CustomUITextField!
     
+    //-----------------------
+    //MARK: - parameters
+    //-----------------------
+    public var onClick:(() -> Void)?
+    @IBOutlet weak private(set) var btn: Button!
+    
+    //-----------------------
+    //MARK: - view load
+    //-----------------------
     override func awakeFromNib() {
         super.awakeFromNib()
-        initTextField()
+        
+        btn.backgroundColor = Colors.baseBlue
+        btn.setTitleColor(Colors.white, for: .normal)
+        btn.titleLabel?.font = UIFont.irMediumFont16()
+        
     }
     
     override func layoutSubviews() {
         super.layoutSubviews()
-        
+        btn.layer.cornerRadius = 0
+        btn.clipsToBounds = true
     }
+    
+    //-----------------------
+    //MARK: - button actions
+    //-----------------------
+    @IBAction func onClickBtn(_ sender: Any) {
+        onClick?()
+    }
+    
+    
 }
-
-
-extension CustomTextField: TextFieldDelegate {
-    
-    private func initTextField() {
-        
-        textField.dividerNormalColor = Colors.gray.withAlphaComponent(0.5)
-        textField.font = UIFont.robotoRegular15()
-        textField.textAlignment = .left
-        textField.isPlaceholderAnimated = true
-        textField.isPlaceholderUppercasedWhenEditing = true
-        
-        textField.delegate = self
-        
-    }
-    
-    public func textFieldDidEndEditing(_ textField: UITextField) {
-        (textField as? ErrorTextField)?.isErrorRevealed = false
-    }
-    
-    public func textFieldShouldClear(_ textField: UITextField) -> Bool {
-        (textField as? ErrorTextField)?.isErrorRevealed = false
-        return true
-    }
-    
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        (textField as? ErrorTextField)?.isErrorRevealed = true
-        return true
-    }
-}
-
