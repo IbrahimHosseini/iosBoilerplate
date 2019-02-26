@@ -40,7 +40,22 @@ target 'baseproject' do
     pod 'ImagePicker'
     pod 'BulletinBoard'
     pod 'NotificationBannerSwift'
-    # pod 'Quick'
-    # pod 'Nimble'
+
+	def testing_pods
+    		pod 'Quick'
+   		pod 'Nimble'
+	end
+
+	target 'UnitTests' do
+    		testing_pods
+	end
+
+	target 'UITests' do
+    		testing_pods
+	end
+
 
 end
+
+
+
