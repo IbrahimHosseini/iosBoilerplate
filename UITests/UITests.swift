@@ -1,14 +1,14 @@
 //
-//  baseprojectUITests.swift
-//  baseprojectUITests
+//  UITests.swift
+//  UITests
 //
-//  Created by Pazandish on 2/25/19.
+//  Created by Pazandish on 2/26/19.
 //  Copyright © 2019 sehosseini. All rights reserved.
 //
 
 import XCTest
 
-class baseprojectUITests: XCTestCase {
+class UITests: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.

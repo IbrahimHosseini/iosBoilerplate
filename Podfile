@@ -40,7 +40,7 @@ target 'baseproject' do
     pod 'ImagePicker'
     pod 'BulletinBoard'
     pod 'NotificationBannerSwift'
-    pod 'Quick'
-    pod 'Nimble'
+    # pod 'Quick'
+    # pod 'Nimble'
 
 end
