@@ -8,19 +8,21 @@
 
 import Foundation
 import MiawKit
+import Localize_Swift
+
 
 public enum Language: String {
-    case  persian = "fa_IR"
-    case  english = "en_US"
+    case  persian = "fa-IR"
+    case  english = "en"
     public static let allValues:[Language] = [.persian, .english]
 }
 
 public func NVLocalizedWithFormat(_ key: String, values: CVarArg ...) -> String {
-    return String(format: MKLocalized(key), arguments: values)
+    return String(format: MKLocalized(key.localized()), arguments: values)
 }
 
 public func NVLocalized(_ key: String) -> String {
-    return MKLocalized(key) ?? ""
+    return MKLocalized(key.localized()) ?? ""
 }
 
 public func translateNumberToPersion(number: Double) -> String {

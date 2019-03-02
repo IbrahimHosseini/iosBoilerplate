@@ -7,29 +7,21 @@
 */
 
 
-"HttpCodeUnknown" = "خطای ناشناخته";
-"FatalError" = "خطای ساختاری";
-"HttpCode200To300" = "درخواست با موفقیت انجام شد.";
-"HttpCode401" = "عدم وجود دسترسی";
-"HttpCode403" = "درخواست غیر مجاز";
-"HttpCode404" = "پیدا نشد.";
+"HttpCodeUnknown" = "Unknown error";
+"FatalError" = "Fatal error";
+"HttpCode200To300" = "Request successfully";
+"HttpCode401" = "Unauthorized error";
+"HttpCode403" = "Forbidden error";
+"HttpCode404" = "Not found";
 "HttpCode423" = "The resource that is being accessed is locked";
-"HttpCode429" = "تعدد درخواست لطفا کمی بعد دوباره تلاش نمایید.";
-"HttpCode502" = "سرور در حال بروزرسانی است. کمی بعد تلاش کنید";
+"HttpCode429" = "Try again later";
+"HttpCode502" = "Server updating, try again later";
 
 //General
-"NoItemToShow" = "داده ای برای نمایش موجود نمی باشد.";
-"TomanPrice" = "%@ تومان";
-"Toman" = "تومان";
-"ShareAppBody" = "دوست عزیز. سلام. پیشنهاد میکنم اپلیکیشن رسنو را از لینک زیر دریافت کرده و با کد %@ نصب کنید.\n http://www.resno.ir";
-"Man" = "مرد";
-"Woman" = "زن";
-"Unknown" = "نامشخص";
-"Second" = "%@ ثانیه";
-"People" = " نفر";
-"undrestood" = "فهمیدم";
+"NoItemToShow" = "No item";
+"undrestood" = "OK"
 
 //NVOverlayView
-"NVOverlayViewRetryBtnTitle" = "تلاش مجدد";
-"NVOverlayViewDefaultDescription" = "خطا در ارتباط با سرور";
+"NVOverlayViewRetryBtnTitle" = "Try again";
+"NVOverlayViewDefaultDescription" = "Server error";
 

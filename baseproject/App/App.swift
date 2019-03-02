@@ -65,17 +65,8 @@ class App {
             checkLoginStatus()
         }
     }
-    
-//    var currentLang: Language {
-//        get{
-//            let langString = Defaults[DefaultsKeys.AppLanguages].first ?? Language.persian.rawValue
-//            return Language(rawValue: langString) ?? .persian
-//        }
-//        set(newValue){
-//            Defaults[DefaultsKeys.AppLanguages] = [newValue.rawValue]
-//        }
-//    }
-//
+
+
 //    var loggedInType: LoggedInType {
 //        get{
 //            let langString = Defaults[DefaultsKeys.LoggedInType] ?? LoggedInType.skiped.rawValue

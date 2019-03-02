@@ -40,6 +40,7 @@ target 'baseproject' do
     pod 'ImagePicker'
     pod 'BulletinBoard'
     pod 'NotificationBannerSwift'
+    pod 'Localize-Swift', '~> 2.0'
 
 	def testing_pods
     		pod 'Quick'

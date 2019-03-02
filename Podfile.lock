@@ -72,6 +72,7 @@ PODS:
   - KeyboardAvoidingView (3.0.0):
     - APExtensions/ViewState (>= 4.5.0)
   - Kingfisher (4.10.1)
+  - Localize-Swift (2.0.0)
   - MarqueeLabel/Swift (3.2.0)
   - Material (2.16.4):
     - Material/Core (= 2.16.4)
@@ -134,6 +135,7 @@ DEPENDENCIES:
   - INSPhotoGallery
   - KeyboardAvoidingView
   - Kingfisher
+  - Localize-Swift (~> 2.0)
   - Material
   - MBProgressHUD
   - MiawKit
@@ -180,6 +182,7 @@ SPEC REPOS:
     - INSPhotoGallery
     - KeyboardAvoidingView
     - Kingfisher
+    - Localize-Swift
     - MarqueeLabel
     - Material
     - MBProgressHUD
@@ -231,6 +234,7 @@ SPEC CHECKSUMS:
   INSPhotoGallery: a4e698e3d6338d9016328d6747488a2a111d94e2
   KeyboardAvoidingView: 0b689b4169f655192a20af70e8951395691ef1fc
   Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
+  Localize-Swift: c798ec9286494866f7068f85f7c71283ac5bdab4
   MarqueeLabel: 440a502b91a9179bd98f9fff00ba1150650a1c0e
   Material: 4ed78690b09ffd148b5ffab6b4367fb1d8da1cd3
   MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
@@ -258,6 +262,6 @@ SPEC CHECKSUMS:
   SwiftyUserDefaults: 3d273b1739b68ada3145dc754a70ec775bc5c8be
   Toaster: a6c9532de1ded8105e77376f7dffeb2e12b46dbb
 
-PODFILE CHECKSUM: 865cfd639aa948129048bb2ff84ebf9f4f84cd9b
+PODFILE CHECKSUM: bb4ad4f7cdbe08e7f57a74e9997e190d471e0aa9
 
 COCOAPODS: 1.6.0.beta.2
