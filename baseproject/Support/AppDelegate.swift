@@ -22,6 +22,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate /*,MessagingDelegate*/ {
         UINavigationBar.appearance().isTranslucent = false
         
         
+        
+        
         do {
             InternetNetwork.reachability = try Reachability(hostname: "www.google.com")
             do {

@@ -10,9 +10,9 @@ import Foundation
 import MiawKit
 
 public enum Language: String {
-    case  persian = "fa"
-    //    case  english = "en"
-    public static let allValues:[Language] = [.persian]//, .english]
+    case  persian = "fa_IR"
+    case  english = "en_US"
+    public static let allValues:[Language] = [.persian, .english]
 }
 
 public func NVLocalizedWithFormat(_ key: String, values: CVarArg ...) -> String {
@@ -25,13 +25,13 @@ public func NVLocalized(_ key: String) -> String {
 
 public func translateNumberToPersion(number: Double) -> String {
     let formatter: NumberFormatter = NumberFormatter()
-    formatter.locale = NSLocale(localeIdentifier: "fa_IR") as Locale!
+    formatter.locale = NSLocale(localeIdentifier: Language.persian.rawValue) as Locale
     return formatter.string(from: NSNumber(value: number)) ?? ""
 }
 
 public func translateNumberToEnglish(numberStr: String) -> String {
     let formatter: NumberFormatter = NumberFormatter()
-    formatter.locale = NSLocale(localeIdentifier: "en_US") as Locale!
+    formatter.locale = NSLocale(localeIdentifier: Language.english.rawValue) as Locale
     let final = formatter.number(from: numberStr)
     if final == nil {
         return ""
