@@ -51,6 +51,7 @@
 		2831D73C21D8B93600D5A5F8 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2831D73B21D8B93600D5A5F8 /* Currency.swift */; };
 		2831D73E21D8B9D800D5A5F8 /* HTML2String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2831D73D21D8B9D800D5A5F8 /* HTML2String.swift */; };
 		2831D74121D8BAA100D5A5F8 /* MessageUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2831D74021D8BAA100D5A5F8 /* MessageUtility.swift */; };
+		283B29A8222BA8E600530963 /* LoginTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283B29A7222BA8E600530963 /* LoginTest.swift */; };
 		284C4AC921EC512100DAFDE1 /* NotificationUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284C4AC821EC512100DAFDE1 /* NotificationUtility.swift */; };
 		284C4AD421EC627C00DAFDE1 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284C4AD321EC627C00DAFDE1 /* App.swift */; };
 		284C4AD621EC62E500DAFDE1 /* Configurations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284C4AD521EC62E500DAFDE1 /* Configurations.swift */; };
@@ -70,7 +71,6 @@
 		288B2BA421F2FBFD001A086B /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288B2BA321F2FBFD001A086B /* Reachability.swift */; };
 		288B2BD021F35868001A086B /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288B2BCF21F35868001A086B /* CustomLabel.swift */; };
 		28B06F6022254071004E525D /* UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B06F5F22254071004E525D /* UITests.swift */; };
-		28B06F6E2225408D004E525D /* UnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B06F6D2225408D004E525D /* UnitTests.swift */; };
 		4D172C32C0F1F808B61A8693 /* Pods_baseproject_UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09A62BBC1D4A4517E6900E60 /* Pods_baseproject_UITests.framework */; };
 		95522EE02E933F52DBC9BD53 /* Pods_baseproject_UnitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE07C82EA90374F7536AD2ED /* Pods_baseproject_UnitTests.framework */; };
 		DF4EA50BE44342C7FA8B9488 /* Pods_baseproject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9FA347AF95AA62E9B3245F9 /* Pods_baseproject.framework */; };
@@ -146,6 +146,7 @@
 		2831D73D21D8B9D800D5A5F8 /* HTML2String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTML2String.swift; sourceTree = "<group>"; };
 		2831D74021D8BAA100D5A5F8 /* MessageUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageUtility.swift; sourceTree = "<group>"; };
 		283B2997222A9A1500530963 /* en copy */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en copy"; path = Localizable.strings; sourceTree = "<group>"; };
+		283B29A7222BA8E600530963 /* LoginTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTest.swift; sourceTree = "<group>"; };
 		284C4AC821EC512100DAFDE1 /* NotificationUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationUtility.swift; sourceTree = "<group>"; };
 		284C4AD321EC627C00DAFDE1 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		284C4AD521EC62E500DAFDE1 /* Configurations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configurations.swift; sourceTree = "<group>"; };
@@ -168,7 +169,6 @@
 		28B06F5F22254071004E525D /* UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITests.swift; sourceTree = "<group>"; };
 		28B06F6122254071004E525D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		28B06F6B2225408D004E525D /* UnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		28B06F6D2225408D004E525D /* UnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitTests.swift; sourceTree = "<group>"; };
 		28B06F6F2225408D004E525D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8AE0146D19CE499445CE6505 /* Pods-baseproject-UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-baseproject-UITests.release.xcconfig"; path = "Target Support Files/Pods-baseproject-UITests/Pods-baseproject-UITests.release.xcconfig"; sourceTree = "<group>"; };
 		AE07C82EA90374F7536AD2ED /* Pods_baseproject_UnitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_baseproject_UnitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -498,6 +498,14 @@
 			path = "fa-IR.lproj";
 			sourceTree = "<group>";
 		};
+		283B29A6222BA8BC00530963 /* ModelTest */ = {
+			isa = PBXGroup;
+			children = (
+				283B29A7222BA8E600530963 /* LoginTest.swift */,
+			);
+			path = ModelTest;
+			sourceTree = "<group>";
+		};
 		284C4AC621EC4F5000DAFDE1 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -614,7 +622,7 @@
 		28B06F6C2225408D004E525D /* UnitTests */ = {
 			isa = PBXGroup;
 			children = (
-				28B06F6D2225408D004E525D /* UnitTests.swift */,
+				283B29A6222BA8BC00530963 /* ModelTest */,
 				28B06F6F2225408D004E525D /* Info.plist */,
 			);
 			path = UnitTests;
@@ -1238,7 +1246,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28B06F6E2225408D004E525D /* UnitTests.swift in Sources */,
+				283B29A8222BA8E600530963 /* LoginTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
