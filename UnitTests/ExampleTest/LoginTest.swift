@@ -24,8 +24,6 @@ class ExampleTest: QuickSpec {
             context("") { // is used to define the specific context of the action you’ll be testing
                 it("") { //  is used to define the specific expected result for the test
                     
-                    // write test hire
-                    
                 }
             }
         }
