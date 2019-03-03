@@ -498,12 +498,12 @@
 			path = "fa-IR.lproj";
 			sourceTree = "<group>";
 		};
-		283B29A6222BA8BC00530963 /* ModelTest */ = {
+		283B29A6222BA8BC00530963 /* ExampleTest */ = {
 			isa = PBXGroup;
 			children = (
 				283B29A7222BA8E600530963 /* LoginTest.swift */,
 			);
-			path = ModelTest;
+			path = ExampleTest;
 			sourceTree = "<group>";
 		};
 		284C4AC621EC4F5000DAFDE1 /* Controller */ = {
@@ -622,7 +622,7 @@
 		28B06F6C2225408D004E525D /* UnitTests */ = {
 			isa = PBXGroup;
 			children = (
-				283B29A6222BA8BC00530963 /* ModelTest */,
+				283B29A6222BA8BC00530963 /* ExampleTest */,
 				28B06F6F2225408D004E525D /* Info.plist */,
 			);
 			path = UnitTests;
