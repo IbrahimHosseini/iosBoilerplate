@@ -132,7 +132,7 @@ class BaseVC: UIViewController, UIGestureRecognizerDelegate {
 extension BaseVC {
     
     
-    func setNav(title: String? = nil, largTitle: Bool = false) {
+    func setNav(title: String? = nil, largTitle: Bool = false, backgroundColor: UIColor? = nil) {
         if title != nil {
             navigationItem.title = title
             

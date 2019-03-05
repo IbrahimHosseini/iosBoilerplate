@@ -23,7 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate /*,MessagingDelegate*/ {
         UINavigationBar.appearance().isTranslucent = false
         
         // setup static app language
-//        Localize.setCurrentLanguage(Language.persian.rawValue)
+        Localize.setCurrentLanguage(Language.english.rawValue)
         
         // direction of language based on language
         if Localize.currentLanguage() == Language.persian.rawValue {
