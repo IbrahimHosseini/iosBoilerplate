@@ -48,11 +48,6 @@ class BaseVC: UIViewController, UIGestureRecognizerDelegate {
     //-----------------------
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.navigationController?.navigationBar.titleTextAttributes = [
-            NSAttributedString.Key.font: UIFont.irNumMediumFont15()!,
-            NSAttributedString.Key.foregroundColor: Colors.white]
-        
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -135,9 +130,23 @@ class BaseVC: UIViewController, UIGestureRecognizerDelegate {
 }
 
 extension BaseVC {
-    func setNav(title: String? = nil) {
+    
+    
+    func setNav(title: String? = nil, largTitle: Bool = false) {
         if title != nil {
             navigationItem.title = title
+            
+            let attributes = [ NSAttributedString.Key.font: UIFont.irNumMediumFont15()!,
+                               NSAttributedString.Key.foregroundColor: Colors.white]
+            
+            if #available(iOS 11.0, *) {
+                self.navigationController?.navigationBar.prefersLargeTitles = largTitle
+                self.navigationController?.navigationBar.largeTitleTextAttributes = attributes
+            } else {
+                self.navigationController?.navigationBar.titleTextAttributes = attributes
+            }
+            
+            
         } else {
             let header = UIImageView(frame: CGRect(x: 0, y: 0, width: (1060.0 / 472.0 ) * 44 , height: 44))
             header.contentMode = .scaleAspectFit
