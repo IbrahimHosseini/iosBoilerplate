@@ -70,10 +70,10 @@ class NVOverlayView: UIView {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        errorDescription.text = NVLocalized("خطا در ارتباط با سرور")
+        errorDescription.text = NVLocalized(NVOverlayViewDefaultDescription)
         errorDescription.font = UIFont.irNumRegularFont10()
         errorBtn.titleLabel?.font = UIFont.irNumMediumFont12()
-        errorBtn.setTitle(NVLocalized("تلاش مجدد"), for: .normal)
+        errorBtn.setTitle(NVLocalized(NVOverlayViewRetryBtnTitle), for: .normal)
         
         if self.status == nil {
             self.status = .loading

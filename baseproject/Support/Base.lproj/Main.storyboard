@@ -17,10 +17,41 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="X6y-b7-NkY">
+                                <rect key="frame" x="112.5" y="258.5" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="YmQ-AY-jPD"/>
+                                    <constraint firstAttribute="width" constant="150" id="vu1-ow-vvD"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d7I-Zy-UnD">
+                                <rect key="frame" x="164.5" y="573" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="onClickRetry:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dUK-zA-lhK"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="eRM-Lt-a3G">
+                                <rect key="frame" x="180" y="518" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="d7I-Zy-UnD" firstAttribute="top" secondItem="eRM-Lt-a3G" secondAttribute="bottom" constant="35" id="D7j-1R-oj1"/>
+                            <constraint firstItem="X6y-b7-NkY" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="HfL-wG-uJc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="d7I-Zy-UnD" secondAttribute="bottom" constant="64" id="Xi4-uk-fae"/>
+                            <constraint firstItem="d7I-Zy-UnD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="a0x-r6-Oiu"/>
+                            <constraint firstItem="X6y-b7-NkY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qAT-1n-kcu"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="4Fu-2w-7g7"/>
+                    <connections>
+                        <outlet property="indicator" destination="eRM-Lt-a3G" id="h3S-vi-whY"/>
+                        <outlet property="logoImage" destination="X6y-b7-NkY" id="vX4-ab-ESH"/>
+                        <outlet property="retryButton" destination="d7I-Zy-UnD" id="pHO-9x-nfm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

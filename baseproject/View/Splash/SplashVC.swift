@@ -13,6 +13,9 @@ class SplashVC: BaseVC {
     //-----------------------
     //MARK: - parameters
     //-----------------------
+    @IBOutlet weak var logoImage: UIImageView!
+    @IBOutlet weak var retryButton: UIButton!
+    @IBOutlet weak var indicator: UIActivityIndicatorView!
     
     //-----------------------
     //MARK: - view load
@@ -22,10 +25,23 @@ class SplashVC: BaseVC {
         viewDesign()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        checkVersion()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        checkVersion()
+    }
+    
     //-----------------------
     //MARK: - button actions
     //-----------------------
-    
+    @IBAction func onClickRetry(_ sender: Any) {
+        checkVersion()
+    }
+
     //-----------------------
     //MARK: - functions
     //-----------------------
@@ -36,5 +52,45 @@ class SplashVC: BaseVC {
     
     private func viewDesign() {
         
+        
+        logoImage.image = UIImage(named: "logo")
+        logoImage.contentMode = .scaleAspectFit
+        
+        retryButton.setTitleColor(Colors.blue, for: .normal)
+        retryButton.setTitle(NVLocalized(NVOverlayViewRetryBtnTitle), for: .normal)
+        retryButton.titleLabel?.font = UIFont.irRegularFont15()
+        retryButton.isHidden = true
+        
+        indicator.color = Colors.blue
+        indicator.hidesWhenStopped = true
+        indicator.startAnimating()
+        
+        
     }
+    
+    private func checkVersion() {
+        
+        retryButton.isHidden = true
+        indicator.startAnimating()
+        
+        if App.shared.userToken != nil {
+            goToMain()
+        } else {
+            goToLogin()
+        }
+        
+        indicator.stopAnimating()
+    }
+    
+    private func goToMain() {
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "MainVC") as! MainVC
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    private func goToLogin() {
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "LoginGetMobileVC") as! LoginGetMobileVC
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    
 }
