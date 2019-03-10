@@ -43,6 +43,16 @@
 	</array>
 	<key>UIAppFonts</key>
 	<array>
+		<string>Roboto-Regular.ttf</string>
+		<string>Roboto-MediumItalic.ttf</string>
+		<string>Roboto-Medium.ttf</string>
+		<string>Roboto-Italic.ttf</string>
+		<string>Roboto-BoldItalic.ttf</string>
+		<string>Roboto-Bold.ttf</string>
+		<string>Roboto-LightItalic.ttf</string>
+		<string>Roboto-Light.ttf</string>
+		<string>Roboto-Thin.ttf</string>
+		<string>Roboto-ThinItalic.ttf</string>
 		<string>IRANSansMobile(FaNum)_UltraLight.ttf</string>
 		<string>IRANSansMobile(FaNum)_Medium.ttf</string>
 		<string>IRANSansMobile(FaNum)_Light.ttf</string>
