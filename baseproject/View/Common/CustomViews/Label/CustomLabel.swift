@@ -23,7 +23,7 @@ class CustomLabel: UILabel {
     
     func commonInit() {
         self.textColor = Colors.black
-        self.font = UIFont.numberFont(ofSize: 13)
+        self.font = UIFont.regularFont(ofSize: 15)
         setProperties(border: 0.0, border: Colors.black)
     }
     

@@ -44,7 +44,7 @@ extension CustomTextField: TextFieldDelegate {
         
         textField.dividerNormalColor = Colors.darkBlue
         textField.dividerActiveColor = Colors.blue
-        textField.font = UIFont.numberFont(ofSize: 13)
+        textField.font = UIFont.regularFont(ofSize: 15)
         textField.textAlignment = .right
         textField.isPlaceholderAnimated = true
         textField.placeholderVerticalOffset = 30.0
