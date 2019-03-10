@@ -13,6 +13,8 @@ import SwiftyUserDefaults
 import SCLAlertView
 import Toaster
 import PKHUD
+import SideMenu
+import Localize_Swift
 
 class BaseVC: UIViewController, UIGestureRecognizerDelegate {
 
@@ -150,7 +152,7 @@ extension BaseVC {
         } else {
             let header = UIImageView(frame: CGRect(x: 0, y: 0, width: (1060.0 / 472.0 ) * 44 , height: 44))
             header.contentMode = .scaleAspectFit
-            header.image = UIImage(named:"logo")!
+            header.image = UIImage(named:"nav_logo")!
             let w = header.widthAnchor.constraint(equalToConstant: header.frame.width)
             w.priority = UILayoutPriority.defaultHigh
             w.isActive = true
@@ -158,6 +160,51 @@ extension BaseVC {
             h.priority = UILayoutPriority.defaultHigh
             h.isActive = true
             navigationItem.titleView = header
+        }
+    }
+    
+    func setupSideMenu() {
+        // Define the menus
+        if Localize.currentLanguage() == Language.persian.rawValue {
+            SideMenuManager.default.menuRightNavigationController = storyboard!.instantiateViewController(withIdentifier: "RightMenuVC") as? UISideMenuNavigationController
+        } else {
+            SideMenuManager.default.menuLeftNavigationController = storyboard!.instantiateViewController(withIdentifier: "RightMenuVC") as? UISideMenuNavigationController
+        }
+        // Enable gestures. The left and/or right menus must be set up above for these to work.
+        // Note that these continue to work on the Navigation Controller independent of the View Controller it displays!
+        SideMenuManager.default.menuAddPanGestureToPresent(toView: self.navigationController!.navigationBar)
+        SideMenuManager.default.menuAddScreenEdgePanGesturesToPresent(toView: self.navigationController!.view)
+        SideMenuManager.default.menuPresentMode = .viewSlideOut
+        SideMenuManager.default.menuWidth = 280
+        SideMenuManager.default.menuPresentMode = .menuSlideIn
+        SideMenuManager.default.menuAnimationTransformScaleFactor = 1
+        SideMenuManager.default.menuAnimationBackgroundColor = Colors.black
+    }
+    
+    
+    func setMenu() {
+        //Menu bar button item
+        let btnMenu = UIButton(type: .custom)
+        btnMenu.setImage(UIImage(named: "menu")?.tint(with: Colors.black)?.resizeImage(to: CGSize(width: 25, height: 25)), for: .normal)
+        btnMenu.addTarget(self, action:#selector(onMenu), for: .touchUpInside)
+        let menuIcon = UIBarButtonItem(customView: btnMenu)
+        menuIcon.customView?.frame = CGRect(x: 0, y: 0, width: 30, height: 22)
+        let wTicket = menuIcon.customView?.widthAnchor.constraint(equalToConstant: 30)
+        wTicket?.priority = UILayoutPriority.defaultHigh
+        wTicket?.isActive = true
+        let hTicket = menuIcon.customView?.heightAnchor.constraint(equalToConstant: 25)
+        hTicket?.priority = UILayoutPriority.defaultHigh
+        hTicket?.isActive = true
+        
+        self.navigationItem.leftBarButtonItems = [menuIcon]
+        
+    }
+    
+    @objc private func onMenu() {
+        if Localize.currentLanguage() == Language.persian.rawValue {
+            self.present(SideMenuManager.default.menuRightNavigationController!, animated: true, completion: nil)
+        } else {
+            self.present(SideMenuManager.default.menuLeftNavigationController!, animated: true, completion: nil)
         }
     }
     

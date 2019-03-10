@@ -19,7 +19,11 @@
 
 //General
 "NoItemToShow" = "No item";
-"undrestood" = "OK"
+"undrestood" = "OK";
+"sharing" = "Sharing";
+"logout" = "Logout";
+"cancel" = "Cancel";
+"logoutDesc" = "Are you sure you want to logout?";
 
 //NVOverlayView
 "NVOverlayViewRetryBtnTitle" = "Try again";

@@ -73,7 +73,7 @@ class SplashVC: BaseVC {
         retryButton.isHidden = true
         indicator.startAnimating()
         
-        if App.shared.userToken != nil {
+        if App.shared.userToken == nil {
             goToMain()
         } else {
             goToLogin()

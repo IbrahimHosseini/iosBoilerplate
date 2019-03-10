@@ -1,0 +1,31 @@
+/* 
+  Localizable.strings
+  resno
+
+  Created by sehosseini on 2/1/18.
+  Copyright © 2019 sehosseini. All rights reserved.
+*/
+
+
+"HttpCodeUnknown" = "خطای ناشناخته";
+"FatalError" = "خطای ساختاری";
+"HttpCode200To300" = "درخواست با موفقیت انجام شد.";
+"HttpCode401" = "عدم وجود دسترسی";
+"HttpCode403" = "درخواست غیر مجاز";
+"HttpCode404" = "پیدا نشد.";
+"HttpCode423" = "The resource that is being accessed is locked";
+"HttpCode429" = "تعدد درخواست لطفا کمی بعد دوباره تلاش نمایید.";
+"HttpCode502" = "سرور در حال بروزرسانی است. کمی بعد تلاش کنید";
+
+//General
+"NoItemToShow" = "هیج آیتمی برای نمایش موجود نیست";
+"undrestood" = "باشه";
+"sharing" = "اشتراک گذاری";
+"logout" = "خروج";
+"cancel" = "انصراف";
+"logoutDesc" = "آیا برای خروج مطمئن هستید؟";
+
+//NVOverlayView
+"NVOverlayViewRetryBtnTitle" = "تلاش مجدد";
+"NVOverlayViewDefaultDescription" = "اشکال در ارتباط با سرور";
+

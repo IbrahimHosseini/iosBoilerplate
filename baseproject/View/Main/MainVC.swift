@@ -21,6 +21,11 @@ class MainVC: BaseVC {
         super.viewDidLoad()
         viewDesign()
     }
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        setupSideMenu()
+        setMenu()
+    }
     
     //-----------------------
     //MARK: - button actions

@@ -142,3 +142,41 @@ public let NVOverlayViewDefaultDescription = "NVOverlayViewDefaultDescription"
  en: "OK"
  */
 public let undrestood = "undrestood"
+
+/**
+ "Sharing"
+ 
+ All translations:
+ 
+ en: "Sharing"
+ */
+public let Sharing = "Sharing"
+
+/**
+ "logout"
+ 
+ All translations:
+ 
+ en: "logout"
+ */
+public let logout = "logout"
+
+/**
+ "cancel"
+ 
+ All translations:
+ 
+ en: "cancel"
+ */
+public let cancel = "cancel"
+
+/**
+ "logoutDesc"
+ 
+ All translations:
+ 
+ en: "logoutDesc"
+ */
+public let logoutDesc = "logoutDesc"
+
+
