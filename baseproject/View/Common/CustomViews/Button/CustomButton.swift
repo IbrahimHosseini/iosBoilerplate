@@ -27,7 +27,7 @@ class CustomButton: CustomNibView {
         
         btn.backgroundColor = Colors.baseBlue
         btn.setTitleColor(Colors.white, for: .normal)
-        btn.titleLabel?.font = UIFont.irMediumFont16()
+        btn.titleLabel?.font = UIFont.mediumFont(ofSize: 16)
         
     }
     

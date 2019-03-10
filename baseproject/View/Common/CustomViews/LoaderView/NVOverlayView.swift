@@ -71,8 +71,8 @@ class NVOverlayView: UIView {
     override func awakeFromNib() {
         super.awakeFromNib()
         errorDescription.text = NVLocalized(NVOverlayViewDefaultDescription)
-        errorDescription.font = UIFont.irNumRegularFont10()
-        errorBtn.titleLabel?.font = UIFont.irNumMediumFont12()
+        errorDescription.font = UIFont.numberFont(ofSize: 10)
+        errorBtn.titleLabel?.font = UIFont.numberMediumFont(ofSize: 12)
         errorBtn.setTitle(NVLocalized(NVOverlayViewRetryBtnTitle), for: .normal)
         
         if self.status == nil {
