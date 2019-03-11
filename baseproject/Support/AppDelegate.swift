@@ -22,8 +22,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate /*,MessagingDelegate*/ {
         App.shared.rootViewController = self.window?.rootViewController as? UINavigationController
         UINavigationBar.appearance().isTranslucent = false
         
-        // setup static app language
-        Localize.setCurrentLanguage(Language.persian.rawValue)
+        // setup persian app language
+         Localize.setCurrentLanguage(Language.persian.rawValue)
         
         // direction of language based on language
         if Localize.currentLanguage() == Language.persian.rawValue {
@@ -46,8 +46,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate /*,MessagingDelegate*/ {
             print(error)
         }
 
-        
-        
 //        //notification
 //        UNUserNotificationCenter.current().delegate = self
 //        let authOption: UNAuthorizationOptions = [.alert, .sound, .badge]

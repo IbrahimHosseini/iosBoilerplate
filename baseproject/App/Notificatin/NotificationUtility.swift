@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Notification {
+class NotificationSetting {
     
     
 }

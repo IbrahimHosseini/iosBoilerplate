@@ -29,3 +29,5 @@
 "NVOverlayViewRetryBtnTitle" = "Try again";
 "NVOverlayViewDefaultDescription" = "Server error";
 
+// main view
+"mainViewTitle" = "Dashboard";

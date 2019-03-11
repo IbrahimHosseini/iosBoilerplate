@@ -59,7 +59,7 @@ class BaseVC: UIViewController, UIGestureRecognizerDelegate {
         updateNavigationBar()
         updateSwipe()
         setNav()
-        
+        setMenu()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -67,6 +67,7 @@ class BaseVC: UIViewController, UIGestureRecognizerDelegate {
         styleLeftButtons()
         updateNavigationBar()
         setNav()
+        setMenu()
     }
     
     
@@ -134,12 +135,15 @@ class BaseVC: UIViewController, UIGestureRecognizerDelegate {
 extension BaseVC {
     
     
-    func setNav(title: String? = nil, largTitle: Bool = false, backgroundColor: UIColor? = nil) {
+    func setNav(title: String? = nil, largTitle: Bool = false, tinColor: UIColor? = nil) {
+        
+        navigationController?.navigationBar.barTintColor = tinColor
+        
         if title != nil {
             navigationItem.title = title
             
-            let attributes = [ NSAttributedString.Key.font: UIFont.numberMediumFont(ofSize: 15)!,
-                               NSAttributedString.Key.foregroundColor: Colors.white]
+            let attributes = [ NSAttributedString.Key.font: UIFont.numberBoldFont(ofSize: 35)!,
+                               NSAttributedString.Key.foregroundColor: Colors.black]
             
             if #available(iOS 11.0, *) {
                 self.navigationController?.navigationBar.prefersLargeTitles = largTitle
@@ -197,6 +201,8 @@ extension BaseVC {
         hTicket?.isActive = true
         
         self.navigationItem.leftBarButtonItems = [menuIcon]
+        
+        setupSideMenu()
         
     }
     

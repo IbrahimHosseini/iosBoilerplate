@@ -171,12 +171,22 @@ public let logout = "logout"
 public let cancel = "cancel"
 
 /**
- "logoutDesc"
+ "logout desc"
  
  All translations:
  
- en: "logoutDesc"
+ en: "logout desc"
  */
 public let logoutDesc = "logoutDesc"
+
+/**
+ "main view title"
+ 
+ All translations:
+ 
+ en: "main view title"
+ */
+public let mainViewTitle = "mainViewTitle"
+
 
 

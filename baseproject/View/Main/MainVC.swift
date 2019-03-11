@@ -21,10 +21,15 @@ class MainVC: BaseVC {
         super.viewDidLoad()
         viewDesign()
     }
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        setupSideMenu()
-        setMenu()
+        setNav(title: NVLocalized(mainViewTitle), largTitle: true, tinColor: Colors.green)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        setNav(title: NVLocalized(mainViewTitle), largTitle: true, tinColor: Colors.green)
     }
     
     //-----------------------

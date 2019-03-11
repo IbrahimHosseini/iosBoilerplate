@@ -29,3 +29,5 @@
 "NVOverlayViewRetryBtnTitle" = "تلاش مجدد";
 "NVOverlayViewDefaultDescription" = "اشکال در ارتباط با سرور";
 
+// main view
+"mainViewTitle" = "داشبرد";
