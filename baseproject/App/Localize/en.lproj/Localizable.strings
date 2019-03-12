@@ -29,5 +29,13 @@
 "NVOverlayViewRetryBtnTitle" = "Try again";
 "NVOverlayViewDefaultDescription" = "Server error";
 
-// main view
+//main view
 "mainViewTitle" = "Dashboard";
+
+
+//Main tabbar items
+"item1" = "Home";
+"item2" = "item2";
+"item3" = "item3";
+"item4" = "item4";
+"item5" = "Profile";

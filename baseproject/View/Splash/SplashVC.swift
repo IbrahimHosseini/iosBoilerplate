@@ -83,8 +83,12 @@ class SplashVC: BaseVC {
     }
     
     private func goToMain() {
-        let vc = self.storyboard?.instantiateViewController(withIdentifier: "MainVC") as! MainVC
+        
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "MainTabbarContainerVC") as! MainTabbarContainerVC
         self.navigationController?.pushViewController(vc, animated: true)
+        
+//        let vc = self.storyboard?.instantiateViewController(withIdentifier: "MainVC") as! MainVC
+//        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     private func goToLogin() {

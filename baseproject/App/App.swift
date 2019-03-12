@@ -52,7 +52,7 @@ class App {
     
     public var rootViewController: UINavigationController?
     
-//    public weak var mainTabbarController: MainTabbarCtrl?
+    public weak var mainTabbarController: MainTabbarVC?
     
     private(set) var loginStatus: LoginStatus = .logout
     

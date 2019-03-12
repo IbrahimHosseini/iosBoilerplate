@@ -73,6 +73,8 @@
 		28889AF2223524C800B0F5BA /* SideItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28889AF0223524C800B0F5BA /* SideItemCell.swift */; };
 		28889AF3223524C800B0F5BA /* SideItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28889AF1223524C800B0F5BA /* SideItemCell.xib */; };
 		28889AF6223526FF00B0F5BA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 28889AF4223526FF00B0F5BA /* Localizable.strings */; };
+		28889AF9223786BD00B0F5BA /* MainTabbarContainerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28889AF8223786BD00B0F5BA /* MainTabbarContainerVC.swift */; };
+		28889AFB2237887000B0F5BA /* MainTabbarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28889AFA2237887000B0F5BA /* MainTabbarVC.swift */; };
 		288B2BA421F2FBFD001A086B /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288B2BA321F2FBFD001A086B /* Reachability.swift */; };
 		288B2BD021F35868001A086B /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288B2BCF21F35868001A086B /* CustomLabel.swift */; };
 		28B06F6022254071004E525D /* UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B06F5F22254071004E525D /* UITests.swift */; };
@@ -184,6 +186,8 @@
 		28889AF0223524C800B0F5BA /* SideItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideItemCell.swift; sourceTree = "<group>"; };
 		28889AF1223524C800B0F5BA /* SideItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SideItemCell.xib; sourceTree = "<group>"; };
 		28889AF5223526FF00B0F5BA /* fa-IR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "fa-IR"; path = Localizable.strings; sourceTree = "<group>"; };
+		28889AF8223786BD00B0F5BA /* MainTabbarContainerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabbarContainerVC.swift; sourceTree = "<group>"; };
+		28889AFA2237887000B0F5BA /* MainTabbarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabbarVC.swift; sourceTree = "<group>"; };
 		288B2BA321F2FBFD001A086B /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		288B2BCF21F35868001A086B /* CustomLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
 		28B06F5D22254071004E525D /* UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -294,8 +298,8 @@
 		2831D6D121D8A3E200D5A5F8 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				28889AE82235218A00B0F5BA /* SideMenu */,
 				2831D72321D8B36700D5A5F8 /* Common */,
+				28889AE82235218A00B0F5BA /* SideMenu */,
 				2831D6D821D8A44700D5A5F8 /* Splash */,
 				2831D6DA21D8A45500D5A5F8 /* Register */,
 				2831D6D921D8A44E00D5A5F8 /* Main */,
@@ -446,6 +450,7 @@
 		2831D72321D8B36700D5A5F8 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				28889AF72237861D00B0F5BA /* MainTab */,
 				2831D72421D8B37900D5A5F8 /* CustomViews */,
 				2831D72521D8B3C400D5A5F8 /* BaseNavigationVC.swift */,
 				2831D71C21D8AE4A00D5A5F8 /* BaseVC.swift */,
@@ -638,6 +643,15 @@
 				28889AF1223524C800B0F5BA /* SideItemCell.xib */,
 			);
 			path = ItemCell;
+			sourceTree = "<group>";
+		};
+		28889AF72237861D00B0F5BA /* MainTab */ = {
+			isa = PBXGroup;
+			children = (
+				28889AF8223786BD00B0F5BA /* MainTabbarContainerVC.swift */,
+				28889AFA2237887000B0F5BA /* MainTabbarVC.swift */,
+			);
+			path = MainTab;
 			sourceTree = "<group>";
 		};
 		288B2BA221F2FB7B001A086B /* Internet Check */ = {
@@ -940,6 +954,7 @@
 				"${BUILT_PRODUCTS_DIR}/Presentr/Presentr.framework",
 				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/RAMAnimatedTabBarController/RAMAnimatedTabBarController.framework",
 				"${BUILT_PRODUCTS_DIR}/SCLAlertView/SCLAlertView.framework",
 				"${BUILT_PRODUCTS_DIR}/SideMenu/SideMenu.framework",
 				"${BUILT_PRODUCTS_DIR}/SkeletonView/SkeletonView.framework",
@@ -988,6 +1003,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Presentr.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RAMAnimatedTabBarController.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SCLAlertView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SideMenu.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SkeletonView.framework",
@@ -1090,6 +1106,7 @@
 				"${BUILT_PRODUCTS_DIR}/Presentr/Presentr.framework",
 				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/RAMAnimatedTabBarController/RAMAnimatedTabBarController.framework",
 				"${BUILT_PRODUCTS_DIR}/SCLAlertView/SCLAlertView.framework",
 				"${BUILT_PRODUCTS_DIR}/SideMenu/SideMenu.framework",
 				"${BUILT_PRODUCTS_DIR}/SkeletonView/SkeletonView.framework",
@@ -1136,6 +1153,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Presentr.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RAMAnimatedTabBarController.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SCLAlertView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SideMenu.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SkeletonView.framework",
@@ -1192,6 +1210,7 @@
 				"${BUILT_PRODUCTS_DIR}/Presentr/Presentr.framework",
 				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/RAMAnimatedTabBarController/RAMAnimatedTabBarController.framework",
 				"${BUILT_PRODUCTS_DIR}/SCLAlertView/SCLAlertView.framework",
 				"${BUILT_PRODUCTS_DIR}/SideMenu/SideMenu.framework",
 				"${BUILT_PRODUCTS_DIR}/SkeletonView/SkeletonView.framework",
@@ -1240,6 +1259,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Presentr.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RAMAnimatedTabBarController.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SCLAlertView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SideMenu.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SkeletonView.framework",
@@ -1303,6 +1323,7 @@
 				2831D73221D8B54400D5A5F8 /* CustomTextField.swift in Sources */,
 				2878702E22241CF60020CBCF /* Commons.swift in Sources */,
 				28889AEA223521A800B0F5BA /* SideVC.swift in Sources */,
+				28889AF9223786BD00B0F5BA /* MainTabbarContainerVC.swift in Sources */,
 				288B2BD021F35868001A086B /* CustomLabel.swift in Sources */,
 				2831D70B21D8A80B00D5A5F8 /* Configuration.swift in Sources */,
 				28889AED2235231A00B0F5BA /* MenuSection.swift in Sources */,
@@ -1311,6 +1332,7 @@
 				2831D70221D8A73500D5A5F8 /* Colors.swift in Sources */,
 				2831D72621D8B3C400D5A5F8 /* BaseNavigationVC.swift in Sources */,
 				2831D73621D8B55900D5A5F8 /* CustomButton.swift in Sources */,
+				28889AFB2237887000B0F5BA /* MainTabbarVC.swift in Sources */,
 				2831D73C21D8B93600D5A5F8 /* Currency.swift in Sources */,
 				28889AF2223524C800B0F5BA /* SideItemCell.swift in Sources */,
 				284C4AE221EC6D1400DAFDE1 /* NVImageView.swift in Sources */,

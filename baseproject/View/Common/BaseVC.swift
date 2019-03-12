@@ -78,6 +78,10 @@ class BaseVC: UIViewController, UIGestureRecognizerDelegate {
     //-----------------------
     //MARK: - functions
     //-----------------------
+    @objc internal func applicationDidBecomeActive(){
+        
+    }
+    
     private func updateSwipe() {
         var swipeBack = false
         if (self.navigationController?.viewControllers.count ?? 0) > 2 && backStatus == .showBackIfExist {

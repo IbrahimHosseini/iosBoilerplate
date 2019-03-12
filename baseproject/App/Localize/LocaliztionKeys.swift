@@ -188,5 +188,48 @@ public let logoutDesc = "logoutDesc"
  */
 public let mainViewTitle = "mainViewTitle"
 
+/**
+ "tabbar item 1"
+ 
+ All translations:
+ 
+ en: "tabbar item 1"
+ */
+public let item1 = "item1"
 
+/**
+ "tabbar item 2"
+ 
+ All translations:
+ 
+ en: "tabbar item 2"
+ */
+public let item2 = "item2"
+
+/**
+ "tabbar item 3"
+ 
+ All translations:
+ 
+ en: "tabbar item 3"
+ */
+public let item3 = "item3"
+
+/**
+ "tabbar item 4"
+ 
+ All translations:
+ 
+ en: "tabbar item 4"
+ */
+public let item4 = "item4"
+
+/**
+ "tabbar item 5"
+ 
+ All translations:
+ 
+ en: "tabbar item 5"
+ */
+public let item5 = "item5"
 

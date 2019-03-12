@@ -41,6 +41,7 @@ target 'baseproject' do
     pod 'BulletinBoard'
     pod 'NotificationBannerSwift'
     pod 'Localize-Swift', '~> 2.0'
+    pod 'RAMAnimatedTabBarController'
 
 	def testing_pods
     		pod 'Quick'
