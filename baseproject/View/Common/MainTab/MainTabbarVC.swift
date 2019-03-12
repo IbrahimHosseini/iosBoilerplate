@@ -20,6 +20,7 @@ class MainTabbarVC: RAMAnimatedTabBarController {
         self.tabBar.items!.forEach({ (item: UITabBarItem) in
             let i = item as! RAMAnimatedTabBarItem
             i.animation = RAMBounceAnimation()
+            i.animation.duration = 0.8
             i.animation.iconSelectedColor = Colors.blue
             i.animation.textSelectedColor = Colors.blue
         })
@@ -63,7 +64,6 @@ class MainTabbarVC: RAMAnimatedTabBarController {
             item.textFontSize = 11
 
         }
-        
         
         super.viewDidLoad()
         self.tabBar.tintColor = Colors.gray
