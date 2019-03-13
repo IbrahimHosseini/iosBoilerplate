@@ -233,3 +233,93 @@ public let item4 = "item4"
  */
 public let item5 = "item5"
 
+/**
+ "regular font"
+ 
+ All translations:
+ 
+ en: "regular font"
+ */
+public let regular_font = "regularFont"
+
+
+/**
+ "bold font"
+ 
+ All translations:
+ 
+ en: "bold font"
+ */
+public let bold_font = "boldFont"
+
+
+/**
+ "number font"
+ 
+ All translations:
+ 
+ en: "number font"
+ */
+public let number_font = "numberFont"
+
+
+/**
+ "number bold font"
+ 
+ All translations:
+ 
+ en: "number bold font"
+ */
+public let number_bold_font = "numberBoldFont"
+
+
+/**
+ "number medium font"
+ 
+ All translations:
+ 
+ en: "number medium font"
+ */
+public let number_medium_font = "numberMediumFont"
+
+
+/**
+ "number light font"
+ 
+ All translations:
+ 
+ en: "number light font"
+ */
+public let number_light_font = "numberLightFont"
+
+
+/**
+ "light font"
+ 
+ All translations:
+ 
+ en: "light font"
+ */
+public let light_font = "lightFont"
+
+
+/**
+ "italic font"
+ 
+ All translations:
+ 
+ en: "italic font"
+ */
+public let italic_font = "italicFont"
+
+
+/**
+ "medium font"
+ 
+ All translations:
+ 
+ en: "medium font"
+ */
+public let medium_font = "mediumFont"
+
+

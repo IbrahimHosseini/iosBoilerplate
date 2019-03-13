@@ -17,6 +17,17 @@
 "HttpCode429" = "Try again later";
 "HttpCode502" = "Server updating, try again later";
 
+//Font name
+"regularFont" = "Roboto-Regular";
+"boldFont" = "Roboto-Bold";
+"numberFont" = "Roboto-Regular";
+"numberBoldFont" = "Roboto-Bold";
+"numberMediumFont" = "Roboto-Medium";
+"numberLightFont" = "Roboto-Light";
+"lightFont" = "Roboto-Light";
+"italicFont" = "Roboto-Italic";
+"mediumFont" = "Roboto-Medium";
+
 //General
 "NoItemToShow" = "No item";
 "undrestood" = "OK";
