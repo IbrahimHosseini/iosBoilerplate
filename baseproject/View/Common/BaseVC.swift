@@ -58,7 +58,6 @@ class BaseVC: UIViewController, UIGestureRecognizerDelegate {
         styleLeftButtons()
         updateNavigationBar()
         updateSwipe()
-        setNav()
         setMenu()
     }
     
@@ -66,7 +65,6 @@ class BaseVC: UIViewController, UIGestureRecognizerDelegate {
         super.viewWillAppear(animated)
         styleLeftButtons()
         updateNavigationBar()
-        setNav()
         setMenu()
     }
     
@@ -142,6 +140,8 @@ extension BaseVC {
     func setNav(title: String? = nil, largTitle: Bool = false, tinColor: UIColor? = nil) {
         
         navigationController?.navigationBar.barTintColor = tinColor
+        
+        
         
         if title != nil {
             navigationItem.title = title
