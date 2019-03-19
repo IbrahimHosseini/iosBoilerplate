@@ -12,39 +12,39 @@ import Localize_Swift
 
 extension UIFont {
     
-    class func regularFont(ofSize fontSize: CGFloat) -> UIFont? {
+    class func regular(ofSize fontSize: CGFloat) -> UIFont? {
         return UIFont(name: NVLocalized(regular_font), size: fontSize)
     }
     
-    class func boldFont(ofSize fontSize: CGFloat) -> UIFont? {
+    class func bold(ofSize fontSize: CGFloat) -> UIFont? {
         return UIFont(name: NVLocalized(bold_font), size: fontSize)
     }
     
-    class func numberFont(ofSize fontSize: CGFloat) -> UIFont? {
+    class func number(ofSize fontSize: CGFloat) -> UIFont? {
         return UIFont(name: NVLocalized(number_font), size: fontSize)
     }
     
-    class func numberBoldFont(ofSize fontSize: CGFloat) -> UIFont? {
+    class func numberBold(ofSize fontSize: CGFloat) -> UIFont? {
         return UIFont(name: NVLocalized(number_bold_font), size: fontSize)
     }
     
-    class func numberMediumFont(ofSize fontSize: CGFloat) -> UIFont? {
+    class func numberMedium(ofSize fontSize: CGFloat) -> UIFont? {
         return UIFont(name: NVLocalized(number_medium_font), size: fontSize)
     }
     
-    class func numberLightFont(ofSize fontSize: CGFloat) -> UIFont? {
+    class func numberLight(ofSize fontSize: CGFloat) -> UIFont? {
         return UIFont(name: NVLocalized(number_light_font), size: fontSize)
     }
     
-    class func lightFont(ofSize fontSize: CGFloat) -> UIFont? {
+    class func light(ofSize fontSize: CGFloat) -> UIFont? {
         return UIFont(name: NVLocalized(light_font), size: fontSize)
     }
     
-    class func italicFont(ofSize fontSize: CGFloat) -> UIFont? {
+    class func italic(ofSize fontSize: CGFloat) -> UIFont? {
         return UIFont(name: NVLocalized(italic_font), size: fontSize)
     }
     
-    class func mediumFont(ofSize fontSize: CGFloat) -> UIFont? {
+    class func medium(ofSize fontSize: CGFloat) -> UIFont? {
         return UIFont(name: NVLocalized(medium_font), size: fontSize)
     }
     

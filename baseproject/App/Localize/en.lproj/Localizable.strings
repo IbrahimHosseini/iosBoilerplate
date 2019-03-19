@@ -18,15 +18,15 @@
 "HttpCode502" = "Server updating, try again later";
 
 //Font name
-"regularFont" = "Roboto-Regular";
-"boldFont" = "Roboto-Bold";
-"numberFont" = "Roboto-Regular";
-"numberBoldFont" = "Roboto-Bold";
-"numberMediumFont" = "Roboto-Medium";
-"numberLightFont" = "Roboto-Light";
-"lightFont" = "Roboto-Light";
-"italicFont" = "Roboto-Italic";
-"mediumFont" = "Roboto-Medium";
+"regular" = "Roboto-Regular";
+"bold" = "Roboto-Bold";
+"number" = "Roboto-Regular";
+"numberBold" = "Roboto-Bold";
+"numberMedium" = "Roboto-Medium";
+"numberLight" = "Roboto-Light";
+"light" = "Roboto-Light";
+"italic" = "Roboto-Italic";
+"medium" = "Roboto-Medium";
 
 //General
 "NoItemToShow" = "No item";

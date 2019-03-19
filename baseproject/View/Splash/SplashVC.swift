@@ -58,7 +58,7 @@ class SplashVC: BaseVC {
         
         retryButton.setTitleColor(Colors.blue, for: .normal)
         retryButton.setTitle(NVLocalized(NVOverlayViewRetryBtnTitle), for: .normal)
-        retryButton.titleLabel?.font = UIFont.regularFont(ofSize: 15)
+        retryButton.titleLabel?.font = UIFont.regular(ofSize: 15)
         retryButton.isHidden = true
         
         indicator.color = Colors.blue

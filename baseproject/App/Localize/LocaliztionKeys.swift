@@ -240,7 +240,7 @@ public let item5 = "item5"
  
  en: "regular font"
  */
-public let regular_font = "regularFont"
+public let regular_font = "regular"
 
 
 /**
@@ -250,7 +250,7 @@ public let regular_font = "regularFont"
  
  en: "bold font"
  */
-public let bold_font = "boldFont"
+public let bold_font = "bold"
 
 
 /**
@@ -260,7 +260,7 @@ public let bold_font = "boldFont"
  
  en: "number font"
  */
-public let number_font = "numberFont"
+public let number_font = "number"
 
 
 /**
@@ -270,7 +270,7 @@ public let number_font = "numberFont"
  
  en: "number bold font"
  */
-public let number_bold_font = "numberBoldFont"
+public let number_bold_font = "numberBold"
 
 
 /**
@@ -280,7 +280,7 @@ public let number_bold_font = "numberBoldFont"
  
  en: "number medium font"
  */
-public let number_medium_font = "numberMediumFont"
+public let number_medium_font = "numberMedium"
 
 
 /**
@@ -290,7 +290,7 @@ public let number_medium_font = "numberMediumFont"
  
  en: "number light font"
  */
-public let number_light_font = "numberLightFont"
+public let number_light_font = "numberLight"
 
 
 /**
@@ -300,7 +300,7 @@ public let number_light_font = "numberLightFont"
  
  en: "light font"
  */
-public let light_font = "lightFont"
+public let light_font = "light"
 
 
 /**
@@ -310,7 +310,7 @@ public let light_font = "lightFont"
  
  en: "italic font"
  */
-public let italic_font = "italicFont"
+public let italic_font = "italic"
 
 
 /**
@@ -320,6 +320,6 @@ public let italic_font = "italicFont"
  
  en: "medium font"
  */
-public let medium_font = "mediumFont"
+public let medium_font = "medium"
 
 

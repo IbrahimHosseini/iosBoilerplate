@@ -20,7 +20,7 @@ class SideItemCell: UITableViewCell {
         super.awakeFromNib()
         
         titleLabel.textColor = Colors.white
-        titleLabel.font = UIFont.numberFont(ofSize: 15)
+        titleLabel.font = UIFont.number(ofSize: 15)
         
         bgView.backgroundColor = Colors.gray
         

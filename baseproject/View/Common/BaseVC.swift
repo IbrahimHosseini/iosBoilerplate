@@ -146,7 +146,7 @@ extension BaseVC {
         if title != nil {
             navigationItem.title = title
             
-            let attributes = [ NSAttributedString.Key.font: UIFont.numberBoldFont(ofSize: 35)!,
+            let attributes = [ NSAttributedString.Key.font: UIFont.numberBold(ofSize: 35)!,
                                NSAttributedString.Key.foregroundColor: Colors.black]
             
             if #available(iOS 11.0, *) {

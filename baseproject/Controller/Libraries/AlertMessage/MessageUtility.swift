@@ -23,9 +23,9 @@ class AletrView {
         
         let appearance = SCLAlertView.SCLAppearance(
             kDefaultShadowOpacity: 0.5,
-            kTitleFont: UIFont.numberBoldFont(ofSize: 10)!,
-            kTextFont: UIFont.numberMediumFont(ofSize: 13)!,
-            kButtonFont: UIFont.numberMediumFont(ofSize: 15)!,
+            kTitleFont: UIFont.numberBold(ofSize: 10)!,
+            kTextFont: UIFont.numberMedium(ofSize: 13)!,
+            kButtonFont: UIFont.numberMedium(ofSize: 15)!,
             showCloseButton: false,
             showCircularIcon: true,
             contentViewCornerRadius: 15.0,

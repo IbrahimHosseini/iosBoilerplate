@@ -18,15 +18,15 @@
 "HttpCode502" = "سرور در حال بروزرسانی است. کمی بعد تلاش کنید";
 
 //Font name
-"regularFont" = "IRANSansMobile";
-"boldFont" = "IRANSansMobile-Bold";
-"numberFont" = "IRANSansMobileFaNum";
-"numberBoldFont" = "IRANSansMobileFaNum-Bold";
-"numberMediumFont" = "IRANSansMobileFaNum-Medium";
-"numberLightFont" = "IRANSansMobileFaNum-Light";
-"lightFont" = "IRANSansMobile-Light";
-"italicFont" = "IRANSansMobile";
-"mediumFont" = "IRANSansMobile-Medium";
+"regular" = "IRANSansMobile";
+"bold" = "IRANSansMobile-Bold";
+"number" = "IRANSansMobileFaNum";
+"numberBold" = "IRANSansMobileFaNum-Bold";
+"numberMedium" = "IRANSansMobileFaNum-Medium";
+"numberLight" = "IRANSansMobileFaNum-Light";
+"light" = "IRANSansMobile-Light";
+"italic" = "IRANSansMobile";
+"medium" = "IRANSansMobile-Medium";
 
 //General
 "NoItemToShow" = "هیج آیتمی برای نمایش موجود نیست";
