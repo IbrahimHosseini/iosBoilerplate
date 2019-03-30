@@ -12,7 +12,7 @@ target 'baseproject' do
     pod 'FontAwesome.swift'
     pod 'Alamofire' 
     pod 'AlamofireObjectMapper'
-    pod 'GRMustache.swift'
+    pod 'GRMustache.swift4'  , '~> 3.0'
     pod 'Eureka'
     pod 'iCarousel'
     pod 'PromiseKit/Alamofire' , '~> 4.0'

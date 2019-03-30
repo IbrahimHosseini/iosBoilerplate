@@ -65,7 +65,7 @@ PODS:
     - GoogleUtilities/Logger
   - GoogleUtilities/UserDefaults (5.3.7):
     - GoogleUtilities/Logger
-  - GRMustache.swift (2.0.0)
+  - GRMustache.swift4 (3.0.0)
   - iCarousel (1.8.3)
   - ImagePicker (3.1.0)
   - INSPhotoGallery (1.2.7)
@@ -130,7 +130,7 @@ DEPENDENCIES:
   - Firebase/Core
   - Firebase/Messaging
   - FontAwesome.swift
-  - GRMustache.swift
+  - GRMustache.swift4 (~> 3.0)
   - iCarousel
   - ImagePicker
   - INSPhotoGallery
@@ -178,7 +178,7 @@ SPEC REPOS:
     - FontAwesome.swift
     - GoogleAppMeasurement
     - GoogleUtilities
-    - GRMustache.swift
+    - GRMustache.swift4
     - iCarousel
     - ImagePicker
     - INSPhotoGallery
@@ -231,7 +231,7 @@ SPEC CHECKSUMS:
   FontAwesome.swift: 9b5a9b9adb6d48b2d37c1e789889ef377cfbc205
   GoogleAppMeasurement: 008e04ecd8efedd97a693aea8634aefe220bd26e
   GoogleUtilities: 111a012f4c3a29c9e7c954c082fafd6ee3c999c0
-  GRMustache.swift: 8a547c12bea16052071b2b540af83d770075f0eb
+  GRMustache.swift4: 86ae782779f723ed8dd1625a63df193b2eed3bce
   iCarousel: d782f635afac190c49bb8ee455882284cff8b85f
   ImagePicker: db1fd7626337b2577c523bef5f499bbbe5a37079
   INSPhotoGallery: a4e698e3d6338d9016328d6747488a2a111d94e2
@@ -266,6 +266,6 @@ SPEC CHECKSUMS:
   SwiftyUserDefaults: 3d273b1739b68ada3145dc754a70ec775bc5c8be
   Toaster: a6c9532de1ded8105e77376f7dffeb2e12b46dbb
 
-PODFILE CHECKSUM: 9c6321e69e5bedc4d76b5386e0de039e6b710b90
+PODFILE CHECKSUM: 6c2aace89d419542e9b4b612989f51bc095c5bd7
 
 COCOAPODS: 1.6.0.beta.2
