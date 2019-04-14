@@ -75,7 +75,7 @@ class NVImageView: UIImageView {
                     })))
             
             self.kf.setImage(with: urlObj,
-                             placeholder: nil,
+                             placeholder: UIImage(named: "no_image"),
                              options: nil,
                              progressBlock: nil) { (img:Image?, error:NSError?, cacheType:CacheType, url:URL?) in
                                 self.indicator.isHidden = true
