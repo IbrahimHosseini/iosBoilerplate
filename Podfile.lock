@@ -5,7 +5,6 @@ PODS:
     - Alamofire (~> 4.7)
     - ObjectMapper (~> 3.4)
   - AlignedCollectionViewFlowLayout (1.1.2)
-  - APExtensions/ViewState (5.0.1)
   - AwesomeCache (5.0)
   - BulletinBoard (3.0.0)
   - Eureka (4.3.1)
@@ -69,8 +68,6 @@ PODS:
   - iCarousel (1.8.3)
   - ImagePicker (3.1.0)
   - INSPhotoGallery (1.2.7)
-  - KeyboardAvoidingView (3.0.0):
-    - APExtensions/ViewState (>= 4.5.0)
   - Kingfisher (4.10.1)
   - Localize-Swift (2.0.0)
   - MarqueeLabel/Swift (3.2.0)
@@ -108,6 +105,7 @@ PODS:
   - RAMAnimatedTabBarController (4.0.1)
   - SCLAlertView (0.8)
   - SideMenu (5.0.1)
+  - SKCountryPicker (1.2.0)
   - SkeletonView (1.4.1)
   - SnapKit (4.2.0)
   - SocketRocket (0.5.1)
@@ -134,7 +132,6 @@ DEPENDENCIES:
   - iCarousel
   - ImagePicker
   - INSPhotoGallery
-  - KeyboardAvoidingView
   - Kingfisher
   - Localize-Swift (~> 2.0)
   - Material
@@ -152,6 +149,7 @@ DEPENDENCIES:
   - RAMAnimatedTabBarController
   - SCLAlertView
   - SideMenu
+  - SKCountryPicker
   - SkeletonView
   - SnapKit
   - StompClientLib
@@ -165,7 +163,6 @@ SPEC REPOS:
     - Alamofire
     - AlamofireObjectMapper
     - AlignedCollectionViewFlowLayout
-    - APExtensions
     - AwesomeCache
     - BulletinBoard
     - Eureka
@@ -182,7 +179,6 @@ SPEC REPOS:
     - iCarousel
     - ImagePicker
     - INSPhotoGallery
-    - KeyboardAvoidingView
     - Kingfisher
     - Localize-Swift
     - MarqueeLabel
@@ -204,6 +200,7 @@ SPEC REPOS:
     - RAMAnimatedTabBarController
     - SCLAlertView
     - SideMenu
+    - SKCountryPicker
     - SkeletonView
     - SnapKit
     - SocketRocket
@@ -218,7 +215,6 @@ SPEC CHECKSUMS:
   Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
   AlamofireObjectMapper: 92b6ce2423a9d159e686f6a1d514a009bf903ddc
   AlignedCollectionViewFlowLayout: ee2ef451e741ec08f8e0967d828001e2f051c20a
-  APExtensions: f921e817747d5f58cd78d3e0239407fa4e0cabce
   AwesomeCache: d8906955242173357caa0be0214d5e77dec32cc5
   BulletinBoard: 927f4f9fd22503ceecd71bfc830fd65d5996593a
   Eureka: 28ea296f06710f6745266b71f17862048941a32d
@@ -235,7 +231,6 @@ SPEC CHECKSUMS:
   iCarousel: d782f635afac190c49bb8ee455882284cff8b85f
   ImagePicker: db1fd7626337b2577c523bef5f499bbbe5a37079
   INSPhotoGallery: a4e698e3d6338d9016328d6747488a2a111d94e2
-  KeyboardAvoidingView: 0b689b4169f655192a20af70e8951395691ef1fc
   Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
   Localize-Swift: c798ec9286494866f7068f85f7c71283ac5bdab4
   MarqueeLabel: 440a502b91a9179bd98f9fff00ba1150650a1c0e
@@ -257,6 +252,7 @@ SPEC CHECKSUMS:
   RAMAnimatedTabBarController: 677d6f7ec7e88b1089486f4db49b0a5067e8ad1c
   SCLAlertView: 6a77bb2edfc65e04dbe57725546cb4107a506b85
   SideMenu: 87efd943737bb83aedf0358884d09fcf5576636d
+  SKCountryPicker: f0087598e342ee70a087ab334a28ba9ee37f1df2
   SkeletonView: 60d6ce7edb0cb4c7758db33c74add50392b3c475
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
   SocketRocket: d57c7159b83c3c6655745cd15302aa24b6bae531
@@ -266,6 +262,6 @@ SPEC CHECKSUMS:
   SwiftyUserDefaults: 3d273b1739b68ada3145dc754a70ec775bc5c8be
   Toaster: a6c9532de1ded8105e77376f7dffeb2e12b46dbb
 
-PODFILE CHECKSUM: 6c2aace89d419542e9b4b612989f51bc095c5bd7
+PODFILE CHECKSUM: e06a069b0d5e75d4168b60a60d40b5378bb0db1b
 
 COCOAPODS: 1.6.0.beta.2

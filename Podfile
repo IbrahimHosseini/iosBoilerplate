@@ -1,4 +1,4 @@
- platform :ios, '9.0'
+ platform :ios, '10.0'
 
 target 'baseproject' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
@@ -33,7 +33,6 @@ target 'baseproject' do
     pod 'Firebase/Core'
     pod 'Firebase/Messaging'
     pod 'AwesomeCache'
-    pod "KeyboardAvoidingView"
     pod "StompClientLib"
     pod "SkeletonView"
     pod 'SideMenu'
@@ -42,6 +41,7 @@ target 'baseproject' do
     pod 'NotificationBannerSwift'
     pod 'Localize-Swift', '~> 2.0'
     pod 'RAMAnimatedTabBarController'
+    pod 'SKCountryPicker'
 
 	def testing_pods
     		pod 'Quick'
