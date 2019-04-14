@@ -10,8 +10,11 @@ import Foundation
 
 
 enum CurrencyLabel: String {
-    case rial = "ریال"
-    case toman = "تومان"
+    case irr = "ریال" //rial
+    case toman = "تومان" //toman
+    case usd = "$" //dolar
+    case eur = "€" //eure
+    case gbp = "£" // pound
 }
 
 //-------------------------------------
@@ -24,7 +27,7 @@ extension String {
     }
     
     func toCurrency()-> String {
-        return "\(number2Decimal.n2d(number: self)) \(CurrencyLabel.rial.rawValue)"
+        return "\(number2Decimal.n2d(number: self)) \(CurrencyLabel.irr.rawValue)"
     }
 }
 
