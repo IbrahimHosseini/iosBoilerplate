@@ -10,39 +10,34 @@ import Foundation
 import ObjectMapper
 import SwiftyUserDefaults
 
-public protocol NVMappable: Mappable{
-    init();
+public protocol NVMappable: Mappable {
+    init()
 }
 
 extension UserDefaults {
-    public subscript<T>(key: DefaultsKey<T>) -> T? where T:NVMappable {
+    public subscript<T>(key: DefaultsKey<T>) -> T? where T: NVMappable {
         get {
             if let str = string(forKey: key._key) {
                 return Mapper<T>().map(JSONString: str)
             }
             return nil
         }
-        set {
-            set(key, newValue?.toJSONString())
-            
-        }
+        set { set(key, newValue?.toJSONString()) }
     }
 }
 
 
 extension UserDefaults {
-    public subscript<T:NVMappable>(key: DefaultsKey<T?>) -> T? {
+    public subscript<T: NVMappable>(key: DefaultsKey<T?>) -> T? {
         get {
             if let str = string(forKey: key._key){
                 return Mapper<T>().map(JSONString: str)
             }
             return nil
         }
-        set { set(key, newValue?.toJSONString())
-            
-        }
+        set { set(key, newValue?.toJSONString()) }
     }
-    public subscript<T:NVMappable>(key: DefaultsKey<T>) -> T {
+    public subscript<T: NVMappable>(key: DefaultsKey<T>) -> T {
         get {
             if let str = string(forKey: key._key){
                 return Mapper<T>().map(JSONString: str) ?? T()
