@@ -15,7 +15,11 @@ public class Colors : NSObject {
     private struct Cache {
         
         static let black: UIColor = UIColor(red: 0.000, green: 0.000, blue: 0.000, alpha: 1.000)
-        static let gray: UIColor = UIColor(red: 0.490, green: 0.490, blue: 0.490, alpha: 1.000)
+        static let gray: UIColor = UIColor(red: 0.557, green: 0.557, blue: 0.576, alpha: 1.000)
+        static let midGray: UIColor = UIColor(red: 0.780, green: 0.780, blue: 0.800, alpha: 1.000)
+        static let lightMidGray: UIColor = UIColor(red: 0.820, green: 0.820, blue: 0.839, alpha: 1.000)
+        static let lightGray: UIColor = UIColor(red: 0.898, green: 0.898, blue: 0.918, alpha: 1.000)
+        static let extraLightGray: UIColor = UIColor(red: 0.937, green: 0.937, blue: 0.957, alpha: 1.000)
         static let white: UIColor = UIColor(red: 1.000, green: 1.000, blue: 1.000, alpha: 1.000)
         static let red: UIColor = UIColor(red: 1.000, green: 0.231, blue: 0.188, alpha: 1)
         static let orange: UIColor = UIColor(red: 1.000, green: 0.584, blue: 0.000, alpha: 1)
@@ -25,13 +29,17 @@ public class Colors : NSObject {
         static let blue: UIColor = UIColor(red: 0.000, green: 0.478, blue: 1.000, alpha: 1)
         static let purple: UIColor = UIColor(red: 0.345, green: 0.337, blue: 0.839, alpha: 1)
         static let pink: UIColor = UIColor(red: 0.345, green: 0.337, blue: 0.839, alpha: 1)
-        static let background: UIColor = UIColor(red: 0.490, green: 0.490, blue: 0.490, alpha: 0.05)
+        static let background: UIColor = UIColor(red: 0.937, green: 0.937, blue: 0.957, alpha: 1.000)
         
     }
     
     //// Colors
     @objc public dynamic class var black: UIColor { return Cache.black }
     @objc public dynamic class var gray: UIColor { return Cache.gray }
+    @objc public dynamic class var midGray: UIColor { return Cache.midGray }
+    @objc public dynamic class var lightMidGray: UIColor { return Cache.lightMidGray }
+    @objc public dynamic class var lightGray: UIColor { return Cache.lightGray }
+    @objc public dynamic class var extraLightGray: UIColor { return Cache.extraLightGray }
     @objc public dynamic class var white: UIColor { return Cache.white }
     @objc public dynamic class var red: UIColor { return Cache.red }
     @objc public dynamic class var orange: UIColor { return Cache.orange }
