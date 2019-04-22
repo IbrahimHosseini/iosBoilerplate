@@ -42,6 +42,7 @@ target 'baseproject' do
     pod 'Localize-Swift', '~> 2.0'
     pod 'RAMAnimatedTabBarController'
     pod 'SKCountryPicker'
+    pod 'KeyboardAvoidingView', '~> 4.0'
 
 	def testing_pods
     		pod 'Quick'

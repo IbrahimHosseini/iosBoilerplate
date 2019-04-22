@@ -5,6 +5,7 @@ PODS:
     - Alamofire (~> 4.7)
     - ObjectMapper (~> 3.4)
   - AlignedCollectionViewFlowLayout (1.1.2)
+  - APExtensions/ViewState (7.0.1)
   - AwesomeCache (5.0)
   - BulletinBoard (3.0.0)
   - Eureka (4.3.1)
@@ -68,6 +69,8 @@ PODS:
   - iCarousel (1.8.3)
   - ImagePicker (3.1.0)
   - INSPhotoGallery (1.2.7)
+  - KeyboardAvoidingView (4.0.0):
+    - APExtensions/ViewState (>= 7.0.0)
   - Kingfisher (4.10.1)
   - Localize-Swift (2.0.0)
   - MarqueeLabel/Swift (3.2.0)
@@ -132,6 +135,7 @@ DEPENDENCIES:
   - iCarousel
   - ImagePicker
   - INSPhotoGallery
+  - KeyboardAvoidingView (~> 4.0)
   - Kingfisher
   - Localize-Swift (~> 2.0)
   - Material
@@ -163,6 +167,7 @@ SPEC REPOS:
     - Alamofire
     - AlamofireObjectMapper
     - AlignedCollectionViewFlowLayout
+    - APExtensions
     - AwesomeCache
     - BulletinBoard
     - Eureka
@@ -179,6 +184,7 @@ SPEC REPOS:
     - iCarousel
     - ImagePicker
     - INSPhotoGallery
+    - KeyboardAvoidingView
     - Kingfisher
     - Localize-Swift
     - MarqueeLabel
@@ -215,6 +221,7 @@ SPEC CHECKSUMS:
   Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
   AlamofireObjectMapper: 92b6ce2423a9d159e686f6a1d514a009bf903ddc
   AlignedCollectionViewFlowLayout: ee2ef451e741ec08f8e0967d828001e2f051c20a
+  APExtensions: 9a7a7b6ff5b9785b245962de89fbbdaf4c10f10e
   AwesomeCache: d8906955242173357caa0be0214d5e77dec32cc5
   BulletinBoard: 927f4f9fd22503ceecd71bfc830fd65d5996593a
   Eureka: 28ea296f06710f6745266b71f17862048941a32d
@@ -231,6 +238,7 @@ SPEC CHECKSUMS:
   iCarousel: d782f635afac190c49bb8ee455882284cff8b85f
   ImagePicker: db1fd7626337b2577c523bef5f499bbbe5a37079
   INSPhotoGallery: a4e698e3d6338d9016328d6747488a2a111d94e2
+  KeyboardAvoidingView: edbfcb705eb522dc080e42d082cb3b28f79f9879
   Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
   Localize-Swift: c798ec9286494866f7068f85f7c71283ac5bdab4
   MarqueeLabel: 440a502b91a9179bd98f9fff00ba1150650a1c0e
@@ -262,6 +270,6 @@ SPEC CHECKSUMS:
   SwiftyUserDefaults: 3d273b1739b68ada3145dc754a70ec775bc5c8be
   Toaster: a6c9532de1ded8105e77376f7dffeb2e12b46dbb
 
-PODFILE CHECKSUM: e06a069b0d5e75d4168b60a60d40b5378bb0db1b
+PODFILE CHECKSUM: dbd985759ca2501d9e708ea231689a49cd870422
 
 COCOAPODS: 1.6.0.beta.2
