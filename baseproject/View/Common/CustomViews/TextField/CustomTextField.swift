@@ -42,7 +42,7 @@ extension CustomTextField: TextFieldDelegate {
     
     private func initTextField() {
         
-        textField.dividerNormalColor = Colors.black
+        textField.dividerNormalColor = Colors.gray
         textField.dividerActiveColor = Colors.blue
         textField.font = UIFont.regular(ofSize: 15)
         textField.textAlignment = .right
@@ -51,7 +51,7 @@ extension CustomTextField: TextFieldDelegate {
         textField.isPlaceholderUppercasedWhenEditing = true
         textField.placeholderActiveColor = Colors.blue
         textField.placeholderNormalColor = Colors.blue
-        textField.placeholderLabel.textColor = Colors.black
+        textField.placeholderLabel.textColor = Colors.lightGray
         textField.textColor = Colors.white
         //        textField.attributedPlaceholder = NSAttributedString(string: "placeholder text", attributes: [NSAttributedString.Key.foregroundColor: Colors.materialLight])
         
