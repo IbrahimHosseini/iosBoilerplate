@@ -45,14 +45,13 @@ extension CustomTextField: TextFieldDelegate {
         textField.dividerNormalColor = Colors.gray
         textField.dividerActiveColor = Colors.blue
         textField.font = UIFont.regular(ofSize: 15)
-        textField.textAlignment = .right
         textField.isPlaceholderAnimated = true
         textField.placeholderVerticalOffset = 30.0
         textField.isPlaceholderUppercasedWhenEditing = true
         textField.placeholderActiveColor = Colors.blue
         textField.placeholderNormalColor = Colors.blue
         textField.placeholderLabel.textColor = Colors.lightGray
-        textField.textColor = Colors.white
+        textField.textColor = Colors.gray
         //        textField.attributedPlaceholder = NSAttributedString(string: "placeholder text", attributes: [NSAttributedString.Key.foregroundColor: Colors.materialLight])
         
         textField.delegate = self
