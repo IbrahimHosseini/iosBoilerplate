@@ -25,7 +25,7 @@ class CustomButton: CustomNibView {
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        btn.backgroundColor = Colors.black
+        btn.backgroundColor = Colors.blue
         btn.setTitleColor(Colors.white, for: .normal)
         btn.titleLabel?.font = UIFont.medium(ofSize: 16)
         
