@@ -60,5 +60,17 @@ target 'baseproject' do
 
 end
 
+ # select libraries who have different swift version
+
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    if ['ImagePicker', 'Toaster', 'ObjectMapper', 'Alamofire', 'AlamofireObjectMapper', 'GRMustache.swift4', 'PromiseKit/Alamofire'].include? target.name
+      target.build_configurations.each do |config|
+        config.build_settings['SWIFT_VERSION'] = '4'
+      end
+    end
+  end
+end
+
 
 
