@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QtG-99-ut4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -236,44 +236,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hfE-MA-YZY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-3414" y="-2088"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="Nel-B5-EbP">
-            <objects>
-                <viewController id="QtG-99-ut4" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="AjJ-LB-iBn">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="16j-vn-uGd" customClass="CustomButton" customModule="baseproject" customModuleProvider="target">
-                                <rect key="frame" x="69" y="334" width="240" height="50"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="240" id="Ogb-lC-U0R"/>
-                                    <constraint firstAttribute="height" constant="50" id="wvl-zV-EnK"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VCE-gJ-ycn" customClass="CustomTextField" customModule="baseproject" customModuleProvider="target">
-                                <rect key="frame" x="68" y="264" width="240" height="50"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="240" id="RI0-V5-ATl"/>
-                                    <constraint firstAttribute="height" constant="50" id="j1F-L9-xv1"/>
-                                </constraints>
-                            </view>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="16j-vn-uGd" firstAttribute="centerY" secondItem="AjJ-LB-iBn" secondAttribute="centerY" id="hnH-xY-bPb"/>
-                            <constraint firstItem="16j-vn-uGd" firstAttribute="top" secondItem="VCE-gJ-ycn" secondAttribute="bottom" constant="16" id="kXC-aS-sZZ"/>
-                            <constraint firstItem="16j-vn-uGd" firstAttribute="centerX" secondItem="AjJ-LB-iBn" secondAttribute="centerX" id="vuA-Li-V9R"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="M1e-yy-vTE"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="D0J-nR-hCq" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-484" y="-2189.0554722638681"/>
         </scene>
         <!--Main Tabbar ContainerVC-->
         <scene sceneID="cR0-DM-Xo7">
