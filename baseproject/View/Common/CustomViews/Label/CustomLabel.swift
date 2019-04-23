@@ -22,9 +22,9 @@ class CustomLabel: UILabel {
     }
     
     func commonInit() {
-        self.textColor = Colors.black
+        self.textColor = Colors.gray
         self.font = UIFont.regular(ofSize: 15)
-        setProperties(border: 0.0, border: Colors.black)
+        setProperties(border: 0.0, border: Colors.lightMidGray)
     }
     
     func setProperties(border with: Float, border color: UIColor) {
