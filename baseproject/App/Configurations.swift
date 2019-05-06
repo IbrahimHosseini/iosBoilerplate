@@ -2,7 +2,7 @@
 //  Configurations.swift
 //  baseproject
 //
-//  Created by Pazandish on 1/14/19.
+//  Created by sehosseini on 1/14/19.
 //  Copyright © 2019 sehosseini. All rights reserved.
 //
 
@@ -45,7 +45,7 @@ class Configurations {
             return rurl
         } else {
             if rurl != "" {
-                return getBaseUrl(rurl:"static/public/" + rurl)// + "?token=\(App.shared.userToken!)")
+                return getBaseUrl(rurl:"static/public/" + rurl)
             } else {
                 return ""
             }
@@ -70,7 +70,4 @@ class Configurations {
         }
     }
     
-    
-    //TODO:style needs to go struct
-    //    let mainFont:UIFont = UIFont(name: "IRANSansWebFaNum ", size: 14)!
 }

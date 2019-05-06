@@ -6,7 +6,10 @@
 //  Copyright © 2018 sehosseini. All rights reserved.
 //
 
-enum ServiceResponseStatus:String {
+import ObjectMapper
+
+
+enum ServiceResponseStatus: String {
     
     case success = "OK"
     case failure = "FAILURE"
@@ -18,46 +21,16 @@ enum ServiceResponseStatus:String {
 }
 
 
-enum ItemShowType:String{
+enum ItemShowType: String {
     case downloadable = "DOWNLOADABLE"
 }
 
-
-enum  TransactionStatus:String {
+class VoidMappable : Mappable {
     
-    case paid = "PAID"
-    case pending = "PENDING"
-    case unknown = "UNKNOWN"
-    case failed  = "FAILED"
-    
-    
-    func getString() -> String{
-        switch self {
-        case .paid:
-            return "پرداخت شده"
-        case .pending:
-            return "در حال پردازش"
-        case .unknown:
-            return "نا مشخص"
-        case .failed:
-            return "رخداد خطا"
-        }
-    }
-}
-
-
-
-
-import ObjectMapper
-
-class VoidMappable : Mappable{
     required init() {}
-    required init?(map: Map) {
-        
-    }
+    required init?(map: Map) {}
     
-    func mapping(map: Map) {
-    }
+    func mapping(map: Map) {}
     
 }
 

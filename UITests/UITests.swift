@@ -2,7 +2,7 @@
 //  UITests.swift
 //  UITests
 //
-//  Created by Pazandish on 2/26/19.
+//  Created by sehosseini on 2/26/19.
 //  Copyright © 2019 sehosseini. All rights reserved.
 //
 

@@ -2,7 +2,7 @@
 //  CustomLabel.swift
 //  baseproject
 //
-//  Created by Pazandish on 1/19/19.
+//  Created by sehosseini on 1/19/19.
 //  Copyright © 2019 sehosseini. All rights reserved.
 //
 
