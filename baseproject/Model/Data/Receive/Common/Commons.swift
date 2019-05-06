@@ -50,7 +50,7 @@ enum  TransactionStatus:String {
 
 import ObjectMapper
 
-class VoidMappable : NVMappable{
+class VoidMappable : Mappable{
     required init() {}
     required init?(map: Map) {
         
