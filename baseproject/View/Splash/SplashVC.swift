@@ -8,6 +8,7 @@
 
 import UIKit
 
+///This view is firs view and you can check login status and version of app
 class SplashVC: BaseVC {
 
     //-----------------------
@@ -50,8 +51,8 @@ class SplashVC: BaseVC {
         // Dispose of any resources that can be recreated.
     }
     
+    ///At this function you can set view design
     private func viewDesign() {
-        
         
         logoImage.image = UIImage(named: "logo")
         logoImage.contentMode = .scaleAspectFit
@@ -68,6 +69,7 @@ class SplashVC: BaseVC {
         
     }
     
+    
     private func checkVersion() {
         
         retryButton.isHidden = true
@@ -82,15 +84,23 @@ class SplashVC: BaseVC {
         indicator.stopAnimating()
     }
     
+    ///This function enables you to go to the main page
+    ///You have the main tab bar and a single view
+    ///To select each one just need to uncomment that
     private func goToMain() {
         
+        
+        // uncomment if you have main tab bar view
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "MainTabbarContainerVC") as! MainTabbarContainerVC
         self.navigationController?.pushViewController(vc, animated: true)
         
+        // uncomment if you have single view
 //        let vc = self.storyboard?.instantiateViewController(withIdentifier: "MainVC") as! MainVC
 //        self.navigationController?.pushViewController(vc, animated: true)
     }
     
+    
+    ///This function send you to login view
     private func goToLogin() {
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "LoginGetMobileVC") as! LoginGetMobileVC
         self.navigationController?.pushViewController(vc, animated: true)
