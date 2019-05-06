@@ -1,7 +1,10 @@
 # iOSBoilerplate
 iOS Boilerplate
 
-multi-language include RTL and LTR
-set up two font in default for Persian and English language
-change font based on language
-custom label, Button, textField and more feature who explain in the readme file
+1. Multi-language include RTL and LTR
+2. Set up two font in default for Persian and English language
+3. Change font based on language
+4. Custom label, Button, textField and more feature who explain in the readme file
+
+
+
