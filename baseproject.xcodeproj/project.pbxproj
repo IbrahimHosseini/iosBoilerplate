@@ -51,6 +51,7 @@
 		28449DCF22F17B5400F82647 /* ArrayParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28449DCE22F17B5400F82647 /* ArrayParameterEncoding.swift */; };
 		28449DD122F17B8200F82647 /* BeginigAndEndTimeInDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28449DD022F17B8200F82647 /* BeginigAndEndTimeInDay.swift */; };
 		28449DD322F17B9E00F82647 /* PersianNumberToEnglishNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28449DD222F17B9E00F82647 /* PersianNumberToEnglishNumber.swift */; };
+		28449DDB22F1839E00F82647 /* SecurityCertificateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28449DDA22F1839E00F82647 /* SecurityCertificateManager.swift */; };
 		284C4AC921EC512100DAFDE1 /* NotificationUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284C4AC821EC512100DAFDE1 /* NotificationUtility.swift */; };
 		284C4AD421EC627C00DAFDE1 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284C4AD321EC627C00DAFDE1 /* App.swift */; };
 		284C4AD621EC62E500DAFDE1 /* Configurations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284C4AD521EC62E500DAFDE1 /* Configurations.swift */; };
@@ -156,6 +157,7 @@
 		28449DCE22F17B5400F82647 /* ArrayParameterEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayParameterEncoding.swift; sourceTree = "<group>"; };
 		28449DD022F17B8200F82647 /* BeginigAndEndTimeInDay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeginigAndEndTimeInDay.swift; sourceTree = "<group>"; };
 		28449DD222F17B9E00F82647 /* PersianNumberToEnglishNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersianNumberToEnglishNumber.swift; sourceTree = "<group>"; };
+		28449DDA22F1839E00F82647 /* SecurityCertificateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityCertificateManager.swift; sourceTree = "<group>"; };
 		284C4AC821EC512100DAFDE1 /* NotificationUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationUtility.swift; sourceTree = "<group>"; };
 		284C4AD321EC627C00DAFDE1 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		284C4AD521EC62E500DAFDE1 /* Configurations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configurations.swift; sourceTree = "<group>"; };
@@ -431,6 +433,7 @@
 			isa = PBXGroup;
 			children = (
 				2878702722241CB80020CBCF /* Request.swift */,
+				28449DDA22F1839E00F82647 /* SecurityCertificateManager.swift */,
 			);
 			path = Request;
 			sourceTree = "<group>";
@@ -1325,6 +1328,7 @@
 				2831D71B21D8AE3000D5A5F8 /* SplashVC.swift in Sources */,
 				284C4AE621EC713200DAFDE1 /* CommonUtility.swift in Sources */,
 				284C4AE421EC6D7000DAFDE1 /* TableViewUtility.swift in Sources */,
+				28449DDB22F1839E00F82647 /* SecurityCertificateManager.swift in Sources */,
 				2878702C22241CE10020CBCF /* RMBaseResponse.swift in Sources */,
 				2831D71321D8AD8400D5A5F8 /* LoginGetVerifyVC.swift in Sources */,
 				284C4AD621EC62E500DAFDE1 /* Configurations.swift in Sources */,

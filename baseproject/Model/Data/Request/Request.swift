@@ -13,7 +13,7 @@ import PromiseKit
 import AlamofireObjectMapper
 import Mustache
 
-func attempt<T>(_ body: @escaping (Int) -> Promise<T> ,count:Int = 3, interval:TimeInterval = 2) -> Promise<T> {
+func attempt<T>(_ body: @escaping (Int) -> Promise<T> ,count: Int = 3, interval: TimeInterval = 2) -> Promise<T> {
     var attempts = 0
     func attempt() -> Promise<T> {
         attempts += 1
@@ -29,6 +29,7 @@ func attempt<T>(_ body: @escaping (Int) -> Promise<T> ,count:Int = 3, interval:T
 class BaseRequestHolder {
     
     internal static let syncQueue = DispatchQueue(label: "syncRetokenQueue")
+    private var sessionManager: SessionManager?
     
     public var rurl: String
     internal var headerParams: [String: String] = [:]
@@ -54,7 +55,6 @@ class BaseRequestHolder {
         self.init(rurl: rurl)
         self.set(headerParams: headerParams)
         self.set(urlData: urlData)
-        
         self.set(body: body)
         
         if let model = bodyModel {
@@ -73,11 +73,12 @@ class BaseRequestHolder {
     
     @discardableResult func set(body: Mappable) -> Self {
         self.body = self.body.merging(body.toJSON(), uniquingKeysWith: {$1})
-        return self;
+        return self
     }
     
     func getHeaders() -> [String: String] {
         var params = self.headerParams
+        
         for (k,v) in BaseRequestHolder.defaultHeaderParams {
             params[k] = v
         }
@@ -85,10 +86,11 @@ class BaseRequestHolder {
         return params
     }
     
-    @discardableResult func set(headerParams: [String: String]) -> Self { self.headerParams = headerParams; return self; }
+    @discardableResult func set(headerParams: [String: String]) -> Self { self.headerParams = headerParams; return self }
     
     func getQueryParams() -> [AnyHashable: Any] {
         var params = self.queryParams
+        
         for (k,v) in BaseRequestHolder.defaultQueryParams {
             params[k] = v
         }
@@ -96,15 +98,15 @@ class BaseRequestHolder {
         return params
     }
     
-    @discardableResult func set(queryParams: [AnyHashable: Any]) -> Self { self.queryParams = queryParams; return self; }
+    @discardableResult func set(queryParams: [AnyHashable: Any]) -> Self { self.queryParams = queryParams; return self }
     
     func getParamEncoding() -> ParameterEncoding { return paramEncoding }
     
-    @discardableResult func set(paramEncoding: ParameterEncoding) -> Self { self.paramEncoding = paramEncoding; return self; }
+    @discardableResult func set(paramEncoding: ParameterEncoding) -> Self { self.paramEncoding = paramEncoding; return self }
     
     func getIsForm() -> Bool { return isForm }
     
-    @discardableResult func set(isForm: Bool) -> Self { self.isForm = isForm ; return self; }
+    @discardableResult func set(isForm: Bool) -> Self { self.isForm = isForm ; return self }
     
     func getHttpMethod() -> Alamofire.HTTPMethod { return self.httpMethod }
     
@@ -112,7 +114,7 @@ class BaseRequestHolder {
     
     func getUrlData() -> [String: Any] { return self.urlData }
     
-    @discardableResult func set(urlData: [String: Any]) -> Self { self.urlData = urlData; return self; }
+    @discardableResult func set(urlData: [String: Any]) -> Self { self.urlData = urlData; return self }
     
     func getUrl() -> URLConvertible {
         var baseUrl = Configurations.baseUrl
@@ -121,7 +123,7 @@ class BaseRequestHolder {
         let relativeUrlTemplate = try! Template(string: rurl)
         let relativeUrl = try! relativeUrlTemplate.render(self.urlData)
         
-        if(baseUrl.last  == "/" && relativeUrl.first == "/") {
+        if baseUrl.last  == "/" && relativeUrl.first == "/" {
             baseUrl = String(baseUrl.dropLast())
         }
         
@@ -155,9 +157,37 @@ class BaseRequestHolder {
         return urlComponents.url!
     }
     
+    //ssl alamofire configuration
+    private func enableCertificatePinning() {
+        let certificates = getCertificates()
+        let trustPolicy = ServerTrustPolicy.pinCertificates(certificates: certificates,
+                                                            validateCertificateChain: true,
+                                                            validateHost: true)
+        let trustPolicies = [ "urlAddress": trustPolicy ] // set url address like example.com
+        let policyManager =  ServerTrustPolicyManager(policies: trustPolicies)
+        sessionManager = SessionManager(configuration: .default,
+                                        serverTrustPolicyManager: policyManager)
+    }
+    
+    private func getCertificates() -> [SecCertificate] {
+        let url = Bundle.main.url(forResource: "SSLCertificate", withExtension: "cer")!
+        let localCertificate = try! Data(contentsOf: url) as CFData
+        guard let certificate = SecCertificateCreateWithData(nil, localCertificate)
+            else { return [] }
+        
+        return [certificate]
+    }
+    
     func requestForPromise() -> Promise<NVDataResponse> {
         
         func request() -> Promise<NVDataResponse>  {
+            
+            //        enableCertificatePinning()
+            // TODO: to use certificate change uncomment this line
+//                    let req =  sessionManager!.request(self.getUrl(),
+            // TODO: to use ServerTrustPolicy uncomment this line
+            //        let req =  SecurityCertificateManager.sharedInstance.defaultManager.request(self.getUrl(),
+            
             let req =  Alamofire.request(self.getUrl(),
                                          method: self.getHttpMethod(),
                                          parameters: self.getBody(),
@@ -280,13 +310,14 @@ class RequestHolder<T: Mappable>: BaseRequestHolder {
 }
 
 public struct NVDataResponse {
+    
     fileprivate init(_ rawrsp: Alamofire.DataResponse<Any>) {
         request = rawrsp.request
         response = rawrsp.response
         data = rawrsp.data
     }
     
-    fileprivate init(request: URLRequest? = nil ,response: HTTPURLResponse? = nil, data: Data? = nil) {
+    fileprivate init(request: URLRequest? = nil, response: HTTPURLResponse? = nil, data: Data? = nil) {
         self.request = request
         self.response = response
         self.data = data
