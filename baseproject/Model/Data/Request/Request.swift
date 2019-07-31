@@ -185,7 +185,7 @@ class BaseRequestHolder {
             //        enableCertificatePinning()
             // TODO: to use certificate change uncomment this line
 //                    let req =  sessionManager!.request(self.getUrl(),
-            // TODO: to use ServerTrustPolicy uncomment this line
+            // TODO: to use server trust policy uncomment this line
             //        let req =  SecurityCertificateManager.sharedInstance.defaultManager.request(self.getUrl(),
             
             let req =  Alamofire.request(self.getUrl(),
