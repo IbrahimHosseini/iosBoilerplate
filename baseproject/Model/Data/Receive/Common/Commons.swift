@@ -25,7 +25,7 @@ enum ItemShowType: String {
     case downloadable = "DOWNLOADABLE"
 }
 
-class VoidMappable : Mappable {
+class VoidMappable : NVMappable {
     
     required init() {}
     required init?(map: Map) {}

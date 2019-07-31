@@ -16,7 +16,7 @@ protocol BaseResponseType {
     func getData() -> Any?
 }
 
-class RMBaseResponse<Item>: Mappable, BaseResponseType {
+class RMBaseResponse<Item>: NVMappable, BaseResponseType {
     func getData() -> Any? {
         return self.data
     }
@@ -37,7 +37,7 @@ class RMBaseResponse<Item>: Mappable, BaseResponseType {
     }
 }
 
-class RMBaseObjectResponse<Item: Mappable>: Mappable, BaseResponseType {
+class RMBaseObjectResponse<Item: NVMappable>: NVMappable, BaseResponseType {
     func getData() -> Any? {
         return self.data
     }
