@@ -45,6 +45,12 @@
 		2831D73E21D8B9D800D5A5F8 /* HTML2String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2831D73D21D8B9D800D5A5F8 /* HTML2String.swift */; };
 		2831D74121D8BAA100D5A5F8 /* MessageUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2831D74021D8BAA100D5A5F8 /* MessageUtility.swift */; };
 		283B29A8222BA8E600530963 /* LoginTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283B29A7222BA8E600530963 /* LoginTest.swift */; };
+		28449DC922F1790300F82647 /* NumberToLetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28449DC822F1790300F82647 /* NumberToLetter.swift */; };
+		28449DCB22F17A2100F82647 /* DecimalTextInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28449DCA22F17A2100F82647 /* DecimalTextInput.swift */; };
+		28449DCD22F17AD200F82647 /* StringParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28449DCC22F17AD200F82647 /* StringParameterEncoding.swift */; };
+		28449DCF22F17B5400F82647 /* ArrayParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28449DCE22F17B5400F82647 /* ArrayParameterEncoding.swift */; };
+		28449DD122F17B8200F82647 /* BeginigAndEndTimeInDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28449DD022F17B8200F82647 /* BeginigAndEndTimeInDay.swift */; };
+		28449DD322F17B9E00F82647 /* PersianNumberToEnglishNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28449DD222F17B9E00F82647 /* PersianNumberToEnglishNumber.swift */; };
 		284C4AC921EC512100DAFDE1 /* NotificationUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284C4AC821EC512100DAFDE1 /* NotificationUtility.swift */; };
 		284C4AD421EC627C00DAFDE1 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284C4AD321EC627C00DAFDE1 /* App.swift */; };
 		284C4AD621EC62E500DAFDE1 /* Configurations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284C4AD521EC62E500DAFDE1 /* Configurations.swift */; };
@@ -144,6 +150,12 @@
 		2831D73D21D8B9D800D5A5F8 /* HTML2String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTML2String.swift; sourceTree = "<group>"; };
 		2831D74021D8BAA100D5A5F8 /* MessageUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageUtility.swift; sourceTree = "<group>"; };
 		283B29A7222BA8E600530963 /* LoginTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTest.swift; sourceTree = "<group>"; };
+		28449DC822F1790300F82647 /* NumberToLetter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberToLetter.swift; sourceTree = "<group>"; };
+		28449DCA22F17A2100F82647 /* DecimalTextInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecimalTextInput.swift; sourceTree = "<group>"; };
+		28449DCC22F17AD200F82647 /* StringParameterEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringParameterEncoding.swift; sourceTree = "<group>"; };
+		28449DCE22F17B5400F82647 /* ArrayParameterEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayParameterEncoding.swift; sourceTree = "<group>"; };
+		28449DD022F17B8200F82647 /* BeginigAndEndTimeInDay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeginigAndEndTimeInDay.swift; sourceTree = "<group>"; };
+		28449DD222F17B9E00F82647 /* PersianNumberToEnglishNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersianNumberToEnglishNumber.swift; sourceTree = "<group>"; };
 		284C4AC821EC512100DAFDE1 /* NotificationUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationUtility.swift; sourceTree = "<group>"; };
 		284C4AD321EC627C00DAFDE1 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		284C4AD521EC62E500DAFDE1 /* Configurations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configurations.swift; sourceTree = "<group>"; };
@@ -479,6 +491,12 @@
 				2831D73921D8B90600D5A5F8 /* DateTime.swift */,
 				2831D73B21D8B93600D5A5F8 /* Currency.swift */,
 				2831D73D21D8B9D800D5A5F8 /* HTML2String.swift */,
+				28449DC822F1790300F82647 /* NumberToLetter.swift */,
+				28449DCA22F17A2100F82647 /* DecimalTextInput.swift */,
+				28449DCC22F17AD200F82647 /* StringParameterEncoding.swift */,
+				28449DCE22F17B5400F82647 /* ArrayParameterEncoding.swift */,
+				28449DD022F17B8200F82647 /* BeginigAndEndTimeInDay.swift */,
+				28449DD222F17B9E00F82647 /* PersianNumberToEnglishNumber.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -1271,15 +1289,18 @@
 				2831D72F21D8B4F500D5A5F8 /* CustomNibView.swift in Sources */,
 				2831D6BD21D8A28600D5A5F8 /* AppDelegate.swift in Sources */,
 				284C4ADC21EC6C5A00DAFDE1 /* ViewAndCreateFromNib.swift in Sources */,
+				28449DCD22F17AD200F82647 /* StringParameterEncoding.swift in Sources */,
 				284C4AD421EC627C00DAFDE1 /* App.swift in Sources */,
 				284C4AEB21EC728200DAFDE1 /* LocaliztionKeys.swift in Sources */,
 				284C4AE921EC71D300DAFDE1 /* LocalizeUtility.swift in Sources */,
 				2831D71921D8AE1900D5A5F8 /* MainVC.swift in Sources */,
 				2831D74121D8BAA100D5A5F8 /* MessageUtility.swift in Sources */,
+				28449DCB22F17A2100F82647 /* DecimalTextInput.swift in Sources */,
 				2831D70621D8A79300D5A5F8 /* APIUrls.swift in Sources */,
 				2831D73A21D8B90600D5A5F8 /* DateTime.swift in Sources */,
 				2831D73221D8B54400D5A5F8 /* CustomTextField.swift in Sources */,
 				2878702E22241CF60020CBCF /* Commons.swift in Sources */,
+				28449DD122F17B8200F82647 /* BeginigAndEndTimeInDay.swift in Sources */,
 				28889AEA223521A800B0F5BA /* SideVC.swift in Sources */,
 				28889AF9223786BD00B0F5BA /* MainTabbarContainerVC.swift in Sources */,
 				288B2BD021F35868001A086B /* CustomLabel.swift in Sources */,
@@ -1308,8 +1329,11 @@
 				2831D71321D8AD8400D5A5F8 /* LoginGetVerifyVC.swift in Sources */,
 				284C4AD621EC62E500DAFDE1 /* Configurations.swift in Sources */,
 				2831D70821D8A7A800D5A5F8 /* APIs.swift in Sources */,
+				28449DD322F17B9E00F82647 /* PersianNumberToEnglishNumber.swift in Sources */,
+				28449DC922F1790300F82647 /* NumberToLetter.swift in Sources */,
 				284C4AEF21EC746A00DAFDE1 /* AppUtility.swift in Sources */,
 				2831D71521D8ADA300D5A5F8 /* ForgetPassVC.swift in Sources */,
+				28449DCF22F17B5400F82647 /* ArrayParameterEncoding.swift in Sources */,
 				288B2BA421F2FBFD001A086B /* Reachability.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

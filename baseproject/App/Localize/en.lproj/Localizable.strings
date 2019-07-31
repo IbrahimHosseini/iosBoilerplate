@@ -49,3 +49,6 @@
 "item3" = "item3";
 "item4" = "item4";
 "item5" = "Profile";
+
+//NUmber to letter
+"NumberToLetter" = "en";

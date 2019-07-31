@@ -49,3 +49,6 @@
 "item3" = "آیتم ۳";
 "item4" = "آیتم ۴";
 "item5" = "پروفایل";
+
+//NUmber to letter
+"NumberToLetter" = "fa";

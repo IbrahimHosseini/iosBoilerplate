@@ -322,4 +322,13 @@ public let italic_font = "italic"
  */
 public let medium_font = "medium"
 
+/**
+ "medium font"
+ 
+ All translations:
+ 
+ en: "medium font"
+ */
+public let NumberToLetter = "NumberToLetter"
+
 
