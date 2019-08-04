@@ -10,12 +10,14 @@ import Foundation
 import UIKit
 import SafariServices
 import PKHUD
+import Toaster
 
 
 @discardableResult
 func openUrl(url: URL) -> Bool {
     
     if !UIApplication.shared.canOpenURL(url) {
+        Toast(text: NVLocalized("Your address is not valid"), duration: Delay.long).show()
         return false
     }
     
@@ -24,5 +26,19 @@ func openUrl(url: URL) -> Bool {
     } else {
         UIApplication.shared.openURL(url)
     }
+    return true
+}
+
+@discardableResult
+func openUrlInApp(url: URL, view: UIViewController) -> Bool {
+    
+    if !UIApplication.shared.canOpenURL(url) {
+        Toast(text: NVLocalized("Your address is not valid"), duration: Delay.long).show()
+        return false
+    }
+    
+    let vc = SFSafariViewController(url: url)
+    view.present(vc, animated: true, completion: nil)
+    
     return true
 }
